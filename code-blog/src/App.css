@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+body {
+  background-color: #121f26;
+}
+
+
+.auth-buttons button {
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background-color: #5999B1;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.auth-buttons button+button {
+  margin-left: 10px;
+  margin-right: 35px;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #121f26;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  /* font-weight: 800; */
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
