@@ -1,0 +1,200 @@
+
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    background-color: #121f26;
+    font-size: 20px;
+    font-family: poppins;
+}
+footer{
+    height: 430px;
+    width: 100%;
+    background-color: white;
+    border-radius: 4rem 4rem 0rem 0rem;
+    /* margin: 0px; */
+}
+.footer-main{
+    display: flex   ;
+}
+
+.footer-div1{
+    height: 290px;
+    width: 35%;
+    padding: 40px 40px 0px 100px;
+    /* padding-left: 100px;
+    padding-bottom:0px ; */
+    background-color: white;
+    border-radius: 4rem 4rem 0rem 0rem;
+
+}
+
+.footer-div2{
+    height: 290px;
+    width: 65%;
+    display: flex;
+    border-radius: 4rem 4rem 0rem 0rem;
+    padding-bottom:0px ;
+    background-color: white;
+    justify-content:stretch;
+
+}
+.footer-link{
+    margin: 50px;
+}
+.footer-div2 .footer-link ul li{
+    text-decoration: none;
+    list-style: none;
+    /* padding: 0px;
+    margin: 0px;
+     */
+
+}
+ul{
+    padding: 0px;
+}
+.footer-div2 .footer-link ul li{
+    text-align: left;
+    /* margin: 0px; */
+    
+    
+}
+.footer-div2 .footer-link u{
+    text-align: center;
+    /* padding: 0px;
+    margin: 0px; */
+    
+}
+.footer-div2 .footer-link ul li a{ 
+    text-decoration: none;
+    list-style: none;
+    color: #13072e  ;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px;
+    color: #13072e;
+}
+.copyright p a{ 
+    text-decoration: none;
+    color:black
+}
+.footer-last{
+    margin-top: 0px;
+    border-top: 1px solid #333;
+    margin:0px 100px ;
+}
+
+.subscribe-form {
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 30px;
+    background-color:white;
+    padding: 5px;
+    width: 300px;
+}
+
+.subscribe-form input[type="email"] {
+flex: 1;
+border: none;
+background-color: white; 
+padding: 10px 15px;
+margin-right: 5px;
+border-radius: 22px; 
+outline: none;
+font-size: 16px; 
+}
+
+.subscribe-form button.subscribe-button {
+background-color: #345A69;; 
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 50%; 
+cursor: pointer;
+outline: none;
+font-size: 16px; 
+width: 44px; 
+height: 44px; 
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.subscribe-form input::placeholder {
+color: #333;
+}
+
+.subscribe-form input:focus,
+.subscribe-form button:hover {
+border: none;
+box-shadow: 0 0 0 2px white;
+}
+
+.subscribe-form button:hover {
+background-color: #345A69;;
+}
+.footer-main {
+    flex-wrap: wrap; 
+        justify-content: center; 
+    padding: 20px;
+  }
+  
+  .footer-div1,
+  .footer-div2 {
+    flex: 1 1 300px; 
+        margin: 10px; 
+  }
+  
+@media (max-width: 768px) {
+.footer-div1, .footer-div2 {
+    width: 100%; 
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-div1 {
+    order: 2;
+}
+
+.footer-div2 {
+    order: 1;
+}
+
+.subscribe-form {
+    width: auto; 
+    margin: 0 20px; 
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+}
+
+.subscribe-form button.subscribe-button {
+    width: 44px;
+    height: 44px;
+}
+}
+
+.subscribe-form button.subscribe-button {
+font-family: 'Poppins', sans-serif; 
+display: inline-flex; 
+align-items: center;
+justify-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.subscribe-form input[type="email"],
+.subscribe-form button.subscribe-button {
+padding: 15px; 
+}
+
+@media (max-width: 480px) {
+.subscribe-form input[type="email"],
+.subscribe-form button.subscribe-button {
+    font-size: 14px; 
+}
+}
