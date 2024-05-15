@@ -1,18 +1,11 @@
 import './App.css';
+import React from 'react';
+import Home from './Pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <header>    
-        <nav>
-        <div class="logo">
-            <span>CodeBlog</span>
-        </div>
-        <div class="auth-buttons">
-            <button><a href="Login.html">Sign In</a></button>
-            <button><a href="SignUp.html">Sign Up</a></button>
-        </div>
-    </nav></header>
+    <Home />
     </div>
   );
 }
