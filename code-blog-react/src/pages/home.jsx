@@ -3,13 +3,15 @@ import logo1 from "../assets/images/logo1.png"
 // import "../assets/style/home.css"
 import blog1 from "../assets/images/blog1.webp"
 import Navbar from "../components/navbar"
+import HomeBody from "../components/homeBody"
 function Home() {
 
   return (
     <>
-    <div>This is home</div>
+    {/* <div>This is home</div> */}
       <Navbar/>
-      <div>After navbar</div>
+      <HomeBody />
+      {/* <div>After navbar</div> */}
     </>
   )
 }
