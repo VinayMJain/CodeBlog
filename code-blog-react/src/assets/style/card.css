@@ -1,0 +1,54 @@
+
+.card {
+    background-color: #224452;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card .image {
+    background-color: #224452;
+    height: 150px;
+}
+
+.card .image img {
+    width: 250px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.card .topic-name {
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+}
+#explore-button {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #5999B1;
+    color: #fff;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    height: 10px; 
+    width: 40%;
+}
+
+#explore-button:hover {
+    background-color: #fff;
+    color: #121f26;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
