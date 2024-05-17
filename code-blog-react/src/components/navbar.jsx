@@ -1,6 +1,10 @@
 import React from 'react'
-import "../assets/style/home.css"
+// import "../assets/style/home.css"
+import "../assets/style/navbar.css"
+// import profile-photo from "../"
 import logo1 from "../assets/images/logo1.png"
+import profilephoto from "../assets/images/profile-photo.png"
+import notification from "../assets/images/notification.png"
 function  Navbar() {
   return (
     <header className="home-header" id="home-header">
@@ -23,8 +27,8 @@ function  Navbar() {
             </div>
             <div className="home-navbar-right">
                 <div className="home-navbar-right-notification">
-                    <a href="" id="notificationButton" onclick="toggleNotificationsDropdown(event)" className="notification-button">
-                        <img src="images/notification.png" alt="This is img" />
+                    <a href="" id="notificationButton"  className="notification-button">
+                        <img src={notification} alt="This is img" />
                     </a>
                     {/* <div className="notifications-dropdown" id="notificationsDropdown" style="display: none; color: black;">
                         <div className="notification-item">You have 3 new messages.</div>
@@ -35,7 +39,7 @@ function  Navbar() {
 
                 <div className="home-navbar-right-profile">
                     
-                    <img src="images/profile-photo.png" alt="profile" className="imgIcon" id="imgIcon" />
+                    <img src={profilephoto} alt="profile" className="imgIcon" id="imgIcon" />
                     <div className="dropdownProfile" id="profileDrop">
                         <a href="profile.html">Profile</a>
                         <a href="index.html">Log Out</a>
