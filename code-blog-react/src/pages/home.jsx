@@ -12,8 +12,8 @@ const Home = () => {
             <span>CodeBlog</span>
         </div>
         <div class="auth-buttons">
-            <button><a href="Login.html">Sign In</a></button>
-            <button><a href="SignUp.html">Sign Up</a></button>
+            <button><a href="/login">Sign In</a></button>
+            <button><a href="/signup">Sign Up</a></button>
         </div>
     </nav></header>
     <section class="index-first">

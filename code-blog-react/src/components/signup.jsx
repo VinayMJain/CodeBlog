@@ -4,12 +4,10 @@ import "../assets/style/signup.css"
 const Signup = () => {
     return (
         <div className="div-body">
-            <header className="site-header">
-                <a href="index.html">
-                    <img src="images/logo1.png" alt="CodeBlog Logo" style={{ width: '40px', height: '40px' }} />
-                </a>
-                <h1>CODE-BLOG</h1>
-            </header>
+            <div class="logo">
+            <img src="images/logo1.png" alt="Logo" />
+            <span>CodeBlog</span>
+        </div>
             <section className="signup-section">
                 <div className="signup-heading">
                     <h2>Create an account</h2>
