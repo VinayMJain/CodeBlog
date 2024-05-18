@@ -1,5 +1,5 @@
 import React from 'react'
-import "../assets/style/Home.css"
+import "../assets/style/home.css"
 import "../assets/style/Footer.css"
 
 const Home = () => {

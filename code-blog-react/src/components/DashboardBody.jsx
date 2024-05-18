@@ -25,7 +25,7 @@ const DashboardBody = () => {
                 <div className="card-image">
                     <img src="images/BlogData/BFS graph.png" alt="" />
                     <div className="card-topic">
-                        <p className="topic-name">BFS Graph Traversal</p>
+                        <p className="topic-name">BFS Graph</p>
         
                     </div>
                     <div className="explore-btn">

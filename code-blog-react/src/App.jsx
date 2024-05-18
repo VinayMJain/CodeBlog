@@ -1,10 +1,12 @@
-import Login from "./components/Login"
-import Signup from "./components/Signup"
-import Upload from "./components/Upload"
+import Login from "./components/login"
+import Signup from "./components/signup"
+import Upload from "./components/upload"
 import { Route, Routes } from "react-router-dom"
 import Dashboard from "./pages/Dashboard"
-import Home from "./pages/Home"
-import "./assets/style/Root.css"
+import Home from "./pages/home"
+import "./assets/style/overall.css"
+import "./assets/style/root.css"
+// import ""
 
 function App() {
 

@@ -1,6 +1,6 @@
 import React from 'react'
 // import "../assets/style/home.css"
-import "../assets/style/Navbar.css"
+import "../assets/style/navbar.css"
 // import profile-photo from "../"
 import logo1 from "../assets/images/logo1.png"
 import profilephoto from "../assets/images/profile-photo.png"
@@ -24,9 +24,9 @@ function  Navbar() {
             </div>
             <div className="home-navbar-center">
                 <ul className="home-nav-links">
-                    <li><a href="home.html" className="home-navbar-links-li">Blogs</a></li>
+                    <li><a href="/dashboard" className="home-navbar-links-li">Blogs</a></li>
                     <li><a href="" className="home-navbar-links-li">Discussions</a></li>
-                    <li><a href="Upload.html" className="home-navbar-links-li">Uploads</a></li>
+                    <li><a href="/uploads" className="home-navbar-links-li">Uploads</a></li>
                     <li><a href="AboutUs.html" className="home-navbar-links-li">About</a></li>
                     <li><a href="FAQs.html" className="home-navbar-links-li">FAQs</a></li>
                     <li><a href="contact.html" className="home-navbar-links-li">Contact</a></li>

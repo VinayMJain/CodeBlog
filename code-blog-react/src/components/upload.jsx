@@ -1,40 +1,10 @@
 import React from 'react';
-import "../assets/style/Upload.css"
-
+import "../assets/style/upload.css"
+import Navbar from './navbar';
 const Upload = () => {
     return (
         <>
-            <header className="home-header" id="home-header">
-                <nav className="home-navbar" id="home-navbar">
-                    <div className="home-navbar-left">
-                        <a href="home.html" className="home-link">
-                            <img src="images/logo1.png" alt="Code-Blog logo" />
-                            <span className="CodeBlog-Name">CodeBlog</span>
-                        </a>
-                    </div>
-                    <div className="home-navbar-center">
-                        <ul className="home-nav-links">
-                            <li><a href="home.html">Blogs</a></li>
-                            <li><a href="">Discussions</a></li>
-                            <li><a href="Upload.html">Uploads</a></li>
-                            <li><a href="AboutUs.html">About</a></li>
-                            <li><a href="FAQs.html">FAQs</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div className="home-navbar-right">
-                        <div className="home-navbar-right-notification">
-                            <img src="images/notification.png" alt="" />
-                        </div>
-
-                        <div className="home-navbar-right-profile">
-                            <a href="profile.html">
-                                <img src="images/profile-photo.png" alt="profile" />
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-            </header>
+            <Navbar />
             <div className="main-container">
                 <div>
                     <div className="p-blog">
