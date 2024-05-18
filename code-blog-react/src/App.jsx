@@ -1,17 +1,18 @@
-import Home from "./pages/home"
-import Login from "./components/login"
-import Signup from "./components/signup"
-import Upload from "./components/upload"
-// import 
-import Navbar from "./components/navbar"
+import Login from "./components/Login"
+import Signup from "./components/Signup"
+import Upload from "./components/Upload"
 import { Route, Routes } from "react-router-dom"
-import "./assets/style/root.css"
+import Dashboard from "./pages/Dashboard"
+import Home from "./pages/Home"
+import "./assets/style/Root.css"
+
 function App() {
 
   return (
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/dashboard" element={<Dashboard />} />
         <Route path="/login" element={<Login />}/>
         <Route path="/signup" element={<Signup />}/>
         <Route path="/uploads" element={<Upload />}/>

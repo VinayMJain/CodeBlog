@@ -1,5 +1,6 @@
-// import React from 'react'
-import "../assets/style/login.css"
+import React from 'react'
+import "../assets/style/Login.css"
+
 function Login() {
   return (
     <div id="login-container">

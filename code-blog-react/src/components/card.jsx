@@ -1,5 +1,5 @@
 // import React from 'react';
-import "../assets/style/card.css"
+import "../assets/style/Card.css"
 import cardImage from "../assets/images/BlogData/binary search.png"
 function Card() {
   return (
