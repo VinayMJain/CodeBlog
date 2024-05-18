@@ -5,7 +5,9 @@ import { Route, Routes } from "react-router-dom"
 import Dashboard from "./pages/Dashboard"
 import Home from "./pages/home"
 import "./assets/style/overall.css"
+// import "./assets/style/Dashboard.css"
 import "./assets/style/root.css"
+import Card from "./components/card"
 // import ""
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         <Route path="/login" element={<Login />}/>
         <Route path="/signup" element={<Signup />}/>
         <Route path="/uploads" element={<Upload />}/>
+        <Route path="/card" element={<Card />}/>
+        
       </Routes>
       {/* <Home /> */}
     {/* <Home /> */}

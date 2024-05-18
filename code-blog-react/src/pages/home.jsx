@@ -57,7 +57,7 @@ const Home = () => {
     <p>Top Blogs</p>
 </div>
     <div class="card-index">
-        <div class="card-image">
+        {/* <div class="card-image">
             <img src="images/BlogData/binary tree.png" alt="" />
             <div class="card-topic">
                 <p class="topic-name">Binary Tree</p>
@@ -66,7 +66,7 @@ const Home = () => {
             <div class="explore-btn">
                 <button>Explore</button>
             </div>
-        </div>
+        </div> */}
         <div class="card-image">
             <img src="images/BlogData/bucket sort.png" alt="" />
             <div class="card-topic">
