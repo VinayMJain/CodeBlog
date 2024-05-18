@@ -1,6 +1,6 @@
 import React from 'react'
-import "../assets/style/home.css"
-const HomeBody = () => {
+import "../assets/style/Dashboard.css"
+const DashboardBody = () => {
   return (
     <>
     <main className="home-main-content">
@@ -296,4 +296,4 @@ const HomeBody = () => {
   )
 }
 
-export default HomeBody
+export default DashboardBody

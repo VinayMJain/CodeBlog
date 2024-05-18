@@ -1,6 +1,6 @@
 import React from 'react'
 
-const rankingSection = () => {
+const RankingSection = () => {
   return (
     <aside class="rankings-section">
             <h2>Global Rankings</h2>
@@ -158,4 +158,4 @@ const rankingSection = () => {
   )
 }
 
-export default rankingSection
+export default RankingSection

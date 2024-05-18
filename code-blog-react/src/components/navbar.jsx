@@ -1,10 +1,12 @@
 import React from 'react'
 // import "../assets/style/home.css"
-import "../assets/style/navbar.css"
+import "../assets/style/Navbar.css"
 // import profile-photo from "../"
 import logo1 from "../assets/images/logo1.png"
 import profilephoto from "../assets/images/profile-photo.png"
 import notification from "../assets/images/notification.png"
+import { NavLink } from 'react-router-dom'
+
 function  Navbar() {
   return (
     <header className="home-header" id="home-header">
@@ -12,7 +14,12 @@ function  Navbar() {
             <div className="home-navbar-left">
                 <a href="home.html" className="home-link">
                     <img src={logo1} alt="Code-Blog logo" />
-                    <span className="CodeBlog-Name">CodeBlog</span>
+                    <span className="CodeBlog-Name">
+                        <NavLink
+                        to = "/" >
+                        CodeBlog
+                        </NavLink>
+                        </span>
                 </a>
             </div>
             <div className="home-navbar-center">
