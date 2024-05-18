@@ -435,7 +435,7 @@ body {
         background-color: #487a8c; 
     }
 
-@media only screen and (max-width: 1149px) {
+/* @media only screen and (max-width: 1149px) {
     .rankings-section{
         display: none;
 
@@ -443,7 +443,7 @@ body {
     .home-main-content{
         display: block;
     }
-    }
+    } */
     
 @media only screen and (max-width:1225px){
     .rankings-section{
