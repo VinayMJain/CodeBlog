@@ -1,3 +1,18 @@
+body {
+    background-color: #121f26;
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+}
+
+.card-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
 
 .card {
     background-color: #224452;
@@ -23,7 +38,7 @@
 
 .card .topic-name {
     padding: 15px;
-    font-size: 1.2em;
+    font-size: large;
     font-weight: bold;
     color: #fff;
 }
@@ -42,6 +57,7 @@
     cursor: pointer;
     height: 10px; 
     width: 40%;
+    font-size: small;
 }
 
 #explore-button:hover {
@@ -52,3 +68,4 @@
 .card:hover {
     transform: translateY(-10px);
 }
+
