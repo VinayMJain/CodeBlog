@@ -69,3 +69,43 @@ body {
     transform: translateY(-10px);
 }
 
+
+@media (max-width:600px) {
+    .card {
+        width: 45%;
+        height: 195px;
+    }
+
+    .card .topic-name {
+        font-size: 16px;
+    }
+
+    .card .image {
+        max-height: 60%;
+    }
+
+    #explore-button {
+        width: 50%;
+        border: black 1px solid;
+
+    }
+
+}
+
+@media (max-width:375px) {
+    #explore-button {
+        width: 60%;
+    }
+}
+@media (max-width:325px) {
+
+    .card{
+        height: 200px;
+    }
+    .card .topic-name{
+        font-size: 14px;
+    }
+    #explore-button {
+        width: 60%;
+    }
+}
