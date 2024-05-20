@@ -5,16 +5,19 @@ const DashboardBody = () => {
     <>
     <main className="home-main-content">
         <section className="home-main-content-blogs">
+            <div className='searchbar-parent'>
             <div className="search-bar">
                 <input type="search" id="search" name="search" placeholder="Search Blogs" required />
                 <button  type="submit" className="search-button"><img src="images/search.png" alt="" /></button>
             </div>
+            </div>
+
             
             {/* <div className="card-index" id="result" style="display: none;"></div> */}
             <div className="card-index" id="topblogs">
                 <div className="card-image">
                     <img src="images/BlogData/binary search.png" alt="" />
-                    <div classNameName="card-topic">
+                    <div className="card-topic">
                         <p className="topic-name">Binary Search</p>
         
                     </div>
