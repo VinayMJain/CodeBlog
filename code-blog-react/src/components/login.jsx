@@ -27,7 +27,7 @@ function Login() {
         </div>
         <button type="submit" className="signin-btn"><a href="home.html">Sign in</a></button>
         <button type="button" className="email-btn"><a href="home.html">Continue with email</a></button>
-        <p className="register-prompt">Donot have an account? <a href="SignUp.html">Register</a></p>
+        <p className="register-prompt">Don&apos;t have an account? <a href="SignUp.html">Register</a></p>
     </div>
     <div  className="login-image">
         <img src="images/login7.webp" alt="Login Visual" />
