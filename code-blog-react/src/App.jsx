@@ -13,7 +13,7 @@ import Card from "./components/card"
 function App() {
 
   return (
-    <>
+  
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/dashboard" element={<Dashboard />} />
@@ -21,11 +21,9 @@ function App() {
         <Route path="/signup" element={<Signup />}/>
         <Route path="/uploads" element={<Upload />}/>
         <Route path="/card" element={<Card />}/>
-        
       </Routes>
-      {/* <Home /> */}
-    {/* <Home /> */}
-    </>
+
+
   )
 }
 
