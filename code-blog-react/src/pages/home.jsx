@@ -80,75 +80,57 @@ const Home = () => {
         <div className="p-blog">
           <p>Top Blogs</p>
         </div>
-        <div className="card-index">
-          {/* <div className="card-image">
-            <img src="images/BlogData/binary tree.png" alt="" />
-            <div className="card-topic">
-                <p className="topic-name">Binary Tree</p>
+        <div class="card-div">
 
-            </div>
-            <div className="explore-btn">
-                <button>Explore</button>
-            </div>
-        </div> */}
-          <div className="card-image">
-            <img src="images/BlogData/bucket sort.png" alt="" />
-            <div className="card-topic">
-              <p className="topic-name">Bucket Sort</p>
-            </div>
-            <div className="explore-btn">
-              <button>Explore</button>
-            </div>
-          </div>
-          <div className="card-image">
-            <img src="images/BlogData/dining philosopher.png" alt="" />
-            <div className="card-topic">
-              <p className="topic-name">Dining Philosopher</p>
-            </div>
-            <div className="explore-btn">
-              <button>Explore</button>
-            </div>
-          </div>
-          <div className="card-image">
-            <img src="images/BlogData/DFS graph.png" alt="" />
-            <div className="card-topic">
-              <p className="topic-name">Graph DFS</p>
-            </div>
-            <div className="explore-btn">
-              <button>Explore</button>
-            </div>
-          </div>
-          <div className="card-image">
-            <img src="images/BlogData/circular linked list.jpeg" alt="" />
-            <div className="card-topic">
-              <p className="topic-name">Circluar linked list</p>
-            </div>
-            <div className="explore-btn">
-              <button>Explore</button>
-            </div>
-          </div>
-          <div className="card-image">
-            <img src="images/BlogData/fibbonacci.jpeg" alt="" />
-            <div className="card-topic">
-              <p className="topic-name">Fibbonacci</p>
-            </div>
-            <div className="explore-btn">
-              <button>Explore</button>
-            </div>
-          </div>
-
-          <div className="card-image">
-            <img src="images/BlogData/tries.png" alt="" />
-            <div className="card-topic">
-              <p className="topic-name">Tries</p>
-            </div>
-            <div className="explore-btn">
-              <button>Explore</button>
-            </div>
-          </div>
+    <div class="card">
+        <div class="image"><img src="images/cb-logo-3.webp" alt="" /></div>
+        <div class="topic-name">Binary Search
+            <button id="explore-button">explore</button>
         </div>
-      </section>
-      <footer>
+    </div>
+    <div class="card">
+        <div class="image"><img src="images/cb-logo-3.webp" alt="" /></div>
+        <div class="topic-name">Binary Search
+            <button id="explore-button">explore</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image"><img src="images/cb-logo-3.webp" alt="" /></div>
+        <div class="topic-name">Binary Search
+            <button id="explore-button">explore</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image"><img src="images/cb-logo-3.webp" alt="" /></div>
+        <div class="topic-name">Binary Search
+            <button id="explore-button">explore</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image"><img src="images/cb-logo-3.webp" alt="" /></div>
+        <div class="topic-name">Binary Search
+            <button id="explore-button">explore</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image"><img src="images/cb-logo-3.webp" alt="" /></div>
+        <div class="topic-name">Binary Search
+            <button id="explore-button">explore</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image"><img src="images/cb-logo-3.webp" alt="" /></div>
+        <div class="topic-name">Binary Search
+            <button id="explore-button">explore</button>
+        </div>
+    </div>
+
+</div>
+<div class="ccopyright">
+    <p >© Code-Blog Inc. All Rights Reserved 2024</p> 
+    <p ><a href="#">Terms & Conditions</a></p>
+</div>
+<footer>
         <div className="footer-main">
           <div className="footer-div1">
             <h3 id="h2"> Code-Blog</h3>
@@ -230,6 +212,8 @@ const Home = () => {
           </p>
         </div>
       </footer>
+      </section>
+
     </div>
   );
 };
