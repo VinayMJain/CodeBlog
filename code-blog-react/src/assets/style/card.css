@@ -61,6 +61,7 @@ body {
     height: 10px; 
     width: 40%;
     font-size: small;
+    border: none;
 }
 
 #explore-button:hover {
