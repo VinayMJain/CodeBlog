@@ -4,10 +4,10 @@ import "../assets/style/signup.css"
 const Signup = () => {
     return (
         <div className="div-body">
-            <div class="logo">
-            <img src="images/logo1.png" alt="Logo" />
-            <span>CodeBlog</span>
-        </div>
+            <div className="logo">
+                <img id="logo-image" src="images/logo1.png" alt="Logo" />
+                <span>CodeBlog</span>
+            </div>
             <section className="signup-section">
                 <div className="signup-heading">
                     <h2>Create an account</h2>
@@ -34,10 +34,10 @@ const Signup = () => {
                             <input type="date" id="dob" name="dob" />
                         </div>
                     </div>
-                    <div className="form-group">
-                        <div className="input-field">
+                    <div className="form-group" id="phone-field">
+                        <div className="input-field" >
                             <label htmlFor="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" required /> 
+                            <input type="tel" id="phone" name="phone" required />
                         </div>
                     </div>
                     <div className="form-group">
