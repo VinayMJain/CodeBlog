@@ -1,0 +1,43 @@
+
+
+.formDiv{
+    width: 50%;
+    height: 100%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactForm{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formInput{
+    width: 50%;
+    height: 30px;
+    margin: 10px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    /* padding: 10px; */
+}
+
+.formTextarea{
+    width: 50%;
+    height: 100px;
+    margin: 10px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    /* padding: 10px; */
+} 
