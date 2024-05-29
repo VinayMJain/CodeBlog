@@ -7,8 +7,6 @@ const blogs = [
   { title: "Binary Search", path: "images/cb-logo-4.webp" },
   { title: "Merge Sort", path: "images/cb-logo-7.webp" },
   { title: "Quick Sort", path: "images/cb=logo-5.webp" },
-  { title: "Quick Sort", path: "images/cb=logo-5.webp" },
-  { title: "Quick Sort", path: "images/cb=logo-5.webp" },
 ];
 
 const Upload = ({ month }) => {
