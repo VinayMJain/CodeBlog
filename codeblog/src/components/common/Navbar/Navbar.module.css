@@ -42,15 +42,30 @@
 .notificationButton img{
     max-width: 24px;
     height: auto;
-    margin-right: 50px;
+    /* margin-right: 100px; */
+}
+.notificationButton{
+    max-width: 24px;
+    height: auto;
+    margin-right: 30px;
+    background-color: transparent;
+    border: none;
 }
 
-.profileButton img{
+.profileButton {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    object-fit: cover;
+    /* object-fit: cover; */
     cursor: pointer;
+}
+
+.profileButton img {
+    /* width: 50px;
+    height: 50px; */
+    border-radius: 50%;
+    object-fit: cover;
+    /* cursor: pointer; */
 }
 
 .CodeBlogName{
