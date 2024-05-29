@@ -1,9 +1,11 @@
 import styles from './ContactForm.module.css';
-import Button from "../../common/Button/Button"
+import Button from "../../../common/Button/Button"
 
 function ContactForm(){
     return (
-        <div className={styles.formDiv} id="formDiv">
+        <div 
+            className={styles.formDiv} 
+            id="formDiv">
             <form
                 action="#" 
                 className={styles.contactForm}
@@ -45,10 +47,6 @@ function ContactForm(){
                     </textarea>
                     <br></br>
                     <Button buttonText="Submit"/>
-                    {/* <button 
-                        type="submit">
-                            Submit
-                    </button> */}
             </form>
         </div>
     );

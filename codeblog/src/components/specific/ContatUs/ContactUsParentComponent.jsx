@@ -1,10 +1,12 @@
 
-import ContactForm from './ContactForm.jsx';
-import ContactContent from './ContactContent.jsx';
+import ContactForm from './ContactForm/ContactForm';
+import ContactContent from './ContactContent/ContactContent';
 import styles from './ContactUsParentComponent.module.css';
 function ContactUs(){
     return (
-        <div className={styles.mainDiv}>
+        <div 
+            className={styles.mainDiv}
+            id='mainDiv'>
             <ContactForm/>
             <ContactContent/>
       </div>
