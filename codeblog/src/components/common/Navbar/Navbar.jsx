@@ -10,7 +10,7 @@ function Navbar() {
             <div className={style.navbarLogo} id='navbarLogo'>
                 <button className={style.logoButton} id='logoButton'>
                     <img src="#" alt="logo" id='logo'/>
-                    <span id='CodeBlogName'>CodeBlog</span>
+                    <span id='CodeBlogName' className={style.CodeBlogName}>CodeBlog</span>
                 </button>
             </div>
             <div className={style.navbarOption} id='navbarOption'>
@@ -18,7 +18,7 @@ function Navbar() {
                     {navbarItemArray.map((item, index) => {
                         return (
                             <li key={index} className={style.navbarItem} id={`navbarItem${item}`}>
-                                <button className={style.navbarLink} id={`navbarLink${item}`}>{item}</button>
+                                <button className={style.navbarLinkButton} id={`navbarLinkButton${item}`}>{item}</button>
                             </li>
                         )
                     })}
