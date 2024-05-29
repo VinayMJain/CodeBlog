@@ -3,7 +3,7 @@ import styles from './Button.module.css';
 
 const Button = ({ buttonText }) => {
     return (
-            <button className={styles.autoResizeButton}>{buttonText}</button>
+            <button id="autoResizeButtonId" className={styles.autoResizeButton}>{buttonText}</button>
     );
 };
 
