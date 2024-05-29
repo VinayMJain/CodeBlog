@@ -1,0 +1,20 @@
+
+.autoResizeButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Poppins', Arial, sans-serif;
+    border-radius: 20px;
+    background-color: #5993b1;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.autoResizeButton:hover {
+    background-color: white;
+    color: #121f26;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
