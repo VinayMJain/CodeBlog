@@ -15,7 +15,7 @@ const LoginForm = () => {
                 <div id="loginForm" className={styles.loginForm}>
                     <div id="formHeader" className={styles.formHeader}>
                         <div id="logo" className={styles.logo}>
-                            <a href="index.html">
+                            <a href="index.html" id="redirectHome">
                                 <img id="logoImage" src="images/logo1.png" alt="CodeBlog Logo" />
                                 <h1 id="logoText">CodeBlog</h1>
                             </a>
