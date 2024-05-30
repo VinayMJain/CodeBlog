@@ -1,7 +1,7 @@
 import React from 'react'
 import style from  './Navbar.module.css'
 
-function Navbar() {
+function Navbar({onPageChange}) {
     const navbarItemArray = ['Blogs','Discussion','Uploads','About','FAQs','Contact']
 
   return (
@@ -9,7 +9,7 @@ function Navbar() {
         <nav className={style.navbar} id='navbar'>
             <div className={style.navbarLogo} id='navbarLogo'>
                 <button className={style.logoButton} id='logoButton'>
-                    <img src="#" alt="logo" id='logo'/>
+                    <img src="images/logo1.png" alt="logo" id='logo'/>
                     <span id='CodeBlogName' className={style.CodeBlogName}>CodeBlog</span>
                 </button>
             </div>
@@ -18,16 +18,16 @@ function Navbar() {
                     {navbarItemArray.map((item, index) => {
                         return (
                             <li key={index} className={style.navbarItem} id={`navbarItem${item}`}>
-                                <button className={style.navbarLinkButton} id={`navbarLinkButton${item}`}>{item}</button>
+                                <button onClick={()=>onPageChange(item)} className={style.navbarLinkButton} id={`navbarLinkButton${item}`}>{item}</button>
                             </li>
                         )
                     })}
                 </ul>
             </div>
             <div className={style.navbarRight} id='navbarRight'>
-                <button className={style.notificationButton}><img src="#" alt="Notification" id='notificationLogo'/></button>
+                <button className={style.notificationButton}><img src="images/notification.png" alt="Notification" id='notificationLogo'/></button>
                 <div className={style.navbarProfile} id='navbarProfile'>
-                    <button className={style.profileButton} id='profileButton'><img src="#" alt="Profile" id='profileLogo'/></button>
+                    <button className={style.profileButton} id='profileButton'><img src="images/profile-photo.png" alt="Profile" id='profileLogo'/></button>
                 </div>
             </div>
         </nav>

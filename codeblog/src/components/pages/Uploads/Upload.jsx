@@ -1,138 +1,25 @@
 import React from "react";
 import style from "./upload.module.css";
+import Card from "../../common/Card/Card";
 
-const Upload = () => {
+const blogs = [
+  { title: "Quick Sort", path: "images/cb-logo-3.webp" },
+  { title: "Binary Search", path: "images/cb-logo-4.webp" },
+  { title: "Merge Sort", path: "images/cb-logo-7.webp" },
+  { title: "Bucket Sort", path: "images/cb=logo-5.webp" },
+];
+
+const Upload = ({ month }) => {
   return (
     <>
-      <div className="main-container">
-        <div>
-          <div className="p-blog">
-            <p>This-Month</p>
-          </div>
-          <div className="card-index">
-            <div className="card-image">
-              <img src="images/BlogData/binary search.png" alt="" />
-              <div className="card-topic">
-                <p className="topic-name">Binary Search</p>
-              </div>
-              <div className="explore-btn">
-                <button>Explore</button>
-              </div>
-            </div>
-            <div className="card-image">
-              <img src="images/BlogData/binarytree.png" alt="" />
-              <div className="card-topic">
-                <p className="topic-name">Binary Tree</p>
-              </div>
-              <div className="explore-btn">
-                <button>Explore</button>
-              </div>
-            </div>
-            <div className="card-image">
-              <img src="images/BlogData/binary search.png" alt="" />
-              <div className="card-topic">
-                <p className="topic-name">Binary Search</p>
-              </div>
-              <div className="explore-btn">
-                <button>Explore</button>
-              </div>
-            </div>
-            <div className="card-image">
-              <img src="images/BlogData/binarytree.png" alt="" />
-              <div className="card-topic">
-                <p className="topic-name">Binary Tree</p>
-              </div>
-              <div className="explore-btn">
-                <button>Explore</button>
-              </div>
-            </div>
-          </div>
+      <div className={style.mainCantainer} id="mainCantainer">
+        <div className={style.pBlog} id="pBlog">
+          <p id="monthP">{month}</p>
         </div>
-        <div>
-          <div className="p-blog">
-            <p>April</p>
-          </div>
-          <div className="card-index">
-            <div className="card-image">
-              <img src="images/BlogData/tries.png" alt="" />
-              <div className="card-topic">
-                <p className="topic-name">Tries</p>
-              </div>
-              <div className="explore-btn">
-                <button>Explore</button>
-              </div>
-            </div>
-            <div className="card-image">
-              <img src="images/BlogData/binary search.png" alt="" />
-              <div className="card-topic">
-                <p className="topic-name">Binary Search</p>
-              </div>
-              <div className="explore-btn">
-                <button>Explore</button>
-              </div>
-            </div>
-            <div className="card-image">
-              <img src="images/BlogData/binarytree.png" alt="" />
-              <div className="card-topic">
-                <p className="topic-name">Binary Tree</p>
-              </div>
-              <div className="explore-btn">
-                <button>Explore</button>
-              </div>
-            </div>
-            <div className="card-image">
-              <img src="images/BlogData/tries.png" alt="" />
-              <div className="card-topic">
-                <p className="topic-name">Tries</p>
-              </div>
-              <div className="explore-btn">
-                <button>Explore</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="p-blog">
-            <p>March</p>
-          </div>
-          <div className="card-index">
-            <div className="card-image">
-              <img src="images/BlogData/binary search.png" alt="" />
-              <div className="card-topic">
-                <p className="topic-name">Binary Search</p>
-              </div>
-              <div className="explore-btn">
-                <button>Explore</button>
-              </div>
-            </div>
-            <div className="card-image">
-              <img src="images/BlogData/binarytree.png" alt="" />
-              <div className="card-topic">
-                <p className="topic-name">Binary Tree</p>
-              </div>
-              <div className="explore-btn">
-                <button>Explore</button>
-              </div>
-            </div>
-            <div className="card-image">
-              <img src="images/BlogData/tries.png" alt="" />
-              <div className="card-topic">
-                <p className="topic-name">Tries</p>
-              </div>
-              <div className="explore-btn">
-                <button>Explore</button>
-              </div>
-            </div>
-            <div className="card-image">
-              <img src="images/BlogData/binarytree.png" alt="" />
-              <div className="card-topic">
-                <p className="topic-name">Binary Tree</p>
-              </div>
-              <div className="explore-btn">
-                <button>Explore</button>
-              </div>
-            </div>
-          </div>
+        <div className={style.uploadBlog} id="uploadBlog">
+          {blogs.map((blog) => (
+            <Card title={blog.title} image={blog.path} />
+          ))}
         </div>
       </div>
     </>
