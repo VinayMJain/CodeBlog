@@ -1,9 +1,10 @@
 import React from 'react';
+import Home from './components/pages/Home/Home';
 
 function App() {
   return (
     <>
-      <h1>Codeblog</h1>
+      <Home />
     </>
   );
 }

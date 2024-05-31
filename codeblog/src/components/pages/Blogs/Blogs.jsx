@@ -4,9 +4,7 @@ import SearchBar from '../../common/SearchBar/SearchBar'
 
 function Blogs() {
   return (
-    // <div>Blogs</div>
     <>
-        <Navbar />
         <SearchBar />
     </>
   )

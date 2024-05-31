@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from '../../common/Navbar/Navbar';
-
+import Blogs from '../Blogs/Blogs'
+import Uploads from '../Uploads/Uploads';
+import Faqs from '../Faqs/Faqs';
+import ContactUs from '../../specific/ContatUs/ContactUsParentComponent';
 function Home() {
     const [currentPage, setCurrentPage] = useState('Home');
 
@@ -11,23 +14,15 @@ function Home() {
     const renderPage = () => {
         switch (currentPage) {
             case 'Blogs':
-                return <div>Home Page
-                    <div>Home Page</div>
-                    <div>Home Page</div>
-                    <div>Home Page</div>
-                </div>;
-            case 'About':
-                return <div>About Page
-                    <div>About Page</div>
-                    <div>About Page</div>
-                    <div>About Page</div>
-                </div>;
+                return <Blogs />;
+            case 'Uploads':
+                return <Uploads />;
+            case 'FAQs':
+                return <Faqs />;
             case 'Contact':
-                return <div>Contact Page
-                    <div>Contact Page</div>
-                    <div>Contact Page</div>
-                    <div>Contact Page</div>
-                </div>;
+                return <ContactUs />;
+            case 'About':
+                return <About />;
             default:
                 return <div>Home Page
                     <div>Home Page</div>
