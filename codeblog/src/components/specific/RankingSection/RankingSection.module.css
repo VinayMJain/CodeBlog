@@ -1,5 +1,58 @@
-.globalRankingsHeading{
-    margin-top: 20px;
-    color: #fff;
-    font-size: xx-large;
+.rankingsSection {
+    padding: 20px;
+   
+}
+
+.globalRankingsHeading {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rankingsTable {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.rankingItem {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+  
+}
+
+.rank {
+    font-size: 20px;
+    font-weight: bold;
+    width: 70px;
+}
+
+.rankHolder {
+    display: flex;
+    align-items: center;
+    background-color: #15222D;
+    padding: 5px 10px;
+    /* border-radius: 5px; */
+    width: 100%;
+}
+
+.rankHolderImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px; 
+}
+
+.rankHolderName {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: inherit;
+}
+
+.accountHolder .rankHolder {
+    background-color: #d0e6a5; 
 }
