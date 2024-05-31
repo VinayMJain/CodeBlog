@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './LoginForm.module.css'; // Import your module CSS file
-import Btn from '../../common/Button/Button';
+import Button from '../../common/Button/Button';
 
 const LoginForm = () => {
     const [passwordVisible, setPasswordVisible] = useState(false);
@@ -32,8 +32,8 @@ const LoginForm = () => {
                         <label id="passwordInputContainerLabel"htmlFor="passwordInput" className={styles.inputLabel}>Password</label>
                         <img id="togglePasswordVisibilityImage" src={passwordVisible ? "images/Openeye.png" : "images/Closeeye.png"} alt={passwordVisible ? "Show Password" : "Hide Password"} onClick={togglePasswordVisibility} className={styles.eyeIcon} />
                     </div>
-                    <Btn id="submitButton" buttonText="Submit" />
-                    <Btn id="continueWithEmailButton" buttonText="Continue with email" />
+                    <Button id="submitButton" buttonText="Submit" />
+                    <Button id="continueWithEmailButton" buttonText="Continue with email" />
 
                     <p id="registerPrompt" className={styles.registerPrompt}>Don&apos;t have an account? <a href="SignUp.html">Register</a></p>
                 </div>
