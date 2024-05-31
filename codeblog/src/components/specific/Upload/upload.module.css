@@ -1,5 +1,5 @@
-.mainCantainer{
-    display: flex;
+.mainContainer{
+    display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -10,4 +10,5 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
+    justify-content: center;
 }

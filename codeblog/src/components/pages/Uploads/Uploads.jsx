@@ -1,14 +1,14 @@
 import React from 'react'
+import Upload from '../../specific/Upload/Upload'
+import blogs from '../../../blogs.json'
+
 
 function Uploads() {
   return (
     <>
-        <div>Uploads</div>
-        <div>Uploads</div>
-        <div>Uploads</div>
-        <div>Uploads</div>
-        <div>Uploads</div>
-        <div>Uploads</div>
+  {blogs.map((blog) => (
+    <Upload month={blog.month} blogs={blog.blogsList} />
+  ))}
     </>
   )
 }
