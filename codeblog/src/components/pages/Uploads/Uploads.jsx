@@ -1,6 +1,6 @@
 import React from 'react'
 import Upload from '../../specific/Upload/Upload'
-import blogs from '../../../blogs.json'
+import blogs from '../../../uploadBlogs.json'
 
 
 function Uploads() {

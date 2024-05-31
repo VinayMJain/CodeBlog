@@ -1,23 +1,12 @@
-[
-    {"month": "This Month",
-    "blogsList": [
-        {"title": "Binary Tree", "path": "images/BlogData/binarytree.png"},
-        {"title": "Circular Linked list", "path": "images/BlogData/circular linked list.jpeg"},
-        {"title": "Dining Philosop...", "path": "images/BlogData/dining philosopher.png"},
-        {"title": "Fibbonacci", "path": "images/BlogData/fibbonacci.jpeg"}
-    ]},
-    {"month": "April",
-    "blogsList": [
-        {"title": "AVL Tree", "path": "images/cb=logo-5.webp"},
-        {"title": "Binary Search", "path": "images/cb-logo-4.webp"},
-        {"title": "DP", "path": "images/cb-logo-7.webp"},
-        {"title": "Merge sort", "path": "images/cb-logo-3.webp"}
-    ]},
-    {"month": "March",    
-    "blogsList":[
-        {"title": "Dijkstra", "path": "images/cb-logo-3.webp"},
-        {"title": "Radix", "path": "images/cb-logo-7.webp"},
-        {"title": "Tree Traversal", "path": "images/cb-logo-4.webp"},
-        {"title": "ijskstra", "path": "images/cb=logo-5.webp"}
-    ]} 
-]
+[{"title": "Circular Linked list", "path": "images/BlogData/circular linked list.jpeg"},
+{"title": "Dijkstra", "path": "images/cb-logo-3.webp"},
+{"title": "Tree Traversal", "path": "images/cb-logo-4.webp"},
+{"title": "Radix", "path": "images/cb-logo-7.webp"},
+{"title": "Dining Philosop...", "path": "images/BlogData/dining philosopher.png"},
+{"title": "ijskstra", "path": "images/cb=logo-5.webp"},
+{"title": "Fibbonacci", "path": "images/BlogData/fibbonacci.jpeg"},
+{"title": "Binary Tree", "path": "images/BlogData/binarytree.png"},
+{"title": "DP", "path": "images/cb-logo-7.webp"},
+{"title": "AVL Tree", "path": "images/cb=logo-5.webp"},
+{"title": "Binary Search", "path": "images/cb-logo-4.webp"},
+{"title": "Merge sort", "path": "images/cb-logo-3.webp"}]
