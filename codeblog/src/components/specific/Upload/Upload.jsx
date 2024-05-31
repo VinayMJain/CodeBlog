@@ -2,30 +2,24 @@ import React from "react";
 import style from "./upload.module.css";
 import Card from "../../common/Card/Card";
 
-const blogs = [
-  { title: "Quick Sort", path: "images/cb-logo-3.webp" },
-  { title: "Binary Search", path: "images/cb-logo-4.webp" },
-  { title: "Merge Sort", path: "images/cb-logo-7.webp" },
-  { title: "Bucket Sort", path: "images/cb=logo-5.webp" },
-];
 
-const Upload = ({ month }) => {
+const Upload = ({ month, blogs }) => {
   return (
     <>
       <div 
-        className={style.mainCantainer} 
-        id="mainCantainer">
+        className={style.mainContainer} 
+        id="mainContainerId">
         <div 
           className={style.pBlog} 
-          id="pBlog">
-          <p 
+          id="pBlogId">
+          <h2 
             id="monthP">
               {month}
-          </p>
+          </h2>
         </div>
         <div 
           className={style.uploadBlog} 
-          id="uploadBlog">
+          id="uploadBlogId">
           {blogs.map((blog) => (
             <Card title={blog.title} image={blog.path} />
           ))}

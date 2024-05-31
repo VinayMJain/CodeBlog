@@ -6,22 +6,22 @@ const Card = ({title,image}) => {
   return (
       <div 
         className={style.cardDiv} 
-        id="cardDiv">
+        id="cardDivId">
         <div 
           className={style.card} 
-          id="card">
+          id="cardId">
           <div 
             className={style.image} 
-            id="cardImage">
+            id="cardImageId">
             <img 
               alt="" 
-              id="blogImage" 
+              id="blogImageId" 
               src={image} 
             />
           </div>
           <div 
             className={style.topicName} 
-            id="topicName">
+            id="topicNameId">
             {title}
             <button 
               id={style.exploreButton}>
