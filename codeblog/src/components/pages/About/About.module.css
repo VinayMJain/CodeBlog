@@ -1,0 +1,93 @@
+section {
+    margin-top: 13vh;
+    color: white;
+}
+
+.headingAboutus {
+    margin-left: 30px;
+}
+
+.quote h2 {
+    text-align: center;
+}
+
+.content {
+    text-align: justify;
+    padding: 20px;
+    max-width: 600px;
+    width: 90%;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socialmediaLinks {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 500px;
+    width: 90%;
+    height: 50px;
+    margin-top: 60px;
+}
+
+.socialmediaLinks .linkedin,
+.github,
+.twitter,
+.insta {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.linkedin img,
+.github img,
+.twitter img,
+.insta img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.totalContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.leftsideContent,
+.rightsideContent {
+    flex: 1;
+    max-width: 50%;
+}
+.leftsideContent{
+    margin-top: 40px;
+}
+.rightsideContent {
+    margin-top: 65px;
+    text-align: center;
+}
+
+.rightsideContent img {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .totalContent {
+        flex-direction: column;
+    }
+
+    .leftsideContent,
+    .rightsideContent {
+        max-width: 100%;
+    }
+
+    .rightsideContent img {
+        width: 80%;
+    }
+}
