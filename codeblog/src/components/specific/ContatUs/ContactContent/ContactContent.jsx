@@ -3,7 +3,7 @@ function ContactContent(){
     return (
         <div 
             className={styles.contentDiv}
-            id='contentDiv'>
+            id='contactUsContentDiv'>
                 <h1 className={styles.contentDivHeading}
                     id='contentHeading'>
                     Contact <span className={styles.contentDivSpan}>Us</span>
@@ -14,43 +14,43 @@ function ContactContent(){
                 </p>
                 <div 
                     className={styles.icons}
-                    id='iconsDiv'>
+                    id='iconsDiv1'>
                         <img 
                             className={styles.iconsImg}
-                            id='iconsImg' 
+                            id='iconsImg1' 
                             src="images/cell.png">
                         </img>
                         <p 
                             className={styles.contentDivPara}
-                            id='iconsPara'>
+                            id='iconsPara1'>
                             +91 9876543210
                         </p>
                 </div>
                 <div 
                     className={styles.icons}
-                    id='iconsDiv'>
+                    id='iconsDiv2'>
                         <img 
                             className={styles.iconsImg} 
-                            id='iconsImg'
+                            id='iconsImg2'
                             src="images/mail.png">
                         </img>
                         <p 
                             className={styles.contentDivPara}
-                            id='iconsPara'>
+                            id='iconsPara2'>
                             codeblog25@gmail.com
                         </p>
                 </div>
                 <div 
                     className={styles.icons}
-                    id='iconsDiv'>
+                    id='iconsDiv3'>
                         <img 
                             className={styles.iconsImg} 
-                            id='iconsImg' 
+                            id='iconsImg3' 
                             src="images/location.svg">
                         </img>
                         <p 
                             className={styles.contentDivPara}
-                            id='iconsPara'>
+                            id='iconsPara3'>
                             Vadodara, Gujarat
                         </p>
                 </div>

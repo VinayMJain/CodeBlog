@@ -6,7 +6,7 @@ function ContactUs(){
     return (
         <div 
             className={styles.mainDiv}
-            id='mainDiv'>
+            id='contactUsMainDiv'>
             <ContactForm/>
             <ContactContent/>
       </div>

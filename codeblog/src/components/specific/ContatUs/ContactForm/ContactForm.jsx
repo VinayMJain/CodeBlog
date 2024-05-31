@@ -5,38 +5,41 @@ function ContactForm(){
     return (
         <div 
             className={styles.formDiv} 
-            id="formDiv">
+            id="contactUsFormDiv">
             <form
                 action="#" 
                 className={styles.contactForm}
                 id = "contactForm"
                 method="#">
                     <label 
-                        for="name">
+                        for="name"
+                        id='contactLabel1'>
                             Name:
                     </label>
                     <input 
                         className={styles.formInput}
-                        type="text" 
                         id="name" 
                         name="name" 
-                        required>
+                        required
+                        type="text"> 
                     </input>
                     <br></br>
                     <label 
-                        for="email">
+                        for="email"
+                        id='contactLabel2'>
                             Email:
                     </label>
                     <input 
                         className={styles.formInput}
-                        type="email" 
                         id="email" 
                         name="email" 
-                        required>
+                        required
+                        type="email"> 
                     </input>
                     <br></br>
                     <label 
-                        for="message">
+                        for="message"
+                        id='contactLabel3'>
                             Message:
                     </label>
                     <textarea 
