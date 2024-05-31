@@ -1,0 +1,99 @@
+.nameEdit{
+    margin-top: 85px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+}
+.nameEdit button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #6B9AC4;
+}
+.nameEdit button img{
+    height: 20px;
+    width: 20px;
+    background-color: #6B9AC4;
+    color:#fff
+}
+.profileDetails{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.profileImage{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-left: 100px;
+}
+.profileImage img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profileText{
+    margin: auto;
+}
+.profileText h1{
+    font-size: 70px;
+    margin: 0;
+}
+.profileSocial{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.profileLinks{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.profileButton{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.profileSocial{
+    margin-top:60px ;
+}
+
+.profileSocial .profileLinks{
+    width: 500px;
+    height: 100px;
+    margin-left: 55px;
+}
+.profileSocial .profileLinks .linkedin,.github,.twitter,.insta{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.profileSocial .profileLinks .linkedin img,.github img,.twitter img,.insta img{
+    width: 50px;
+    height: 50px;
+}
+
+.profileSocial .profileButton{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.profileSocial .profileButton .rank,.like{
+    background-color: #6B9AC4;
+    width: 120px;
+    height: 45px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
