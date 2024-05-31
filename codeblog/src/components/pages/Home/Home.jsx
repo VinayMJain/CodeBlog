@@ -25,11 +25,7 @@ function Home() {
             case 'About':
                 return <About />;
             default:
-                return <div>Home Page
-                    <div>Home Page</div>
-                    <div>FAQs</div>
-                    <div>Home Page</div>
-                </div>;
+                return <Blogs />;
         }
     };
 

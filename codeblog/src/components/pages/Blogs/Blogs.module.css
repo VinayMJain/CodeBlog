@@ -1,0 +1,19 @@
+.blogContainer{
+    margin-top: 10vh;
+    display: flex;
+    width: 100%;
+}
+
+.blogContainerMain{
+    width: 67%;
+    min-height: 90vh;
+}
+
+.searchBarContainer{
+    margin-top: 1em;
+}
+
+.rankingAside{
+    width: 33%;
+}
+
