@@ -1,0 +1,70 @@
+/* Reset some basic elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #121f26;
+}
+
+/* Search Bar Styles */
+.searchBarDiv {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px; /* Rounded corners for the container */
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 5px;
+    width: 500px; /* Adjust width as needed */
+    margin: 0 auto;
+}
+
+.searchBarDiv input[type="search"] {
+    flex: 1;
+    border: none;
+    background-color: white; /* Same as form background for seamless integration */
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 22px; /* Rounded corners for the input field */
+    outline: none;
+    font-size: 16px; /* Adjust size as needed */
+}
+
+.searchBarDiv button.searchButton {
+    background-color: #345A69; /* The button's background color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer;
+    outline: none;
+    width: 44px; /* Circle's width */
+    height: 44px; /* Circle's height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBarDiv button.searchButton img {
+    height: 100%;
+}
+
+/* Adjust placeholder color for better visibility if necessary */
+.searchBarDiv input::placeholder {
+    color: #333;
+}
+
+/* Hover and focus states for interactivity */
+.searchBarDiv input:focus,
+.searchBarDiv button:hover {
+    border: none;
+    box-shadow: 0 0 0 2px white; /* A subtle shadow to highlight focus/hover */
+}
+
+/* Making the button's hover state a bit darker */
+.searchBarDiv button:hover {
+    background-color: #2d4f5e;
+}

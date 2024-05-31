@@ -1,10 +1,9 @@
-import React from 'react'
-import ContactUs from './components/specific/ContatUs/ContactUsParentComponent';
+import React from 'react';
+
 function App() {
   return (
     <>
       <h1>Codeblog</h1>
-      <ContactUs/>
     </>
   );
 }
