@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121f26;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: white;
+    border-radius: 4rem 4rem 0 0;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.footerMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footerDiv1,
+.footerDiv2 {
+    flex: 1 1 300px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 4rem 4rem 0 0;
+}
+
+.footerDiv1 {
+    padding: 20px;
+}
+
+.footerDiv1 h3 {
+    margin: 0;
+}
+
+.footerDiv1 p {
+    margin: 10px 0;
+}
+
+.subscribeForm {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: white;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+}
+
+.subscribeForm input[type="email"] {
+    flex: 1;
+    border: none;
+    background-color: white;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 22px;
+    outline: none;
+    font-size: 16px;
+}
+
+.subscribeForm button.subscribeButton {
+    background-color: #345a69;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribeForm input::placeholder {
+    color: #333;
+}
+
+.subscribeForm input:focus,
+.subscribeForm button:hover {
+    border: none;
+    box-shadow: 0 0 0 2px white;
+}
+
+.subscribeForm button:hover {
+    background-color: #345a69;
+}
+
+.footerDiv2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footerLink {
+    margin: 10px;
+}
+
+.footerLink h3 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footerLink ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footerLink ul li {
+    margin: 5px 0;
+}
+
+.footerLink ul li a {
+    text-decoration: none;
+    color: #13072e;
+}
+
+.footerLink ul li a:hover {
+    text-decoration: underline;
+}
+
+.footerLast {
+    border-top: 1px solid #333;
+    margin: 20px 0;
+}
+
+.copyRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    margin: 0 20px;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+
+.copyRight a {
+    color: #345a69;
+    margin: 5px 0;
+    
+}
+
+@media (max-width: 768px) {
+    .footer {
+        width: 100%;
+    }
+
+    .footerDiv1 {
+        width: 10%;
+    }
+
+
+}
+@media (min-width: 480px) and (max-width: 881px) {
+    .footerDiv1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+    
+
+
+@media (max-width: 480px) {
+
+
+    .subscribeForm input[type="email"],
+    .subscribeForm button.subscribeButton {
+        max-width: 210px;
+        font-size: 14px;
+
+    }
+
+    .subscribeForm button.subscribeButton {
+        font-size: 32px;
+        padding: 2px 2px 11px 2px;
+        
+    }
+
+    .footerLink h3 {
+        font-size: 16px;
+    }
+
+    .footerLink ul li a {
+        font-size: 14px;
+    }
+
+    .copyRight {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .copyRight p {
+        font-size: 10px;
+        margin: 5px 0;
+    }
+
+    .footerDiv1 {
+        display: none;
+    }
+}
