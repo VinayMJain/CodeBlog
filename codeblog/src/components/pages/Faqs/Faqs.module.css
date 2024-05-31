@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121f26;
+}
+.containerFluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.faqSection {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    flex: 1 1 45%;
+    /* justify-content: space-between; */
+    margin-left: 20px;
+
+    box-sizing: border-box;
+    width: 48%;
+}
+h1{
+    margin-top: 13vh;
+    text-align: center;
+    color: #5999b1;
+}
+
+
+
+.accordion {
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #5999b1;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.accordion .icon {
+    margin: 0 10px 0 0;
+    width: 25px;
+    height: 25px;
+    background: url(/images/toggle-bg.png) no-repeat 7px 7.5px #5999b1;
+    background-size: 40%;
+    border-radius: 50%;
+    float: left;
+    transition: all 0.5s ease-in;
+}
+
+.accordion h5 {
+    font-size: 20px;
+    margin: 0;
+    padding: 1.5px 0 0 0;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.active {
+    /* background-color: #5999b1; */
+    color: #fff;
+}
+
+.active .icon {
+    background: url(/images/toggle-bg.png) no-repeat 8px -13.5px #5999b1;
+    background-size: 40%;
+
+}
+
+.panel {
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s ease-in;
+    color: #fff;
+}
