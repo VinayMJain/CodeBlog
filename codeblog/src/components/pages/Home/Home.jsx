@@ -4,6 +4,7 @@ import Blogs from '../Blogs/Blogs'
 import Uploads from '../Uploads/Uploads';
 import Faqs from '../Faqs/Faqs';
 import ContactUs from '../../specific/ContatUs/ContactUsParentComponent';
+import About from '../About/About';
 function Home() {
     const [currentPage, setCurrentPage] = useState('Home');
 
