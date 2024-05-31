@@ -12,11 +12,20 @@ const blogs = [
 const Upload = ({ month }) => {
   return (
     <>
-      <div className={style.mainCantainer} id="mainCantainer">
-        <div className={style.pBlog} id="pBlog">
-          <p id="monthP">{month}</p>
+      <div 
+        className={style.mainCantainer} 
+        id="mainCantainer">
+        <div 
+          className={style.pBlog} 
+          id="pBlog">
+          <p 
+            id="monthP">
+              {month}
+          </p>
         </div>
-        <div className={style.uploadBlog} id="uploadBlog">
+        <div 
+          className={style.uploadBlog} 
+          id="uploadBlog">
           {blogs.map((blog) => (
             <Card title={blog.title} image={blog.path} />
           ))}
