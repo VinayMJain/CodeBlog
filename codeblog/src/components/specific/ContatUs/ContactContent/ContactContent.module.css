@@ -1,0 +1,40 @@
+
+.contentDiv{
+    width: 50%;
+    height: 100%;
+    margin-top: 10vh;
+    margin-right: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentDivSpan{
+    color: #6B9AC4;
+}
+.contentDivHeading{
+    font-size: 77px;
+    margin-bottom: 30px;
+}
+.contentDivP1{
+    font-size: 30px;
+    text-align: center;
+    margin: 30px;
+}
+.contentDivPara{
+    font-size: 25px;
+}
+
+.icons{
+    width: 350px;
+    margin-bottom: 2rem ;
+    display: flex;
+    align-items: center;
+}
+
+.iconsImg{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    margin-right: 30px;
+}

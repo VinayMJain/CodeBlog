@@ -1,14 +1,11 @@
-import React from 'react'
-import Upload from './components/pages/Uploads/Upload'
-import Blogs from './components/pages/Blogs/Blogs'
+import React from 'react';
 
 function App() {
   return (
     <>
-    {/* <h1>CodeBlog</h1> */}
-    <Blogs />
+      <h1>Codeblog</h1>
     </>
-  )
+  );
 }
 
 export default App
