@@ -1,50 +1,111 @@
+
 import React from 'react';
 import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer} id='mainId'>
-      <div className={styles.footerMain} id='mainId1'>
-        <div className={styles.footerDiv1} id='divId1'>
-          <h3 className={styles.h2} id='h2Id'>Code-Blog</h3>
-          <p id='footerDiv1P1'>Get the latest coding tips and insights! <br /> Subscribe to CodeBlog's newsletter.</p>
-          <div className={styles.subscribeForm} id='formId'>
-            <input type="email" className={styles.email} id='emailId' name="email" placeholder="Enter your email" required />
-            <button type="submit" className={styles.subscribeButton} id='buttonId'>→</button>
+    <footer className={styles.footer}
+      id='footerMain'>
+      <div 
+        className={styles.footerMain} 
+        id='footerMainDiv'
+      >
+        <div 
+          className={styles.footerDiv1} 
+          id='footerDiv1'
+        >
+          <h3 
+            className={styles.h3} 
+            id='footerH3'
+          >
+            Code-Blog
+          </h3>
+          <p id='footerDiv1P1'>
+            Get the latest coding tips and insights!
+            <br />
+            Subscribe to CodeBlog's newsletter.
+          </p>
+          <div className={styles.subscribeForm} id='subscribeForm'>
+            <input
+              className={styles.email}
+              id='emailInput'
+              name="email"
+              placeholder="Enter your email"
+              required
+              type="email"
+            />
+            <button
+              className={styles.subscribeButton}
+              id='subscribeButton'
+              type="submit"
+            >
+              →
+            </button>
           </div>
         </div>
-        <div className={styles.footerDiv2} id='divId2'>
-          <div className={styles.footerLink} id='linkId'>
-            <h3 id='footerDiv2hId' >Company</h3>
-            <ul id='footerUl1'>
-              <li><a href="#" id='ulId1'>Home</a></li>
-              <li><a href="#" id='ulId2'>About</a></li>
-              <li><a href="#" id='ulId3'>Career</a></li>
-              <li><a href="#" id='ilId4'>Contact</a></li>
+        <div 
+          className={styles.footerDiv2} 
+          id='footerDiv2'
+          >
+          <div 
+            className={styles.footerLink} 
+            id='footerLink1'
+          >
+            <h3 id='companyH3'>Company</h3>
+            <ul id='companyLinks'>
+              <li id='companyLi1'><a href="#" id='homeLink'>Home</a></li>
+              <li id='companyLi2'><a href="#" id='aboutLink'>About</a></li>
+              <li id='companyLi3'><a href="#" id='careerLink'>Career</a></li>
+              <li id='companyLi4'><a href="#" id='contactLink'>Contact</a></li>
             </ul>
           </div>
-          <div className={styles.footerLink} id='linkId'>
-            <h3 id='linkH3id1'>Documentation</h3>
-            <ul id='footerUl2'>
-              <li><a href="#" id='linkUlL1'>Help Centre</a></li>
-              <li><a href="#" id='linkUlL12'>FAQ</a></li>
-              <li><a href="#" id='linkUlL3'>Privacy Policy</a></li>
+          <div 
+            className={styles.footerLink} 
+            id='footerLink2'
+          >
+            <h3 id='documentationH3'>
+              Documentation
+            </h3>
+            <ul id='documentationLinks'>
+              <li id='docLi1'><a href="#" id='helpCentreLink'>Help Centre</a></li>
+              <li id='docLi2'><a href="#" id='faqLink'>FAQ</a></li>
+              <li id='docLi3'><a href="#" id='privacyPolicyLink'>Privacy Policy</a></li>
             </ul>
           </div>
-          <div className={styles.footerLink} id='linkId'>
-            <h3 id='linkIdh3Id2'>Social</h3>
-            <ul id='footerUl3'>
-              <li><a href="#" id='linkUlLi1'>Facebook</a></li>
-              <li><a href="#"  id='linkUlLi2'>Instagram</a></li>
-              <li><a href="#"  id='linkUlLi3'>Youtube</a></li>
-              <li><a href="#"  id='linkUlLi4'>Twitter</a></li>
+          <div 
+            className={styles.footerLink} 
+            id='footerLink3'
+          >
+            <h3 id='socialH3'>
+              Social
+            </h3>
+            <ul id='socialLinks'>
+              <li id='socialL1'><a href="#" id='facebookLink'>Facebook</a></li>
+              <li id='socialL2'><a href="#" id='instagramLink'>Instagram</a></li>
+              <li id='socialL3'><a href="#" id='youtubeLink'>YouTube</a></li>
+              <li id='socialL4'><a href="#" id='twitterLink'>Twitter</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div className={styles.footerLast} id='lastId'></div>
-      <div className={styles.copyRight} id='copyRightId'>
-        <p className={styles.p1} id='copyRightPid'>© Code-Blog Inc. All Rights Reserved 2024 <a href="#">Terms & Conditions</a></p>
+      <div 
+        className={styles.footerLast} 
+        id='footerLast'
+      >
+      </div>
+      <div 
+        className={styles.copyRight} 
+        id='copyRight'
+      >
+        <p 
+          className={styles.p1} 
+          id='copyRightP'
+        >
+          © Code-Blog Inc. All Rights Reserved 2024
+          <a href="#">
+            Terms & Conditions
+          </a>
+        </p>
       </div>
     </footer>
   );
