@@ -10,6 +10,7 @@ function Uploads() {
       <Upload 
         blogs={blog.blogsList} 
         month={blog.month} 
+        key={blog.id}
       />
     ))}
     </>
