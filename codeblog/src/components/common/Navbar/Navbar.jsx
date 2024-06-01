@@ -2,7 +2,7 @@ import React from 'react'
 import style from  './Navbar.module.css'
 
 function Navbar({onPageChange}) {
-    const navbarItemArray = [
+    const navbarObjectArray = [
         {"id": 1, "title": "Blogs"},
         {"id": 2, "title": "Uploads"},
         {"id": 3, "title": "About"},
@@ -49,7 +49,7 @@ function Navbar({onPageChange}) {
                     className={style.navbarList} 
                     id='navbarListId'
                 >
-                    {navbarItemArray.map((item) => {
+                    {navbarObjectArray.map((item) => {
                         return (
                             <li 
                                 className={style.navbarItem} 
