@@ -5,6 +5,7 @@ import Uploads from '../Uploads/Uploads';
 import Faqs from '../Faqs/Faqs';
 import ContactUs from '../../specific/ContatUs/ContactUsParentComponent';
 import About from '../About/About';
+import Profile from '../../specific/profile/profile';
 function Home() {
     const [currentPage, setCurrentPage] = useState('Home');
 
@@ -24,6 +25,8 @@ function Home() {
                 return <ContactUs />;
             case 'About':
                 return <About />;
+            case 'Profile':
+                return <Profile />;
             default:
                 return <Blogs />;
         }
@@ -31,7 +34,9 @@ function Home() {
 
     return (
         <>
-            <Navbar onPageChange={handlePageChange} />
+            <Navbar 
+                onPageChange={handlePageChange} 
+            />
             {renderPage()}
         </>
     );

@@ -1,5 +1,5 @@
 .nameEdit{
-    margin-top: 85px;
+    /* margin-top: 85px; */
     margin-left: 20px;
     display: flex;
     justify-content: space-between;
@@ -96,4 +96,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.profileSection{
+    margin-top: 2rem;
 }

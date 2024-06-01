@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './BlogSection.module.css'
 import Card from '../../common/Card/Card'
 
-import blogs from '../../../Blogs.json';
+import blogs from '../../../blogs.json';
 
 // const blogs = [
 //     { title: "Quick Sort", path: "images/cb-logo-3.webp" },
@@ -16,9 +16,16 @@ import blogs from '../../../Blogs.json';
 
 function BlogSection() {
   return (
-    <div className={styles.blogContainer} id='blogContainerId'>
+    <div 
+      className={styles.blogContainer} 
+      id='blogContainerId'
+    >
         {blogs.map((blog) => (
-          <Card key={blog.title} title={blog.title} image={blog.path} />
+          <Card 
+            image={blog.path} 
+            key={blog.id} 
+            title={blog.title} 
+          />
         ))}
     </div>
   )

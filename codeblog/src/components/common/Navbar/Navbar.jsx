@@ -2,8 +2,14 @@ import React from 'react'
 import style from  './Navbar.module.css'
 
 function Navbar({onPageChange}) {
-    const navbarItemArray = ['Blogs','Discussion','Uploads','About','FAQs','Contact']
-
+    const navbarItemArray = [
+        {"id": 1, "title": "Blogs"},
+        {"id": 2, "title": "Uploads"},
+        {"id": 3, "title": "About"},
+        {"id": 4, "title": "FAQs"},
+        {"id": 5, "title": "Contact"}
+    ]
+    
   return (
     <header 
         className={style.navHeader} 
@@ -20,7 +26,8 @@ function Navbar({onPageChange}) {
                 <button 
                     className={style.logoButton} 
                     id='logoButtonId'
-                    >
+                    onClick={()=>onPageChange('Blogs')}
+                >
                     <img 
                         alt="logo" 
                         id='logoId'
@@ -29,30 +36,31 @@ function Navbar({onPageChange}) {
                     <span 
                         className={style.CodeBlogName}
                         id='CodeBlogNameId' 
-                    >CodeBlog
+                    >
+                        CodeBlog
                     </span>
                 </button>
             </div>
             <div 
                 className={style.navbarOption} 
                 id='navbarOptionId'
-                >
+            >
                 <ul 
                     className={style.navbarList} 
                     id='navbarListId'
-                    >
-                    {navbarItemArray.map((item, index) => {
+                >
+                    {navbarItemArray.map((item) => {
                         return (
                             <li 
                                 className={style.navbarItem} 
-                                id={`navbarItem${item}`}
-                                key={index} 
-                                >
+                                id={`navbarItem${item.id}`}
+                                key={item.id} 
+                            >
                                 <button 
                                     className={style.navbarLinkButton} 
-                                    id={`navbarLinkButton${item}`}
-                                    onClick={()=>onPageChange(item)} 
-                                >{item}
+                                    id={`navbarLinkButton${item.id}`}
+                                    onClick={()=>onPageChange(item.title)} 
+                                >{item.title}
                                 </button>
                             </li>
                         )
@@ -80,7 +88,8 @@ function Navbar({onPageChange}) {
                     <button 
                         className={style.profileButton} 
                         id='profileButtonId'
-                        >
+                        onClick={()=>onPageChange('Profile')}
+                    >
                             <img 
                                 alt="Profile" 
                                 id='profileLogoId'

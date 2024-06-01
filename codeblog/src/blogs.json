@@ -1,12 +1,14 @@
-[{"title": "Circular Linked list", "path": "images/BlogData/circular linked list.jpeg"},
-{"title": "Dijkstra", "path": "images/cb-logo-3.webp"},
-{"title": "Tree Traversal", "path": "images/cb-logo-4.webp"},
-{"title": "Radix", "path": "images/cb-logo-7.webp"},
-{"title": "Dining Philosop...", "path": "images/BlogData/dining philosopher.png"},
-{"title": "ijskstra", "path": "images/cb=logo-5.webp"},
-{"title": "Fibbonacci", "path": "images/BlogData/fibbonacci.jpeg"},
-{"title": "Binary Tree", "path": "images/BlogData/binarytree.png"},
-{"title": "DP", "path": "images/cb-logo-7.webp"},
-{"title": "AVL Tree", "path": "images/cb=logo-5.webp"},
-{"title": "Binary Search", "path": "images/cb-logo-4.webp"},
-{"title": "Merge sort", "path": "images/cb-logo-3.webp"}]
+[
+    {"id": 1, "title": "Circular Linked list", "path": "images/BlogData/circular linked list.jpeg"},
+    {"id": 2, "title": "Dijkstra", "path": "images/cb-logo-3.webp"},
+    {"id": 3, "title": "Tree Traversal", "path": "images/cb-logo-4.webp"},
+    {"id": 4, "title": "Radix", "path": "images/cb-logo-7.webp"},
+    {"id": 5, "title": "Dining Philosop...", "path": "images/BlogData/dining philosopher.png"},
+    {"id": 6, "title": "ijskstra", "path": "images/cb=logo-5.webp"},
+    {"id": 7, "title": "Fibbonacci", "path": "images/BlogData/fibbonacci.jpeg"},
+    {"id": 8, "title": "Binary Tree", "path": "images/BlogData/binarytree.png"},
+    {"id": 9, "title": "DP", "path": "images/cb-logo-7.webp"},
+    {"id": 10, "title": "AVL Tree", "path": "images/cb=logo-5.webp"},
+    {"id": 11, "title": "Binary Search", "path": "images/cb-logo-4.webp"},
+    {"id": 12, "title": "Merge sort", "path": "images/cb-logo-3.webp"}
+]

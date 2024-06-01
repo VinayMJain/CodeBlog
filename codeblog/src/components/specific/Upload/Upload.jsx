@@ -11,9 +11,11 @@ const Upload = ({ month, blogs }) => {
         id="mainContainerId">
         <div 
           className={style.pBlog} 
-          id="pBlogId">
+          id="pBlogId"
+        >
           <h2 
-            id="monthP">
+            id="monthP"
+          >
               {month}
           </h2>
         </div>
@@ -21,7 +23,10 @@ const Upload = ({ month, blogs }) => {
           className={style.uploadBlog} 
           id="uploadBlogId">
           {blogs.map((blog) => (
-            <Card title={blog.title} image={blog.path} />
+            <Card 
+              image={blog.path} 
+              title={blog.title} 
+            />
           ))}
         </div>
       </div>

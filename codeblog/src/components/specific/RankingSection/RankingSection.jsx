@@ -2,45 +2,122 @@ import React from 'react';
 import styles from './RankingSection.module.css';
 
 const rankings = [
-    { rank: 1, imageUrl: 'images/userData/YuvrajPatel.jpg', name: 'Yuvraj Patel' },
-    { rank: 2, imageUrl: 'images/userData/user2.jpeg', name: 'Jane Smith' },
-    { rank: 3, imageUrl: 'images/userData/user3.jpeg', name: 'Michael Johnson' },
-    { rank: 4, imageUrl: 'images/userData/user4.jpeg', name: 'Emily Davis' },
-    { rank: 5, imageUrl: 'images/userData/user1.jpeg', name: 'Christine Brown' },
+    { id:1, imageUrl: 'images/userData/YuvrajPatel.jpg', name: 'Yuvraj Patel', rank: 1 },
+    { id:2, imageUrl: 'images/userData/user2.jpeg', name: 'Jane Smith', rank: 2 },
+    { id:3, imageUrl: 'images/userData/user3.jpeg', name: 'Michael Johnson', rank: 3 },
+    { id:4, imageUrl: 'images/userData/user4.jpeg', name: 'Emily Davis', rank: 4 },
+    { id:5, imageUrl: 'images/userData/user1.jpeg', name: 'Christine Brown', rank: 5 },
 ];
 
-const additionalRank1 = { rank: 122, imageUrl: 'images/userData/user5.jpeg', name: 'Alex Turner' };
-const accountHolderRank = { rank: 123, imageUrl: 'images/userData/user6.jpeg', name: 'Reed Richards' };
+const additionalRank1 = { imageUrl: 'images/userData/user5.jpeg', name: 'Alex Turner', rank: 122 };
+const accountHolderRank = { imageUrl: 'images/userData/user6.jpeg', name: 'Reed Richards', rank: 123 };
 
 function RankingSection() {
     return (
-        <div className={styles.rankingsSection}>
-            <h1 id="globalRankingsHeadingId" className={styles.globalRankingsHeading}>
+        <div className={styles.rankingsSection} id="rankingsSectionId">
+            <h1 
+                className={styles.globalRankingsHeading}
+                id="globalRankingsHeadingId" 
+            >
                 Global Rankings
             </h1>
-            <div className={styles.rankingsTable}>
+            <div 
+                className={styles.rankingsTable}
+                id="rankingsTableId"
+            >
                 {rankings.map(({ rank, imageUrl, name }) => (
-                    <div className={styles.rankingItem} key={rank}>
-                        <span className={styles.rank}>{rank}</span>
-                        <div className={styles.rankHolder}>
-                            <img src={imageUrl} alt={name} className={styles.rankHolderImage} />
-                            <span className={styles.rankHolderName}>{name}</span>
+                    <div 
+                        className={styles.rankingItem} 
+                        key={rank}
+                        id={`rankingItem${rank}Id`}
+                    >
+                        <span 
+                            className={styles.rank}
+                            id={`rank${rank}Id`}
+                        >
+                            {rank}
+                        </span>
+                        <div 
+                            className={styles.rankHolder}
+                            id={`rankHolder${rank}Id`}
+                        >
+                            <img 
+                                alt={name} 
+                                className={styles.rankHolderImage} 
+                                id={`rankHolderImage${rank}Id`}
+                                src={imageUrl} 
+                            />
+                            <span 
+                                className={styles.rankHolderName}
+                                id={`rankHolderName${rank}Id`}
+                            >
+                                {name}
+                            </span>
                         </div>
                     </div>
                 ))}
-                <div className={styles.dots}>...</div>
-                <div className={styles.rankingItem} key={additionalRank1.rank}>
-                    <span className={styles.rank}>{additionalRank1.rank}</span>
-                    <div className={styles.rankHolder}>
-                        <img src={additionalRank1.imageUrl} alt={additionalRank1.name} className={styles.rankHolderImage} />
-                        <span className={styles.rankHolderName}>{additionalRank1.name}</span>
+                <div 
+                    className={styles.dots}
+                    id="dotsId"
+                >
+                    ...
+                </div>
+                <div 
+                    className={styles.rankingItem}
+                    key={additionalRank1.rank}
+                    id={`rankingItem${additionalRank1.rank}Id`}
+                >
+                    <span 
+                        className={styles.rank}
+                        id={`rank${additionalRank1.rank}Id`}
+                    >
+                        {additionalRank1.rank}
+                    </span>
+                    <div 
+                        className={styles.rankHolder}
+                        id={`rankHolder${additionalRank1.rank}Id`}
+                    >
+                        <img 
+                            alt={additionalRank1.name} 
+                            className={styles.rankHolderImage} 
+                            id={`rankHolderImage${additionalRank1.rank}Id`}
+                            src={additionalRank1.imageUrl} 
+                        />
+                        <span 
+                            className={styles.rankHolderName}
+                            id={`rankHolderName${additionalRank1.rank}Id`}
+                        >
+                            {additionalRank1.name}
+                        </span>
                     </div>
                 </div>
-                <div className={styles.rankingItem} key={accountHolderRank.rank}>
-                    <span className={styles.rank}>{accountHolderRank.rank}</span>
-                    <div className={styles.rankHolder}>
-                        <img src={accountHolderRank.imageUrl} alt={accountHolderRank.name} className={styles.rankHolderImage} />
-                        <span className={styles.rankHolderName}>{accountHolderRank.name} (Your Rank)</span>
+                <div 
+                    className={styles.rankingItem} 
+                    key={accountHolderRank.rank}
+                    id={`rankingItem${accountHolderRank.rank}Id`}
+                >
+                    <span 
+                        className={styles.rank}
+                        id={`rank${accountHolderRank.rank}Id`}
+                    >
+                        {accountHolderRank.rank}
+                    </span>
+                    <div 
+                        className={styles.rankHolder}
+                        id={`rankHolder${accountHolderRank.rank}Id`}
+                    >
+                        <img 
+                            alt={accountHolderRank.name} 
+                            className={styles.rankHolderImage} 
+                            src={accountHolderRank.imageUrl} 
+                            id={`rankHolderImage${accountHolderRank.rank}Id`}
+                        />
+                        <span 
+                            className={styles.rankHolderName}
+                            id={`rankHolderName${accountHolderRank.rank}Id`}
+                        >
+                            {accountHolderRank.name} (Your Rank)
+                        </span>
                     </div>
                 </div>
             </div>

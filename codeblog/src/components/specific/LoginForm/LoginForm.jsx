@@ -10,35 +10,95 @@ const LoginForm = () => {
     };
 
     return (
-        <div id="loginFormContainer" className={styles.container}>
-            <div id="loginContainer" className={styles.loginContainer}>
-                <div id="loginForm" className={styles.loginForm}>
-                    <div id="formHeader" className={styles.formHeader}>
-                        <div id="logo" className={styles.logo}>
-                            <a href="index.html" id="redirectHome">
-                                <img id="logoImage" src="images/logo1.png" alt="CodeBlog Logo" />
-                                <h1 id="logoText">CodeBlog</h1>
+        <div 
+            id="loginFormContainerId" 
+            className={styles.container}
+        >
+            <div 
+                id="loginContainerId" 
+                className={styles.loginContainer}
+            >
+                <div 
+                    id="loginFormId" 
+                    className={styles.loginForm}
+                >
+                    <div 
+                        id="formHeaderId" 
+                        className={styles.formHeader}
+                    >
+                        <div 
+                            id="logoId" 
+                            className={styles.logo}
+                        >
+                            <a href="index.html" id="redirectHomeId">
+                                <img 
+                                    id="logoImageId" 
+                                    src="images/logo1.png" 
+                                    alt="CodeBlog Logo" 
+                                />
+                                <h1 id="logoTextId">CodeBlog</h1>
                             </a>
                         </div>
-                        <h2 id="welcomeText">Welcome to CodeBlog</h2>
-                        <p id="getStartedText">Let&apos;s get started!</p>
+                        <h2 id="welcomeTextId">Welcome to CodeBlog</h2>
+                        <p id="getStartedTextId">Let&apos;s get started!</p>
                     </div>
-                    <div id="emailInputContainer" className={styles.inputContainer}>
-                        <input type="email" id="emailInput" className={styles.inputField} required />
-                        <label id='emailInputContainerLabel' htmlFor="emailInput" className={styles.inputLabel}>Email</label>
+                    <div 
+                        id="emailInputContainerId" 
+                        className={styles.inputContainer}
+                    >
+                        <input 
+                            type="email" 
+                            id="emailInputId" 
+                            className={styles.inputField} 
+                            required 
+                        />
+                        <label 
+                            id='emailInputContainerLabelId' 
+                            htmlFor="emailInput" 
+                            className={styles.inputLabel}
+                        >
+                            Email
+                        </label>
                     </div>
-                    <div id="passwordInputContainer" className={`${styles.inputContainer} ${styles.passwordContainer}`}>
-                        <input type={passwordVisible ? "text" : "password"} id="passwordInput" className={styles.inputField} required />
-                        <label id="passwordInputContainerLabel"htmlFor="passwordInput" className={styles.inputLabel}>Password</label>
-                        <img id="togglePasswordVisibilityImage" src={passwordVisible ? "images/Openeye.png" : "images/Closeeye.png"} alt={passwordVisible ? "Show Password" : "Hide Password"} onClick={togglePasswordVisibility} className={styles.eyeIcon} />
+                    <div 
+                        id="passwordInputContainerId" 
+                        className={`${styles.inputContainer} ${styles.passwordContainer}`}
+                    >
+                        <input 
+                            type={passwordVisible ? "text" : "password"} 
+                            id="passwordInputId" 
+                            className={styles.inputField} 
+                            required 
+                        />
+                        <label 
+                            id="passwordInputContainerLabelId" 
+                            htmlFor="passwordInput" 
+                            className={styles.inputLabel}
+                        >
+                            Password
+                        </label>
+                        <img 
+                            id="togglePasswordVisibilityImageId" 
+                            src={passwordVisible ? "images/Openeye.png" : "images/Closeeye.png"} 
+                            alt={passwordVisible ? "Show Password" : "Hide Password"} 
+                            onClick={togglePasswordVisibility} 
+                            className={styles.eyeIcon} 
+                        />
                     </div>
-                    <Button id="submitButton" buttonText="Submit" />
-                    <Button id="continueWithEmailButton" buttonText="Continue with email" />
+                    <Button id="submitButtonId" buttonText="Submit" />
+                    <Button id="continueWithEmailButtonId" buttonText="Continue with email" />
 
-                    <p id="registerPrompt" className={styles.registerPrompt}>Don&apos;t have an account? <a href="SignUp.html">Register</a></p>
+                    <p id="registerPromptId" className={styles.registerPrompt}>Don&apos;t have an account? <a href="SignUp.html">Register</a></p>
                 </div>
-                <div id="loginImageContainer" className={styles.loginImage}>
-                    <img id="loginImage" src="images/login7.webp" alt="Login Visual" />
+                <div 
+                    id="loginImageContainerId" 
+                    className={styles.loginImage}
+                >
+                    <img 
+                        id="loginImageId" 
+                        src="images/login7.webp" 
+                        alt="Login Visual" 
+                    />
                 </div>
             </div>
         </div>

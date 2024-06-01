@@ -1,11 +1,5 @@
-.uploadBlog{
+.blogContainer {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
-}
-.blogContainer{
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px; /* Optional: space between grid items */
 }

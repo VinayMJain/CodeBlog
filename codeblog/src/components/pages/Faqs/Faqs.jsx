@@ -27,11 +27,11 @@ function Faqs() {
                 className={styles.containerFluid}
                 id="ContainerFluidId"
             >
-                {faqs.map((faq, index) => (
+                {faqs.map((faq,index) => (
                     <div 
                         className={styles.faqSection} 
                         id={`FaqSectionid${faq.id}`}
-                        key={index}
+                        key={faq.id}
                     >
                         <div 
                             className={`${styles.accordion} ${activeIndex === index ? styles.active : ''}`} 

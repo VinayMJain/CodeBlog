@@ -6,9 +6,12 @@ import blogs from '../../../uploadBlogs.json'
 function Uploads() {
   return (
     <>
-  {blogs.map((blog) => (
-    <Upload month={blog.month} blogs={blog.blogsList} />
-  ))}
+    {blogs.map((blog) => (
+      <Upload 
+        blogs={blog.blogsList} 
+        month={blog.month} 
+      />
+    ))}
     </>
   )
 }
