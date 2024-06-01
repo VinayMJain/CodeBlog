@@ -3,7 +3,7 @@ import styles from '../About/About.module.css';
 
 function About() {
   return (
-    <>
+    
       <section
         className={styles.aboutusSection}
         id="aboutusSectionId"
@@ -99,7 +99,7 @@ function About() {
           </div>
         </div>
       </section>
-    </>
+    
   );
 }
 
