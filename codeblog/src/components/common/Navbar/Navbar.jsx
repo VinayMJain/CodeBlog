@@ -9,6 +9,8 @@ function Navbar({onPageChange}) {
         {"id": 4, "title": "FAQs"},
         {"id": 5, "title": "Contact"}
     ]
+
+    console.log('Navbar rendered')
     
   return (
     <header 
@@ -18,8 +20,8 @@ function Navbar({onPageChange}) {
         <nav 
             className={style.navbar} 
             id='navbarId'
-            >
-            <div 
+        >
+            {/* <div 
                 className={style.navbarLogo} 
                 id='navbarLogoId'
                 >
@@ -40,7 +42,7 @@ function Navbar({onPageChange}) {
                         CodeBlog
                     </span>
                 </button>
-            </div>
+            </div> */}
             <div 
                 className={style.navbarOption} 
                 id='navbarOptionId'
@@ -67,10 +69,10 @@ function Navbar({onPageChange}) {
                     })}
                 </ul>
             </div>
-            <div 
+            {/* <div 
                 className={style.navbarRight} 
                 id='navbarRightId'
-                >
+            >
                 <button 
                     className={style.notificationButton}
                     id='notificationButtonId'
@@ -97,7 +99,7 @@ function Navbar({onPageChange}) {
                             />
                     </button>
                 </div>
-            </div>
+            </div> */}
         </nav>
     </header>
   )
