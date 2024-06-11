@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Card.module.css";
 
 
-const Card = ({title,image}) => {
+const Card = ({title,image, onDelete, showDeleteButton }) => {
   return (
       <div 
         className={style.cardDiv} 
@@ -27,6 +27,13 @@ const Card = ({title,image}) => {
               id={style.exploreButton}>
                 explore
             </button>
+            {showDeleteButton && (
+            <button 
+              id={style.deleteButton} 
+              onClick={onDelete}>
+                delete
+            </button>
+          )}
           </div>
         </div>
       </div>

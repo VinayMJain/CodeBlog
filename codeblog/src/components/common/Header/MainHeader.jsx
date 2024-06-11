@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './MainHeader.module.css'
+import NotificationButton from '../NotificationButton/NotificationButton'
+
 function MainHeader() {
     console.log('MainHeader rendered')
   return (
@@ -23,7 +25,7 @@ function MainHeader() {
         </button>
 
         <div className={styles.profileSection} id="profileSectionId">
-        <button 
+        {/* <button 
                     className={styles.notificationButton}
                     id='notificationButtonId'
                 >
@@ -32,7 +34,9 @@ function MainHeader() {
                         id='notificationLogoId'
                         src="images/notification.png" 
                     />
-                </button>
+                </button> */}
+                <NotificationButton
+                />
                 <div 
                     className={styles.navbarProfile} 
                     id='navbarProfileId'

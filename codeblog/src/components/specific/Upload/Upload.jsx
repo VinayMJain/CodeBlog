@@ -1,9 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 import style from "./upload.module.css";
 import Card from "../../common/Card/Card";
 
 
 const Upload = ({ month, blogs }) => {
+  
+  const [myBlog, setMyBlog] = useState(blogs)
+  
+  const handleDelete = (id) => {
+    const newArray = myBlog.filter(blog => blog.id !== id);
+    setMyBlog(newArray);
+    };
+
   return (
     <>
       <div 
@@ -22,10 +30,12 @@ const Upload = ({ month, blogs }) => {
         <div 
           className={style.uploadBlog} 
           id="uploadBlogId">
-          {blogs.map((blog) => (
+          {myBlog.map((blog) => (
             <Card 
               image={blog.path} 
               title={blog.title} 
+              onDelete={() => handleDelete(blog.id)} 
+              showDeleteButton={true}
             />
           ))}
         </div>

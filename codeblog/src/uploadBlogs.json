@@ -1,26 +1,63 @@
 [
-    {"id":"This Months",
+    {
     "month": "This Month",
     "blogsList": [
-        {"title": "Binary Tree", "path": "images/BlogData/binarytree.png"},
-        {"title": "Circular Linked list", "path": "images/BlogData/circular linked list.jpeg"},
-        {"title": "Dining Philosop...", "path": "images/BlogData/dining philosopher.png"},
-        {"title": "Fibbonacci", "path": "images/BlogData/fibbonacci.jpeg"}
+        {
+            "id":1,
+            "title": "Binary Tree",
+            "path": "images/BlogData/binarytree.png"
+        },
+        {
+            "id":2,
+            "title": "Circular Linked list",
+            "path": "images/BlogData/circular linked list.jpeg"},
+        {
+            "id":3,
+            "title": "Dining Philosop...",
+            "path": "images/BlogData/dining philosopher.png"},
+        {
+            "id":4,
+            "title": "Fibbonacci",
+            "path": "images/BlogData/fibbonacci.jpeg"}
     ]},
-    {"id": "April",
+    {
     "month": "April",
     "blogsList": [
-        {"title": "AVL Tree", "path": "images/cb=logo-5.webp"},
-        {"title": "Binary Search", "path": "images/cb-logo-4.webp"},
-        {"title": "DP", "path": "images/cb-logo-7.webp"},
-        {"title": "Merge sort", "path": "images/cb-logo-3.webp"}
+        {
+            "id":1,
+            "title": "AVL Tree",
+            "path": "images/cb=logo-5.webp"},
+        {
+            "id":2,
+            "title": "Binary Search",
+            "path": "images/cb-logo-4.webp"},
+        {
+            "id":3,
+            "title": "DP",
+            "path": "images/cb-logo-7.webp"},
+        {
+            "id":4,
+            "title": "Merge sort",
+            "path": "images/cb-logo-3.webp"}
     ]},
-    {"id": "March",
+    {
     "month": "March",    
     "blogsList":[
-        {"title": "Dijkstra", "path": "images/cb-logo-3.webp"},
-        {"title": "Radix", "path": "images/cb-logo-7.webp"},
-        {"title": "Tree Traversal", "path": "images/cb-logo-4.webp"},
-        {"title": "ijskstra", "path": "images/cb=logo-5.webp"}
+        {
+            "id":1,
+            "title": "Dijkstra",
+            "path": "images/cb-logo-3.webp"},
+        {
+            "id":2,
+            "title": "Radix",
+            "path": "images/cb-logo-7.webp"},
+        {
+            "id":3,
+            "title": "Tree Traversal",
+            "path": "images/cb-logo-4.webp"},
+        {
+            "id":4,
+            "title": "ijskstra",
+            "path": "images/cb=logo-5.webp"}
     ]} 
 ]
