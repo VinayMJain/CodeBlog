@@ -1,0 +1,32 @@
+.notificationButton img{
+    max-width: 24px;
+    height: auto;
+    margin-right: 28px;
+    /* margin-right: 100px; */
+}
+
+.notificationContainer {
+    margin-top: 12px;
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.notificationButton {
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.notificationBadge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px 8px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    margin-top: -10px;
+}
