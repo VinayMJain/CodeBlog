@@ -7,37 +7,37 @@ import ContactUs from '../../specific/ContatUs/ContactUsParentComponent';
 import About from '../About/About';
 import Profile from '../../specific/profile/profile';
 function Home() {
-    const [currentPage, setCurrentPage] = useState('Blogs');
+    // const [currentPage, setCurrentPage] = useState('Home');
 
-    const handlePageChange = (page) => {
-        setCurrentPage(page);
-    };
+    // const handlePageChange = (page) => {
+    //     setCurrentPage(page);
+    // };
 
-    const renderPage = () => {
-        switch (currentPage?.toLowerCase()) {
-            case 'blogs':
-                return <Blogs />;
-            case 'uploads':
-                return <Uploads />;
-            case 'faqs':
-                return <Faqs />;
-            case 'contact':
-                return <ContactUs />;
-            case 'about':
-                return <About />;
-            case 'profile':
-                return <Profile />;
-            default:
-                return <Blogs />;
-        }
-    };
+    // const renderPage = () => {
+    //     switch (currentPage) {
+    //         case 'Blogs':
+    //             return <Blogs />;
+    //         case 'Uploads':
+    //             return <Uploads />;
+    //         case 'FAQs':
+    //             return <Faqs />;
+    //         case 'Contact':
+    //             return <ContactUs />;
+    //         case 'About':
+    //             return <About />;
+    //         case 'Profile':
+    //             return <Profile />;
+    //         default:
+    //             return <Blogs />;
+    //     }
+    // };
 
     return (
         <>
             <Navbar 
                 onPageChange={handlePageChange} 
             />
-            {renderPage()}
+            {/* {renderPage()} */}
         </>
     );
 }

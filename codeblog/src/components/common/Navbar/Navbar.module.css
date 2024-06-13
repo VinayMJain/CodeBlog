@@ -106,8 +106,12 @@
 
 .navbarList li {
     margin-right: 20px; 
+    text-decoration: none;
 }
 
 .navbarList li:last-child {
     margin-right: 0; 
+}
+.active {
+    color: burlywood;
 }

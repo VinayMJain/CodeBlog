@@ -1,5 +1,6 @@
 import React from 'react'
 import style from  './Navbar.module.css'
+import {Link, NavLink} from 'react-router-dom'
 
 function Navbar({onPageChange}) {
     const navbarObjectArray = [
@@ -10,7 +11,7 @@ function Navbar({onPageChange}) {
         {"id": 5, "title": "Contact"}
     ]
 
-    console.log('Navbar rendered')
+    console.log('Navbar rendered');
     
   return (
     <header 
@@ -58,12 +59,14 @@ function Navbar({onPageChange}) {
                                 id={`navbarItem${item.id}`}
                                 key={item.id} 
                             >
-                                <button 
+                                <Link 
                                     className={style.navbarLinkButton} 
                                     id={`navbarLinkButton${item.id}`}
-                                    onClick={()=>onPageChange(item.title)} 
+                                    // onClick={()=>onPageChange(item.title)} 
+
+                                    to={`/${item.title}`}
                                 >{item.title}
-                                </button>
+                                </Link>
                             </li>
                         )
                     })}

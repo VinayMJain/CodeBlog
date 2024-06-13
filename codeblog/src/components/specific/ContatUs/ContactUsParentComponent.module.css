@@ -15,7 +15,7 @@ body {
 
 .mainDiv{
     height: 77vh ;
-    margin-top: 10vh;
+    margin-top: 9vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
