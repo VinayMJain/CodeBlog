@@ -8,7 +8,7 @@
     background-color: #f2f2f2; 
     padding: 5px;
     width: 50%; /* Adjust width as needed */
-    margin: 0 auto;
+    margin-top: 80px;
 }
 
 .searchBarDiv input[type="search"] {
