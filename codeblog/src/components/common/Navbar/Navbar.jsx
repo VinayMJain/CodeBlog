@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import style from  './Navbar.module.css'
 import {Link, NavLink} from 'react-router-dom'
 
 function Navbar({onPageChange}) {
+    let [currentPage,setCurrentPage] = useState('Blogs');
     const navbarObjectArray = [
         {"id": 1, "title": "Blogs"},
         {"id": 2, "title": "Uploads"},
@@ -12,6 +13,9 @@ function Navbar({onPageChange}) {
     ]
 
     console.log('Navbar rendered');
+    useEffect(() => {
+        console.log("Current page is: ", currentPage);
+    },[currentPage])
     
   return (
     <header 
@@ -63,6 +67,7 @@ function Navbar({onPageChange}) {
                                     className={style.navbarLinkButton} 
                                     id={`navbarLinkButton${item.id}`}
                                     // onClick={()=>onPageChange(item.title)} 
+                                    onClick={() => {setCurrentPage(item.title)}}
 
                                     to={`/${item.title}`}
                                 >{item.title}
