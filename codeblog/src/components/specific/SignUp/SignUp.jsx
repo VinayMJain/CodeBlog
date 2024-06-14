@@ -5,6 +5,26 @@ import Button from '../../common/Button/Button';
 function SignUp() {
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
+    const [userDetails, setUserDetails] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        dob: "",
+        phone: "",
+        password: "",
+        confirmPassword: ""
+    });
+
+    const onChangeHandler = (event) => {
+        const { name, value } = event.target;
+        setUserDetails({
+            ...userDetails,
+            [name]: value
+        });
+
+        console.log(userDetails);
+        
+    };
 
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
@@ -48,10 +68,12 @@ function SignUp() {
                             First Name
                         </label>
                         <input 
-                            type="text" 
                             id="firstName" 
                             name="firstName" 
+                            onChange={onChangeHandler}
                             required
+                            type="text"
+
                         />
                     </div>
                     <div 
@@ -66,6 +88,7 @@ function SignUp() {
                         <input 
                             id="lastName" 
                             name="lastName" 
+                            onChange={onChangeHandler}
                             required
                             type="text" 
                         />
@@ -87,6 +110,7 @@ function SignUp() {
                         <input 
                             id="email" 
                             name="email" 
+                            onChange={onChangeHandler}
                             required
                             type="email" 
                         />
@@ -103,6 +127,7 @@ function SignUp() {
                         <input 
                             id="dob" 
                             name="dob"
+                            onChange={onChangeHandler}
                             type="date" 
                         />
                     </div>
@@ -122,7 +147,8 @@ function SignUp() {
                         </label>
                         <input 
                             id="phone" 
-                            name="phone" 
+                            name="phone"
+                            onChange={onChangeHandler} 
                             required
                             type="tel" 
                         />
@@ -144,6 +170,7 @@ function SignUp() {
                         <input 
                             id="password" 
                             name="password" 
+                            onChange={onChangeHandler}
                             required
                             type={passwordVisible ? "text" : "password"} 
                         />
@@ -167,6 +194,7 @@ function SignUp() {
                         <input 
                             id="confirmPassword" 
                             name="confirmPassword" 
+                            onChange={onChangeHandler}
                             required
                             type={confirmPasswordVisible ? "text" : "password"} 
                         />
@@ -183,7 +211,7 @@ function SignUp() {
                     className={styles.formActions}
                     id="formActionsId"
                 >
-                    <Button id="submitButtonId" buttonText="Sign Up" />
+                    <Button id="submitButtonId" buttonText="Sign Up"/>
                     <Button id="continueWithEmailButtonId" buttonText="Continue with email" />
                 </div>
             </form>
