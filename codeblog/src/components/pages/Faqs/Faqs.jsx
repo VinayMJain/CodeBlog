@@ -20,6 +20,8 @@ function Faqs() {
         { id: 8, question: "How do I contact support?", answer: "You can contact our support team through email or by filling out the contact form on our website." }
     ];
 
+    console.log("Faqs.jsx rendered");
+
     return (
         <>
             <h1 id="FaqsH1" >Frequently Asked Questions</h1>

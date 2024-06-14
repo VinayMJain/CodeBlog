@@ -4,6 +4,7 @@ import blogs from '../../../uploadBlogs.json'
 
 
 function Uploads() {
+  console.log("Uploads.jsx rendered");
   return (
     <>
     {blogs.map((blog) => (

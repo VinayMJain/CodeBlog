@@ -5,6 +5,7 @@ import RankingSection from '../../specific/RankingSection/RankingSection';
 import BlogSection from '../../specific/BlogSection/BlogSection';
 
 function Blogs() {
+  console.log("Blogs.jsx rendered")
   return (
     <div 
       className={styles.blogContainer} 
