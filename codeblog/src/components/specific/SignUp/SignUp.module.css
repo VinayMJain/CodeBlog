@@ -1,0 +1,141 @@
+body {
+    background-color: #121F26;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.signupSection {
+    margin-top: 30px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.signupHeading h2, .signupHeading p {
+    text-align: center;
+    margin: 5px;
+}
+
+.signUpForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formGroup {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.formGroup:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+
+.inputField {
+    position: relative;
+    padding: 10px;
+    flex-basis: 48%; 
+  
+}
+.inputField input {    
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 15px 15px 20px;
+    color: white;
+    border: 2px solid #345A69;
+    border-radius: 4px;
+    outline: none;
+    background-color: transparent;
+    transition: background-color 5000s ease-in-out 0s;}
+
+.inputField label {
+    position: absolute;
+    top: 15%;
+    left: 20px;
+    transform: translateY(-50%);
+    background-color: #121F26;
+    padding: 0 5px;
+    margin-left: -5px;
+    color: white;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.inputField input:focus + label,
+.inputField input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-150%);
+    font-size: 12px;
+    color: #fff;
+}
+
+#dob{
+    line-height: 22px;
+}
+
+.inputField input:focus + label,
+.inputField input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-100%);
+    font-size: 12px;
+    color: #fff;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%) sepia(0%) saturate(0%) brightness(100%);
+}
+
+.inputField input[type="date"] {
+    padding: 15px;
+    padding-right: 30px;
+    cursor: text;
+}
+
+.inputField img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.phoneField {
+    margin-top: 16px;
+    flex-basis: 100%;
+}
+
+.formActions {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* .submitBtn, .alternative-btn {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #345A69;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+} */
