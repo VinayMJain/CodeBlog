@@ -11,19 +11,20 @@ import Blogs from './components/pages/Blogs/Blogs';
 
 function App() {
   return (
+    <>
+    <MainHeader />
     <BrowserRouter>
-      <MainHeader />
       <Navbar />
       <Routes>
         <Route path="/" element={<Blogs />} />
         <Route path="/Blogs" element={<Blogs />} />
         <Route path="/about" element={<About />} />
-
         <Route path="/Uploads" element={<Uploads />} />
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/Contact" element={<ContactUs />} />
       </Routes>
     </BrowserRouter>
+    </>
   );
 }
 

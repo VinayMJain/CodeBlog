@@ -33,7 +33,8 @@ const Upload = ({ month, blogs }) => {
           {myBlog.map((blog) => (
             <Card 
               image={blog.path} 
-              title={blog.title} 
+              title={blog.title}
+              key={blog.id} 
               onDelete={() => handleDelete(blog.id)} 
               showDeleteButton={true}
             />
