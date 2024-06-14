@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../About/About.module.css';
 
 function About() {
+  console.log("About.jsx rendered");
   return (
     
       <section
