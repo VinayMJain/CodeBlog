@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './MainHeader.module.css'
 import NotificationButton from '../NotificationButton/NotificationButton'
 
-function MainHeader() {
+function MainHeader({notificationCounter}) {
     console.log('MainHeader rendered')
   return (
     <div className={styles.mainHeader} id="mainHeader">
@@ -36,6 +36,7 @@ function MainHeader() {
                     />
                 </button> */}
                 <NotificationButton
+                    notificationCount={notificationCounter}
                 />
                 <div 
                     className={styles.navbarProfile} 

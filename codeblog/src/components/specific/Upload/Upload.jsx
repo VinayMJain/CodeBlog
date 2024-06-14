@@ -3,13 +3,14 @@ import style from "./upload.module.css";
 import Card from "../../common/Card/Card";
 
 
-const Upload = ({ month, blogs }) => {
+const Upload = ({ month, blogs , updateNotification}) => {
   
   const [myBlog, setMyBlog] = useState(blogs)
   
   const handleDelete = (id) => {
     const newArray = myBlog.filter(blog => blog.id !== id);
     setMyBlog(newArray);
+    updateNotification();
     };
 
   return (

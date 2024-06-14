@@ -1,22 +1,22 @@
 import React, { useEffect } from 'react'
 import styles from './NotificationButton.module.css'
-import { useState } from 'react';
-import blogs from "../../../uploadBlogs.json"
+// import { useState } from 'react';
+// import blogs from "../../../uploadBlogs.json"
 
-const NotificationButton = () => {
+const NotificationButton = ({notificationCount}) => {
     // Step 3: State Management
-    const [notificationCount, setNotificationCount] = useState(0); // Example count, you can set it dynamically
+    // const [notificationCount, setNotificationCount] = useState(0); // Example count, you can set it dynamically
 
-    let myArray = []
+    // let myArray = []
 
-    for (let i = 0; i < blogs.length; i++) {
-        myArray.push(...blogs[i].blogsList)
+    // for (let i = 0; i < blogs.length; i++) {
+        // myArray.push(...blogs[i].blogsList)
         
-    }
+    // }
     
-    useEffect(() => {
-        setNotificationCount(myArray.length)
-    },[blogs])
+    // useEffect(() => {
+        // setNotificationCount(myArray.length)
+    // },[blogs])
 
     // console.log(blogs.length)
 
