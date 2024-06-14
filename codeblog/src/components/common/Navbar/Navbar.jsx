@@ -9,7 +9,9 @@ function Navbar({onPageChange}) {
         {"id": 2, "title": "Uploads"},
         {"id": 3, "title": "About"},
         {"id": 4, "title": "FAQs"},
-        {"id": 5, "title": "Contact"}
+        {"id": 5, "title": "Contact"},
+        {"id": 6, "title": "signin"},
+        {"id": 7, "title": "signup"}
     ]
 
     console.log('Navbar rendered');

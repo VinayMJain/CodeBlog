@@ -1,6 +1,6 @@
-body {
+.signupContainer {
     background-color: #121F26;
-    color: white;
+    /* color: white; */
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,7 +11,7 @@ body {
 }
 
 .signupSection {
-    margin-top: 30px;
+    margin-top: 15vh;
     width: 900px;
     display: flex;
     flex-direction: column;

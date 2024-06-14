@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './SignUp.module.css';
 import Button from '../../common/Button/Button';
-function SignUp(){
-    // const [passwordVisible, setPasswordVisible] = useState(false);
 
-    // const togglePasswordVisibility = () => {
-    //     setPasswordVisible(!passwordVisible);
-    // };
+function SignUp() {
+    const [passwordVisible, setPasswordVisible] = useState(false);
+    const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
 
-    return(
+    const togglePasswordVisibility = () => {
+        setPasswordVisible(!passwordVisible);
+    };
+
+    const toggleConfirmPasswordVisibility = () => {
+        setConfirmPasswordVisible(!confirmPasswordVisible);
+    };
+
+    return (
+        <div 
+            className={styles.signupContainer}
+            id="signupContainerId"
+        >
         <section 
             className={styles.signupSection}
             id="signupSectionId"
@@ -33,7 +43,7 @@ function SignUp(){
                         id="inputField1Id"
                     >
                         <label 
-                            for="firstName"
+                            htmlFor="firstName"
                         >
                             First Name
                         </label>
@@ -49,7 +59,7 @@ function SignUp(){
                         id="inputField2Id"
                     > 
                         <label 
-                            for="lastName"
+                            htmlFor="lastName"
                         >
                             Last Name
                         </label>
@@ -70,7 +80,7 @@ function SignUp(){
                         id="inputField3Id"
                     >
                         <label 
-                            for="email"
+                            htmlFor="email"
                         >
                             Email
                         </label>
@@ -86,7 +96,7 @@ function SignUp(){
                         id="inputField4Id"
                     >
                         <label 
-                            for="dob"
+                            htmlFor="dob"
                         >
                             Date of Birth
                         </label>
@@ -106,7 +116,7 @@ function SignUp(){
                         id="inputField5Id"
                     >
                         <label 
-                            for="phone"
+                            htmlFor="phone"
                         >
                             Phone
                         </label>
@@ -127,7 +137,7 @@ function SignUp(){
                         id="inputField6Id"
                     >
                         <label 
-                            for="password"
+                            htmlFor="password"
                         >
                             Password
                         </label>
@@ -135,29 +145,22 @@ function SignUp(){
                             id="password" 
                             name="password" 
                             required
-                            type="password" 
+                            type={passwordVisible ? "text" : "password"} 
                         />
-                        {/* <img 
-                            alt={passwordVisible ? "Show Password" : "Hide Password"} 
-                            id="togglePasswordVisibilityImage1Id"
-                            onclick={togglePasswordVisibility()}
-                            src={passwordVisible ? "images/Openeye.png" : "images/Closeeye.png"}
-                            style="display: none; cursor: pointer;"
-                        /> */}
-                        {/* <img 
-                            alt="Show Password" 
-                            id="eyeOpen" 
-                            onclick={togglePasswordVisibility1()} 
-                            src="images/Openeye.png" 
-                            style="cursor: pointer;"
-                        /> */}
+                        <img 
+                            id="togglePasswordVisibilityImageId" 
+                            src={passwordVisible ? "/images/Openeye.png" : "/images/Closeeye.png"} 
+                            alt={passwordVisible ? "Hide Password" : "Show Password"} 
+                            onClick={togglePasswordVisibility} 
+                            className={styles.eyeIcon} 
+                        />
                     </div>
                     <div 
                         className={styles.inputField}
                         id="inputField7Id"
                     >
                         <label 
-                            for="confirmPassword"
+                            htmlFor="confirmPassword"
                         >
                             Confirm Password
                         </label>
@@ -165,22 +168,15 @@ function SignUp(){
                             id="confirmPassword" 
                             name="confirmPassword" 
                             required
-                            type="password" 
+                            type={confirmPasswordVisible ? "text" : "password"} 
                         />
-                        {/* <img 
-                            alt={passwordVisible ? "Show Password" : "Hide Password"}
-                            id="togglePasswordVisibilityImage2Id"
-                            onclick={togglePasswordVisibility()}
-                            src={passwordVisible ? "images/Openeye.png" : "images/Closeeye.png"}
-                            style="display: none; cursor: pointer;"
-                        /> */}
-                        {/* <img 
-                            alt="Show Password"
-                            id="eyeOpen-confirm" 
-                            onclick={togglePasswordVisibility1()}
-                            src="images/Openeye.png" 
-                            style="cursor: pointer;"
-                        /> */}
+                        <img 
+                            id="toggleConfirmPasswordVisibilityImageId" 
+                            src={confirmPasswordVisible ? "/images/Openeye.png" : "/images/Closeeye.png"} 
+                            alt={confirmPasswordVisible ? "Hide Password" : "Show Password"} 
+                            onClick={toggleConfirmPasswordVisibility} 
+                            className={styles.eyeIcon} 
+                        />
                     </div>
                 </div>
                 <div 
@@ -192,6 +188,7 @@ function SignUp(){
                 </div>
             </form>
         </section>
+        </div>
     );
 }
 
