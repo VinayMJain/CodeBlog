@@ -32,7 +32,7 @@ body {
     z-index: 100;
     width: 100%;
     display: block;
-    clip-path: url(#hexagon-clip-path);
+    clip-path: url(#hexagonClipPathId);
 }
 
 .info {
@@ -48,7 +48,7 @@ body {
     padding-bottom: 70px;
 }
 
-/* nav {
+nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -58,7 +58,7 @@ body {
     position: fixed;
     top: 0;
     z-index: 1000;
-} */
+}
 
 .logo {
     /* font-weight: 800; */
@@ -75,7 +75,7 @@ body {
 }
 
 
-/* .auth-buttons button {
+.authButtons button {
     padding: 8px 16px;
     width: 120px;
     height: 40px;
@@ -86,9 +86,9 @@ body {
     cursor: pointer;
 }
 
-.auth-buttons button+button {
+.authButtons button+button {
     margin-left: 10px;
-} */
+}
 
 
 .hashtag {

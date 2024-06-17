@@ -10,6 +10,28 @@
     min-height: 100vh;
 }
 
+.siteHeader {
+    position: absolute;
+    margin-top: 2vh;
+    top: 0;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.siteHeader img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 40px; 
+    height: 40px;
+}
+
+.siteHeader h1 {
+    font-size: 24px;
+    margin-top: 0px;
+    color: white;
+}
+
 .signupSection {
     margin-top: 15vh;
     width: 900px;
