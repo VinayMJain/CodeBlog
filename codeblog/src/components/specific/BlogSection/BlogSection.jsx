@@ -6,7 +6,7 @@ import blogs from '../../../blogs.json';
 
 const UnsplashAccessKey = 'aVhwloBHIg3J6I1FchuFQt-rr1kwoHJR-lpfzPYBjnI'; // Replace with your Unsplash API access key
 
-function BlogSection() {
+function BlogSection({ selectedCategory }) {
   const [photos, setPhotos] = useState([]);
   // const [query, setQuery] = useState('');
   const [error, setError] = useState(null);
@@ -45,14 +45,15 @@ function BlogSection() {
     return <div>Loading...</div>;
   }
 
+  // Filter and truncate titles based on the selected category
+  const filteredBlogs = selectedCategory === 'all'
+    ? blogs.flatMap(category => category.blogs)
+    : blogs.find(category => category.category === selectedCategory).blogs;
 
-    // Extract and truncate titles
-    const allTitles = blogs.reduce((titles, category) => {
-      category.blogs.forEach(blog => {
-          const truncatedTitle = blog.title.length > 25 ? blog.title.substring(0, 17) + "..." : blog.title;
-          titles.push({ ...blog, title: truncatedTitle });
-      });
-      return titles;
+  const allTitles = filteredBlogs.reduce((titles, blog) => {
+    const truncatedTitle = blog.title.length > 25 ? blog.title.substring(0, 22) + "..." : blog.title;
+    titles.push({ ...blog, title: truncatedTitle });
+    return titles;
   }, []);
 
 
@@ -67,10 +68,10 @@ function BlogSection() {
             title={photo.alt_description || 'Untitled'} 
           />
         ))} */}
-        {allTitles.map((blog) => (
+        {allTitles.map((blog,index) => (
           <Card 
             image={photos[Math.floor(Math.random() * (19 - 1 + 1)) + 1].urls.small}
-            key={blog.id} 
+            key={index} 
             title={blog.title} 
           />
         ))}

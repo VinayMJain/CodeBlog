@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 // import SearchBar from '../../common/SearchBar/SearchBar';
 import SearchBarMui from '../../common/SearchBar/SearchBarMui';
 import styles from './Blogs.module.css';
@@ -8,8 +8,11 @@ import {CatetoryButton} from '../../common/CategoryButton/CatetoryButton';
 import {SortButton} from '../../common/SortButton/SortButton';
 import Stack from '@mui/material/Stack';
 
+const UnsplashAccessKey = 'aVhwloBHIg3J6I1FchuFQt-rr1kwoHJR-lpfzPYBjnI'; // Replace with your Unsplash API access key
+
 function Blogs() {
   console.log("Blogs.jsx rendered")
+  const [selectedCategory, setSelectedCategory] = useState('all');
   return (
     <div 
       className={styles.blogContainer} 
@@ -33,11 +36,16 @@ function Blogs() {
               margin: '1rem',
             }}
             >
-            <CatetoryButton />
+            <CatetoryButton
+              selectedCategory={selectedCategory} 
+              setSelectedCategory={setSelectedCategory} 
+            />
             <SortButton />
           </Stack>
         </div>
-        <BlogSection />
+        <BlogSection
+          selectedCategory={selectedCategory} 
+        />
       </main>
 
       <aside 

@@ -3,17 +3,18 @@ import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import blogs from '../../../blogs.json';
 
-export const CatetoryButton = () => {
-  const [alignment, setAlignment] = React.useState('all');
+export const CatetoryButton = ({ selectedCategory, setSelectedCategory }) => {
 
-  const handleChange = (event, newAlignment) => {
-    setAlignment(newAlignment);
+  const handleChange = (event, newCategory) => {
+    if (newCategory !== null) {
+      setSelectedCategory(newCategory);
+    }
   };
 
   return (
     <ToggleButtonGroup
     color="primary"
-    value={alignment}
+    value={selectedCategory}
     exclusive
     onChange={handleChange}
     aria-label="Platform"
