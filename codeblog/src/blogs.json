@@ -1,14 +1,1492 @@
 [
-    {"id": 1, "title": "Circular Linked list", "path": "images/BlogData/circular linked list.jpeg"},
-    {"id": 2, "title": "Dijkstra", "path": "images/cb-logo-3.webp"},
-    {"id": 3, "title": "Tree Traversal", "path": "images/cb-logo-4.webp"},
-    {"id": 4, "title": "Radix", "path": "images/cb-logo-7.webp"},
-    {"id": 5, "title": "Dining Philosop...", "path": "images/BlogData/dining philosopher.png"},
-    {"id": 6, "title": "ijskstra", "path": "images/cb=logo-5.webp"},
-    {"id": 7, "title": "Fibbonacci", "path": "images/BlogData/fibbonacci.jpeg"},
-    {"id": 8, "title": "Binary Tree", "path": "images/BlogData/binarytree.png"},
-    {"id": 9, "title": "DP", "path": "images/cb-logo-7.webp"},
-    {"id": 10, "title": "AVL Tree", "path": "images/cb=logo-5.webp"},
-    {"id": 11, "title": "Binary Search", "path": "images/cb-logo-4.webp"},
-    {"id": 12, "title": "Merge sort", "path": "images/cb-logo-3.webp"}
+    {
+        "category": "DSA",
+        "blogs": [
+            {
+                "title": "Mastering Arrays in DSA",
+                "date": "2024-02-18",
+                "image": "https://example.com/images/dsa1.jpg"
+            },
+            {
+                "title": "Understanding Linked Lists",
+                "date": "2023-09-25",
+                "image": "https://example.com/images/dsa2.jpg"
+            },
+            {
+                "title": "Dynamic Programming Explained",
+                "date": "2023-11-12",
+                "image": "https://example.com/images/dsa3.jpg"
+            },
+            {
+                "title": "Advanced Sorting Techniques",
+                "date": "2024-06-15",
+                "image": "https://example.com/images/dsa4.jpg"
+            },
+            {
+                "title": "Graph Theory Basics",
+                "date": "2024-01-20",
+                "image": "https://example.com/images/dsa5.jpg"
+            },
+            {
+                "title": "Hash Tables in Depth",
+                "date": "2023-07-29",
+                "image": "https://example.com/images/dsa6.jpg"
+            },
+            {
+                "title": "Greedy Algorithms: A Practical Approach",
+                "date": "2023-12-24",
+                "image": "https://example.com/images/dsa7.jpg"
+            },
+            {
+                "title": "Binary Search Tree Operations",
+                "date": "2024-03-17",
+                "image": "https://example.com/images/dsa8.jpg"
+            },
+            {
+                "title": "Heap and Priority Queues",
+                "date": "2023-11-09",
+                "image": "https://example.com/images/dsa9.jpg"
+            },
+            {
+                "title": "Recursion and Backtracking",
+                "date": "2024-05-02",
+                "image": "https://example.com/images/dsa10.jpg"
+            },
+            {
+                "title": "Understanding Queues and Stacks",
+                "date": "2024-04-15",
+                "image": "https://example.com/images/dsa11.jpg"
+            },
+            {
+                "title": "Divide and Conquer Algorithms",
+                "date": "2024-06-07",
+                "image": "https://example.com/images/dsa12.jpg"
+            },
+            {
+                "title": "Top 10 DSA Interview Questions",
+                "date": "2023-10-11",
+                "image": "https://example.com/images/dsa13.jpg"
+            },
+            {
+                "title": "Tree Traversal Techniques",
+                "date": "2023-08-21",
+                "image": "https://example.com/images/dsa14.jpg"
+            },
+            {
+                "title": "Fibonacci Series using DP",
+                "date": "2024-02-05",
+                "image": "https://example.com/images/dsa15.jpg"
+            },
+            {
+                "title": "Introduction to AVL Trees",
+                "date": "2023-12-01",
+                "image": "https://example.com/images/dsa16.jpg"
+            },
+            {
+                "title": "Implementing Binary Trees",
+                "date": "2024-03-25",
+                "image": "https://example.com/images/dsa17.jpg"
+            },
+            {
+                "title": "Time Complexity Analysis",
+                "date": "2023-07-14",
+                "image": "https://example.com/images/dsa18.jpg"
+            },
+            {
+                "title": "Space Complexity in Algorithms",
+                "date": "2024-01-18",
+                "image": "https://example.com/images/dsa19.jpg"
+            },
+            {
+                "title": "Understanding P and NP Problems",
+                "date": "2023-09-28",
+                "image": "https://example.com/images/dsa20.jpg"
+            },
+            {
+                "title": "Breadth First Search (BFS) Explained",
+                "date": "2023-10-18",
+                "image": "https://example.com/images/dsa21.jpg"
+            },
+            {
+                "title": "Depth First Search (DFS) Techniques",
+                "date": "2024-02-28",
+                "image": "https://example.com/images/dsa22.jpg"
+            },
+            {
+                "title": "Binary Heap Implementation",
+                "date": "2023-12-09",
+                "image": "https://example.com/images/dsa23.jpg"
+            },
+            {
+                "title": "Understanding Red-Black Trees",
+                "date": "2024-04-02",
+                "image": "https://example.com/images/dsa24.jpg"
+            },
+            {
+                "title": "Trie Data Structure",
+                "date": "2024-01-26",
+                "image": "https://example.com/images/dsa25.jpg"
+            },
+            {
+                "title": "An Introduction to Splay Trees",
+                "date": "2023-07-07",
+                "image": "https://example.com/images/dsa26.jpg"
+            },
+            {
+                "title": "Skip Lists Explained",
+                "date": "2023-11-30",
+                "image": "https://example.com/images/dsa27.jpg"
+            },
+            {
+                "title": "Disjoint Set Union (DSU) Algorithm",
+                "date": "2024-03-12",
+                "image": "https://example.com/images/dsa28.jpg"
+            },
+            {
+                "title": "Shortest Path Algorithms",
+                "date": "2023-08-18",
+                "image": "https://example.com/images/dsa29.jpg"
+            },
+            {
+                "title": "Network Flow Algorithms",
+                "date": "2024-05-14",
+                "image": "https://example.com/images/dsa30.jpg"
+            },
+            {
+                "title": "Graph Coloring Techniques",
+                "date": "2023-10-24",
+                "image": "https://example.com/images/dsa31.jpg"
+            },
+            {
+                "title": "Topological Sorting Explained",
+                "date": "2023-12-18",
+                "image": "https://example.com/images/dsa32.jpg"
+            },
+            {
+                "title": "Bellman-Ford Algorithm",
+                "date": "2024-03-05",
+                "image": "https://example.com/images/dsa33.jpg"
+            },
+            {
+                "title": "Dijkstra's Algorithm",
+                "date": "2023-11-15",
+                "image": "https://example.com/images/dsa34.jpg"
+            },
+            {
+                "title": "Kruskal's Algorithm for MST",
+                "date": "2024-04-20",
+                "image": "https://example.com/images/dsa35.jpg"
+            },
+            {
+                "title": "Prim's Algorithm for MST",
+                "date": "2024-02-11",
+                "image": "https://example.com/images/dsa36.jpg"
+            },
+            {
+                "title": "Understanding B-Trees",
+                "date": "2024-01-08",
+                "image": "https://example.com/images/dsa37.jpg"
+            },
+            {
+                "title": "Ternary Search Implementation",
+                "date": "2023-09-14",
+                "image": "https://example.com/images/dsa38.jpg"
+            },
+            {
+                "title": "Interpolation Search Algorithm",
+                "date": "2023-07-23",
+                "image": "https://example.com/images/dsa39.jpg"
+            },
+            {
+                "title": "Jump Search Algorithm",
+                "date": "2024-03-29",
+                "image": "https://example.com/images/dsa40.jpg"
+            },
+            {
+                "title": "Exponential Search Explained",
+                "date": "2024-06-12",
+                "image": "https://example.com/images/dsa41.jpg"
+            },
+            {
+                "title": "Understanding Subarrays",
+                "date": "2024-05-07",
+                "image": "https://example.com/images/dsa42.jpg"
+            },
+            {
+                "title": "Finding Substrings Efficiently",
+                "date": "2023-11-02",
+                "image": "https://example.com/images/dsa43.jpg"
+            },
+            {
+                "title": "Longest Common Subsequence",
+                "date": "2024-02-25",
+                "image": "https://example.com/images/dsa44.jpg"
+            },
+            {
+                "title": "Knuth-Morris-Pratt (KMP) Algorithm",
+                "date": "2023-10-06",
+                "image": "https://example.com/images/dsa45.jpg"
+            },
+            {
+                "title": "Rabin-Karp Algorithm",
+                "date": "2024-01-29",
+                "image": "https://example.com/images/dsa46.jpg"
+            },
+            {
+                "title": "Introduction to Boyer-Moore Algorithm",
+                "date": "2023-08-03",
+                "image": "https://example.com/images/dsa47.jpg"
+            },
+            {
+                "title": "String Matching Algorithms",
+                "date": "2024-05-27",
+                "image": "https://example.com/images/dsa48.jpg"
+            },
+            {
+                "title": "Pattern Searching Algorithms",
+                "date": "2023-12-22",
+                "image": "https://example.com/images/dsa49.jpg"
+            },
+            {
+                "title": "Understanding Subsequence",
+                "date": "2024-04-09",
+                "image": "https://example.com/images/dsa50.jpg"
+            },
+            {
+                "title": "Subarray Sum Problems",
+                "date": "2024-06-01",
+                "image": "https://example.com/images/dsa51.jpg"
+            },
+            {
+                "title": "Kadane's Algorithm for Max Subarray",
+                "date": "2023-11-18",
+                "image": "https://example.com/images/dsa52.jpg"
+            },
+            {
+                "title": "Longest Increasing Subsequence",
+                "date": "2024-03-21",
+                "image": "https://example.com/images/dsa53.jpg"
+            },
+            {
+                "title": "Introduction to Segment Trees",
+                "date": "2024-01-15",
+                "image": "https://example.com/images/dsa54.jpg"
+            },
+            {
+                "title": "Fenwick Tree Explained",
+                "date": "2023-08-11",
+                "image": "https://example.com/images/dsa55.jpg"
+            },
+            {
+                "title": "Binary Indexed Tree (BIT)",
+                "date": "2023-12-02",
+                "image": "https://example.com/images/dsa56.jpg"
+            },
+            {
+                "title": "Range Minimum Query (RMQ)",
+                "date": "2024-05-17",
+                "image": "https://example.com/images/dsa57.jpg"
+            },
+            {
+                "title": "Range Maximum Query (RMQ)",
+                "date": "2023-07-21",
+                "image": "https://example.com/images/dsa58.jpg"
+            },
+            {
+                "title": "Understanding Binary Search Trees",
+                "date": "2024-03-09",
+                "image": "https://example.com/images/dsa59.jpg"
+            },
+            {
+                "title": "AVL Tree Rotations",
+                "date": "2023-11-21",
+                "image": "https://example.com/images/dsa60.jpg"
+            },
+            {
+                "title": "Implementing B+ Trees",
+                "date": "2024-01-12",
+                "image": "https://example.com/images/dsa61.jpg"
+            },
+            {
+                "title": "Cuckoo Hashing Technique",
+                "date": "2024-04-18",
+                "image": "https://example.com/images/dsa62.jpg"
+            },
+            {
+                "title": "Understanding Bloom Filters",
+                "date": "2024-02-14",
+                "image": "https://example.com/images/dsa63.jpg"
+            },
+            {
+                "title": "An Introduction to Treaps",
+                "date": "2023-10-09",
+                "image": "https://example.com/images/dsa64.jpg"
+            },
+            {
+                "title": "Implementing Patricia Tries",
+                "date": "2023-09-06",
+                "image": "https://example.com/images/dsa65.jpg"
+            },
+            {
+                "title": "Graph Representation Techniques",
+                "date": "2024-06-20",
+                "image": "https://example.com/images/dsa66.jpg"
+            },
+            {
+                "title": "Sparse Tables and Applications",
+                "date": "2024-03-19",
+                "image": "https://example.com/images/dsa67.jpg"
+            },
+            {
+                "title": "Understanding XOR Linked Lists",
+                "date": "2023-07-19",
+                "image": "https://example.com/images/dsa68.jpg"
+            },
+            {
+                "title": "Complexity Analysis of Algorithms",
+                "date": "2023-12-14",
+                "image": "https://example.com/images/dsa69.jpg"
+            },
+            {
+                "title": "Understanding Amortized Analysis",
+                "date": "2024-02-21",
+                "image": "https://example.com/images/dsa70.jpg"
+            },
+            {
+                "title": "Backtracking for N-Queens Problem",
+                "date": "2023-08-25",
+                "image": "https://example.com/images/dsa71.jpg"
+            },
+            {
+                "title": "Branch and Bound Techniques",
+                "date": "2023-09-12",
+                "image": "https://example.com/images/dsa72.jpg"
+            },
+            {
+                "title": "Understanding Tabulation in DP",
+                "date": "2024-04-07",
+                "image": "https://example.com/images/dsa73.jpg"
+            },
+            {
+                "title": "Memoization vs Tabulation",
+                "date": "2023-10-02",
+                "image": "https://example.com/images/dsa74.jpg"
+            },
+            {
+                "title": "Top Down vs Bottom Up DP",
+                "date": "2024-01-01",
+                "image": "https://example.com/images/dsa75.jpg"
+            },
+            {
+                "title": "Optimal Substructure in DP",
+                "date": "2024-05-10",
+                "image": "https://example.com/images/dsa76.jpg"
+            },
+            {
+                "title": "Implementing Bellman-Ford Algorithm",
+                "date": "2024-03-02",
+                "image": "https://example.com/images/dsa77.jpg"
+            },
+            {
+                "title": "Graph Theory: Eulerian Path",
+                "date": "2023-08-06",
+                "image": "https://example.com/images/dsa78.jpg"
+            },
+            {
+                "title": "Graph Theory: Hamiltonian Path",
+                "date": "2023-10-12",
+                "image": "https://example.com/images/dsa79.jpg"
+            },
+            {
+                "title": "Cycle Detection in Graphs",
+                "date": "2024-02-01",
+                "image": "https://example.com/images/dsa80.jpg"
+            },
+            {
+                "title": "Strongly Connected Components",
+                "date": "2023-09-30",
+                "image": "https://example.com/images/dsa81.jpg"
+            },
+            {
+                "title": "Articulation Points in Graphs",
+                "date": "2023-11-11",
+                "image": "https://example.com/images/dsa82.jpg"
+            },
+            {
+                "title": "Bridges in Graphs",
+                "date": "2024-01-10",
+                "image": "https://example.com/images/dsa83.jpg"
+            },
+            {
+                "title": "Understanding Floyd-Warshall Algorithm",
+                "date": "2023-12-27",
+                "image": "https://example.com/images/dsa84.jpg"
+            },
+            {
+                "title": "Pathfinding Algorithms Explained",
+                "date": "2023-07-16",
+                "image": "https://example.com/images/dsa85.jpg"
+            },
+            {
+                "title": "Greedy vs Dynamic Programming",
+                "date": "2024-04-25",
+                "image": "https://example.com/images/dsa86.jpg"
+            },
+            {
+                "title": "Understanding Huffman Coding",
+                "date": "2023-11-27",
+                "image": "https://example.com/images/dsa87.jpg"
+            },
+            {
+                "title": "Minimax Algorithm in Game Theory",
+                "date": "2024-03-27",
+                "image": "https://example.com/images/dsa88.jpg"
+            },
+            {
+                "title": "Alpha-Beta Pruning in Game Trees",
+                "date": "2024-02-07",
+                "image": "https://example.com/images/dsa89.jpg"
+            },
+            {
+                "title": "Introduction to Game Trees",
+                "date": "2023-08-27",
+                "image": "https://example.com/images/dsa90.jpg"
+            },
+            {
+                "title": "Bit Manipulation Techniques",
+                "date": "2023-10-04",
+                "image": "https://example.com/images/dsa91.jpg"
+            },
+            {
+                "title": "Understanding Gray Code",
+                "date": "2024-05-05",
+                "image": "https://example.com/images/dsa92.jpg"
+            },
+            {
+                "title": "Counting Bits in Integers",
+                "date": "2023-12-06",
+                "image": "https://example.com/images/dsa93.jpg"
+            },
+            {
+                "title": "Efficient Bitwise Operations",
+                "date": "2024-01-22",
+                "image": "https://example.com/images/dsa94.jpg"
+            },
+            {
+                "title": "Generating Power Set Using Bits",
+                "date": "2024-04-29",
+                "image": "https://example.com/images/dsa95.jpg"
+            },
+            {
+                "title": "Sum of Subsets Problem",
+                "date": "2023-11-06",
+                "image": "https://example.com/images/dsa96.jpg"
+            },
+            {
+                "title": "Understanding Traveling Salesman Problem",
+                "date": "2024-02-23",
+                "image": "https://example.com/images/dsa97.jpg"
+            },
+            {
+                "title": "Solving Knapsack Problem",
+                "date": "2024-03-15",
+                "image": "https://example.com/images/dsa98.jpg"
+            },
+            {
+                "title": "Introduction to Integer Programming",
+                "date": "2023-07-05",
+                "image": "https://example.com/images/dsa99.jpg"
+            },
+            {
+                "title": "Understanding Linear Programming",
+                "date": "2024-05-30",
+                "image": "https://example.com/images/dsa100.jpg"
+            }
+        ] 
+    },
+    {
+        "category": "AI-ML",
+        "blogs": [
+            {
+                "title": "Introduction to Neural Networks",
+                "date": "2024-03-22",
+                "image": "https://example.com/images/ai1.jpg"
+            },
+            {
+                "title": "AI in Healthcare",
+                "date": "2023-08-14",
+                "image": "https://example.com/images/ai2.jpg"
+            },
+            {
+                "title": "Ethics in AI Development",
+                "date": "2024-01-05",
+                "image": "https://example.com/images/ai3.jpg"
+            },
+            {
+                "title": "AI for Autonomous Vehicles",
+                "date": "2024-05-19",
+                "image": "https://example.com/images/ai4.jpg"
+            },
+            {
+                "title": "Understanding Reinforcement Learning",
+                "date": "2024-02-11",
+                "image": "https://example.com/images/ai5.jpg"
+            },
+            {
+                "title": "Natural Language Processing (NLP) Basics",
+                "date": "2023-09-17",
+                "image": "https://example.com/images/ai6.jpg"
+            },
+            {
+                "title": "Deep Learning Techniques",
+                "date": "2023-12-29",
+                "image": "https://example.com/images/ai7.jpg"
+            },
+            {
+                "title": "AI in Financial Markets",
+                "date": "2024-04-04",
+                "image": "https://example.com/images/ai8.jpg"
+            },
+            {
+                "title": "Machine Learning Algorithms",
+                "date": "2024-01-21",
+                "image": "https://example.com/images/ml1.jpg"
+            },
+            {
+                "title": "Supervised vs Unsupervised Learning",
+                "date": "2023-10-30",
+                "image": "https://example.com/images/ml2.jpg"
+            },
+            {
+                "title": "Implementing k-Means Clustering",
+                "date": "2023-12-11",
+                "image": "https://example.com/images/ml3.jpg"
+            },
+            {
+                "title": "A Guide to Regression Analysis",
+                "date": "2024-02-03",
+                "image": "https://example.com/images/ml4.jpg"
+            },
+            {
+                "title": "Deep Learning for Image Recognition",
+                "date": "2024-04-27",
+                "image": "https://example.com/images/ml5.jpg"
+            },
+            {
+                "title": "Introduction to TensorFlow",
+                "date": "2024-05-11",
+                "image": "https://example.com/images/ml6.jpg"
+            },
+            {
+                "title": "Building Chatbots with AI",
+                "date": "2023-08-23",
+                "image": "https://example.com/images/ai9.jpg"
+            },
+            {
+                "title": "AI in Cybersecurity",
+                "date": "2023-11-19",
+                "image": "https://example.com/images/ai10.jpg"
+            },
+            {
+                "title": "AI for Predictive Analytics",
+                "date": "2024-03-08",
+                "image": "https://example.com/images/ai11.jpg"
+            },
+            {
+                "title": "AI in E-commerce",
+                "date": "2023-07-26",
+                "image": "https://example.com/images/ai12.jpg"
+            },
+            {
+                "title": "Machine Learning in Marketing",
+                "date": "2024-01-14",
+                "image": "https://example.com/images/ml7.jpg"
+            },
+            {
+                "title": "Reinforcement Learning with Python",
+                "date": "2023-09-05",
+                "image": "https://example.com/images/ml8.jpg"
+            },
+            {
+                "title": "AI in Gaming Industry",
+                "date": "2024-04-13",
+                "image": "https://example.com/images/ai13.jpg"
+            },
+            {
+                "title": "Neural Network Optimization",
+                "date": "2023-10-22",
+                "image": "https://example.com/images/ai14.jpg"
+            },
+            {
+                "title": "AI for Natural Disaster Management",
+                "date": "2023-11-02",
+                "image": "https://example.com/images/ai15.jpg"
+            },
+            {
+                "title": "AI in Smart Cities",
+                "date": "2024-02-24",
+                "image": "https://example.com/images/ai16.jpg"
+            },
+            {
+                "title": "Time Series Forecasting with ML",
+                "date": "2024-03-10",
+                "image": "https://example.com/images/ml9.jpg"
+            },
+            {
+                "title": "AI and Ethics: A Comprehensive Guide",
+                "date": "2023-07-19",
+                "image": "https://example.com/images/ai17.jpg"
+            },
+            {
+                "title": "AI for Personal Assistants",
+                "date": "2024-05-04",
+                "image": "https://example.com/images/ai18.jpg"
+            },
+            {
+                "title": "Introduction to Generative Adversarial Networks",
+                "date": "2023-09-29",
+                "image": "https://example.com/images/ai19.jpg"
+            },
+            {
+                "title": "Building Recommendation Systems",
+                "date": "2023-08-05",
+                "image": "https://example.com/images/ml10.jpg"
+            },
+            {
+                "title": "Understanding AI Bias",
+                "date": "2023-12-15",
+                "image": "https://example.com/images/ai20.jpg"
+            },
+            {
+                "title": "AI in Agriculture",
+                "date": "2024-04-30",
+                "image": "https://example.com/images/ai21.jpg"
+            },
+            {
+                "title": "AI for Fraud Detection",
+                "date": "2024-02-06",
+                "image": "https://example.com/images/ai22.jpg"
+            },
+            {
+                "title": "Machine Learning Model Evaluation",
+                "date": "2024-01-26",
+                "image": "https://example.com/images/ml11.jpg"
+            },
+            {
+                "title": "AI in the Automotive Industry",
+                "date": "2023-10-14",
+                "image": "https://example.com/images/ai23.jpg"
+            },
+            {
+                "title": "Neural Network Architectures",
+                "date": "2023-07-10",
+                "image": "https://example.com/images/ai24.jpg"
+            },
+            {
+                "title": "AI for Voice Recognition",
+                "date": "2024-03-31",
+                "image": "https://example.com/images/ai25.jpg"
+            },
+            {
+                "title": "Machine Learning with Scikit-Learn",
+                "date": "2024-05-17",
+                "image": "https://example.com/images/ml12.jpg"
+            },
+            {
+                "title": "AI in Education",
+                "date": "2024-04-07",
+                "image": "https://example.com/images/ai26.jpg"
+            },
+            {
+                "title": "AI for Climate Change",
+                "date": "2023-11-13",
+                "image": "https://example.com/images/ai27.jpg"
+            },
+            {
+                "title": "AI and Robotics",
+                "date": "2024-02-28",
+                "image": "https://example.com/images/ai28.jpg"
+            },
+            {
+                "title": "Implementing SVM in Python",
+                "date": "2023-09-10",
+                "image": "https://example.com/images/ml13.jpg"
+            },
+            {
+                "title": "AI in Fashion Industry",
+                "date": "2024-01-19",
+                "image": "https://example.com/images/ai29.jpg"
+            },
+            {
+                "title": "Machine Learning Pipelines",
+                "date": "2024-03-14",
+                "image": "https://example.com/images/ml14.jpg"
+            },
+            {
+                "title": "AI for Social Good",
+                "date": "2023-12-07",
+                "image": "https://example.com/images/ai30.jpg"
+            },
+            {
+                "title": "AI in Manufacturing",
+                "date": "2024-05-21",
+                "image": "https://example.com/images/ai31.jpg"
+            },
+            {
+                "title": "Introduction to Reinforcement Learning",
+                "date": "2023-11-24",
+                "image": "https://example.com/images/ai32.jpg"
+            },
+            {
+                "title": "Understanding Transfer Learning",
+                "date": "2024-04-19",
+                "image": "https://example.com/images/ml15.jpg"
+            },
+            {
+                "title": "AI in the Legal Sector",
+                "date": "2024-01-30",
+                "image": "https://example.com/images/ai33.jpg"
+            },
+            {
+                "title": "Predictive Maintenance with AI",
+                "date": "2023-10-19",
+                "image": "https://example.com/images/ai34.jpg"
+            },
+            {
+                "title": "AI for Music Generation",
+                "date": "2024-03-26",
+                "image": "https://example.com/images/ai35.jpg"
+            },
+            {
+                "title": "Ensemble Learning Methods",
+                "date": "2023-12-22",
+                "image": "https://example.com/images/ml16.jpg"
+            },
+            {
+                "title": "AI in the Energy Sector",
+                "date": "2023-08-18",
+                "image": "https://example.com/images/ai36.jpg"
+            },
+            {
+                "title": "Understanding Bias-Variance Tradeoff",
+                "date": "2024-02-17",
+                "image": "https://example.com/images/ml17.jpg"
+            },
+            {
+                "title": "AI for Space Exploration",
+                "date": "2023-09-13",
+                "image": "https://example.com/images/ai37.jpg"
+            },
+            {
+                "title": "AI and Big Data",
+                "date": "2024-05-25",
+                "image": "https://example.com/images/ai38.jpg"
+            },
+            {
+                "title": "Machine Learning with R",
+                "date": "2023-10-07",
+                "image": "https://example.com/images/ml18.jpg"
+            },
+            {
+                "title": "AI in Human Resources",
+                "date": "2023-11-03",
+                "image": "https://example.com/images/ai39.jpg"
+            },
+            {
+                "title": "AI for Personalization",
+                "date": "2024-03-03",
+                "image": "https://example.com/images/ai40.jpg"
+            },
+            {
+                "title": "Machine Learning in Genomics",
+                "date": "2024-01-03",
+                "image": "https://example.com/images/ml19.jpg"
+            },
+            {
+                "title": "AI in Real Estate",
+                "date": "2023-12-04",
+                "image": "https://example.com/images/ai41.jpg"
+            },
+            {
+                "title": "AI for Customer Service",
+                "date": "2024-05-01",
+                "image": "https://example.com/images/ai42.jpg"
+            },
+            {
+                "title": "Recurrent Neural Networks Explained",
+                "date": "2023-11-29",
+                "image": "https://example.com/images/ml20.jpg"
+            },
+            {
+                "title": "AI in Supply Chain Management",
+                "date": "2023-08-09",
+                "image": "https://example.com/images/ai43.jpg"
+            },
+            {
+                "title": "Understanding Convolutional Neural Networks",
+                "date": "2024-03-28",
+                "image": "https://example.com/images/ml21.jpg"
+            },
+            {
+                "title": "AI in Sports Analytics",
+                "date": "2024-01-16",
+                "image": "https://example.com/images/ai44.jpg"
+            },
+            {
+                "title": "Machine Learning for Anomaly Detection",
+                "date": "2023-10-25",
+                "image": "https://example.com/images/ml22.jpg"
+            },
+            {
+                "title": "AI for Sentiment Analysis",
+                "date": "2023-09-22",
+                "image": "https://example.com/images/ai45.jpg"
+            },
+            {
+                "title": "Machine Learning for Healthcare",
+                "date": "2024-04-22",
+                "image": "https://example.com/images/ml23.jpg"
+            },
+            {
+                "title": "AI in the Entertainment Industry",
+                "date": "2023-07-29",
+                "image": "https://example.com/images/ai46.jpg"
+            },
+            {
+                "title": "Machine Learning for Credit Scoring",
+                "date": "2024-05-08",
+                "image": "https://example.com/images/ml24.jpg"
+            },
+            {
+                "title": "AI for Predictive Policing",
+                "date": "2023-12-19",
+                "image": "https://example.com/images/ai47.jpg"
+            },
+            {
+                "title": "Introduction to Bayesian Networks",
+                "date": "2023-08-02",
+                "image": "https://example.com/images/ai48.jpg"
+            },
+            {
+                "title": "AI for Demand Forecasting",
+                "date": "2024-02-13",
+                "image": "https://example.com/images/ai49.jpg"
+            },
+            {
+                "title": "Understanding Support Vector Machines",
+                "date": "2023-10-17",
+                "image": "https://example.com/images/ml25.jpg"
+            },
+            {
+                "title": "AI in Logistics",
+                "date": "2024-03-06",
+                "image": "https://example.com/images/ai50.jpg"
+            },
+            {
+                "title": "Machine Learning for Recommender Systems",
+                "date": "2024-05-13",
+                "image": "https://example.com/images/ml26.jpg"
+            },
+            {
+                "title": "AI in Healthcare Diagnostics",
+                "date": "2023-09-19",
+                "image": "https://example.com/images/ai51.jpg"
+            },
+            {
+                "title": "Machine Learning in Insurance",
+                "date": "2024-01-07",
+                "image": "https://example.com/images/ml27.jpg"
+            },
+            {
+                "title": "AI for Personalized Medicine",
+                "date": "2023-12-09",
+                "image": "https://example.com/images/ai52.jpg"
+            },
+            {
+                "title": "Understanding Principal Component Analysis",
+                "date": "2023-08-21",
+                "image": "https://example.com/images/ml28.jpg"
+            },
+            {
+                "title": "AI for Disease Prediction",
+                "date": "2024-04-11",
+                "image": "https://example.com/images/ai53.jpg"
+            },
+            {
+                "title": "Machine Learning for Text Classification",
+                "date": "2024-02-19",
+                "image": "https://example.com/images/ml29.jpg"
+            },
+            {
+                "title": "AI in the Food Industry",
+                "date": "2024-01-25",
+                "image": "https://example.com/images/ai54.jpg"
+            },
+            {
+                "title": "Understanding Gradient Descent",
+                "date": "2023-09-27",
+                "image": "https://example.com/images/ml30.jpg"
+            },
+            {
+                "title": "AI for Image Segmentation",
+                "date": "2024-05-29",
+                "image": "https://example.com/images/ai55.jpg"
+            },
+            {
+                "title": "Machine Learning with PyTorch",
+                "date": "2024-03-12",
+                "image": "https://example.com/images/ml31.jpg"
+            },
+            {
+                "title": "AI in the Retail Industry",
+                "date": "2023-10-05",
+                "image": "https://example.com/images/ai56.jpg"
+            },
+            {
+                "title": "Machine Learning for Churn Prediction",
+                "date": "2024-01-12",
+                "image": "https://example.com/images/ml32.jpg"
+            },
+            {
+                "title": "AI for Image Synthesis",
+                "date": "2023-12-25",
+                "image": "https://example.com/images/ai57.jpg"
+            },
+            {
+                "title": "Machine Learning for Time Series Analysis",
+                "date": "2023-11-01",
+                "image": "https://example.com/images/ml33.jpg"
+            },
+            {
+                "title": "AI in Agriculture: Case Studies",
+                "date": "2024-04-15",
+                "image": "https://example.com/images/ai58.jpg"
+            },
+            {
+                "title": "Machine Learning for Social Media Analytics",
+                "date": "2024-02-26",
+                "image": "https://example.com/images/ml34.jpg"
+            },
+            {
+                "title": "AI for Predictive Maintenance",
+                "date": "2023-08-29",
+                "image": "https://example.com/images/ai59.jpg"
+            },
+            {
+                "title": "Machine Learning for Network Security",
+                "date": "2024-05-23",
+                "image": "https://example.com/images/ml35.jpg"
+            },
+            {
+                "title": "AI for Video Analysis",
+                "date": "2023-09-25",
+                "image": "https://example.com/images/ai60.jpg"
+            }
+        ]
+    },
+    {
+        "category": "Cloud Computing",
+        "blogs": [
+            {
+                "title": "Introduction to Cloud Computing",
+                "date": "2024-03-22",
+                "image": "https://example.com/images/cloud1.jpg"
+            },
+            {
+                "title": "Cloud Security Best Practices",
+                "date": "2023-08-14",
+                "image": "https://example.com/images/cloud2.jpg"
+            },
+            {
+                "title": "Understanding Cloud Storage",
+                "date": "2024-01-05",
+                "image": "https://example.com/images/cloud3.jpg"
+            },
+            {
+                "title": "Cloud Migration Strategies",
+                "date": "2024-05-19",
+                "image": "https://example.com/images/cloud4.jpg"
+            },
+            {
+                "title": "AWS vs Azure vs Google Cloud",
+                "date": "2024-02-11",
+                "image": "https://example.com/images/cloud5.jpg"
+            },
+            {
+                "title": "Serverless Computing Explained",
+                "date": "2023-09-17",
+                "image": "https://example.com/images/cloud6.jpg"
+            },
+            {
+                "title": "Introduction to Kubernetes",
+                "date": "2023-12-29",
+                "image": "https://example.com/images/cloud7.jpg"
+            },
+            {
+                "title": "Cloud DevOps Practices",
+                "date": "2024-04-04",
+                "image": "https://example.com/images/cloud8.jpg"
+            },
+            {
+                "title": "Building a Cloud-native Application",
+                "date": "2024-01-21",
+                "image": "https://example.com/images/cloud9.jpg"
+            },
+            {
+                "title": "Cloud Cost Management",
+                "date": "2023-10-30",
+                "image": "https://example.com/images/cloud10.jpg"
+            },
+            {
+                "title": "Understanding Cloud Networking",
+                "date": "2023-12-11",
+                "image": "https://example.com/images/cloud11.jpg"
+            },
+            {
+                "title": "Cloud Computing Trends in 2024",
+                "date": "2024-02-03",
+                "image": "https://example.com/images/cloud12.jpg"
+            },
+            {
+                "title": "Hybrid Cloud Solutions",
+                "date": "2024-04-27",
+                "image": "https://example.com/images/cloud13.jpg"
+            },
+            {
+                "title": "Getting Started with AWS",
+                "date": "2024-05-11",
+                "image": "https://example.com/images/cloud14.jpg"
+            },
+            {
+                "title": "Multi-Cloud Strategies",
+                "date": "2023-08-23",
+                "image": "https://example.com/images/cloud15.jpg"
+            },
+            {
+                "title": "Introduction to Microsoft Azure",
+                "date": "2023-11-19",
+                "image": "https://example.com/images/cloud16.jpg"
+            },
+            {
+                "title": "Cloud Compliance and Governance",
+                "date": "2024-03-08",
+                "image": "https://example.com/images/cloud17.jpg"
+            },
+            {
+                "title": "Deploying Applications with Docker",
+                "date": "2023-07-26",
+                "image": "https://example.com/images/cloud18.jpg"
+            },
+            {
+                "title": "Cloud Monitoring Tools",
+                "date": "2024-01-14",
+                "image": "https://example.com/images/cloud19.jpg"
+            },
+            {
+                "title": "Cloud Disaster Recovery",
+                "date": "2023-09-05",
+                "image": "https://example.com/images/cloud20.jpg"
+            },
+            {
+                "title": "Cloud-based Machine Learning",
+                "date": "2024-04-13",
+                "image": "https://example.com/images/cloud21.jpg"
+            },
+            {
+                "title": "Managing Big Data in the Cloud",
+                "date": "2023-10-22",
+                "image": "https://example.com/images/cloud22.jpg"
+            },
+            {
+                "title": "Edge Computing vs Cloud Computing",
+                "date": "2023-11-02",
+                "image": "https://example.com/images/cloud23.jpg"
+            },
+            {
+                "title": "Introduction to Google Cloud Platform",
+                "date": "2024-02-24",
+                "image": "https://example.com/images/cloud24.jpg"
+            },
+            {
+                "title": "Cloud Automation with Ansible",
+                "date": "2024-03-10",
+                "image": "https://example.com/images/cloud25.jpg"
+            },
+            {
+                "title": "Cloud Computing for Small Businesses",
+                "date": "2023-07-19",
+                "image": "https://example.com/images/cloud26.jpg"
+            },
+            {
+                "title": "Future of Cloud Computing",
+                "date": "2024-05-04",
+                "image": "https://example.com/images/cloud27.jpg"
+            },
+            {
+                "title": "Cloud-native CI/CD Pipelines",
+                "date": "2023-09-29",
+                "image": "https://example.com/images/cloud28.jpg"
+            },
+            {
+                "title": "Securing Your Cloud Infrastructure",
+                "date": "2023-08-05",
+                "image": "https://example.com/images/cloud29.jpg"
+            },
+            {
+                "title": "Introduction to Terraform",
+                "date": "2023-12-15",
+                "image": "https://example.com/images/cloud30.jpg"
+            },
+            {
+                "title": "Cloud Gaming Services",
+                "date": "2024-04-30",
+                "image": "https://example.com/images/cloud31.jpg"
+            },
+            {
+                "title": "Cloud AI Services",
+                "date": "2024-02-06",
+                "image": "https://example.com/images/cloud32.jpg"
+            },
+            {
+                "title": "Understanding Virtualization",
+                "date": "2024-01-26",
+                "image": "https://example.com/images/cloud33.jpg"
+            },
+            {
+                "title": "Introduction to OpenStack",
+                "date": "2023-10-14",
+                "image": "https://example.com/images/cloud34.jpg"
+            },
+            {
+                "title": "Building Scalable Cloud Architectures",
+                "date": "2023-07-10",
+                "image": "https://example.com/images/cloud35.jpg"
+            },
+            {
+                "title": "Introduction to Cloud Databases",
+                "date": "2024-03-31",
+                "image": "https://example.com/images/cloud36.jpg"
+            },
+            {
+                "title": "Cloud-native Development",
+                "date": "2024-05-17",
+                "image": "https://example.com/images/cloud37.jpg"
+            },
+            {
+                "title": "Cloud Services for IoT",
+                "date": "2024-04-07",
+                "image": "https://example.com/images/cloud38.jpg"
+            },
+            {
+                "title": "Managing Cloud Costs",
+                "date": "2023-11-13",
+                "image": "https://example.com/images/cloud39.jpg"
+            },
+            {
+                "title": "Implementing Cloud Security",
+                "date": "2024-02-28",
+                "image": "https://example.com/images/cloud40.jpg"
+            },
+            {
+                "title": "Migrating to the Cloud: Challenges and Solutions",
+                "date": "2023-09-10",
+                "image": "https://example.com/images/cloud41.jpg"
+            },
+            {
+                "title": "Understanding Cloud APIs",
+                "date": "2024-01-19",
+                "image": "https://example.com/images/cloud42.jpg"
+            },
+            {
+                "title": "Cloud-native vs Traditional Applications",
+                "date": "2024-03-14",
+                "image": "https://example.com/images/cloud43.jpg"
+            },
+            {
+                "title": "Introduction to CloudFormation",
+                "date": "2023-12-07",
+                "image": "https://example.com/images/cloud44.jpg"
+            },
+            {
+                "title": "Data Encryption in the Cloud",
+                "date": "2024-05-21",
+                "image": "https://example.com/images/cloud45.jpg"
+            },
+            {
+                "title": "Introduction to Cloud Orchestration",
+                "date": "2023-11-24",
+                "image": "https://example.com/images/cloud46.jpg"
+            },
+            {
+                "title": "Understanding SaaS, PaaS, and IaaS",
+                "date": "2024-04-19",
+                "image": "https://example.com/images/cloud47.jpg"
+            },
+            {
+                "title": "Cloud Service Models Explained",
+                "date": "2024-01-30",
+                "image": "https://example.com/images/cloud48.jpg"
+            },
+            {
+                "title": "Cloud Computing Certifications",
+                "date": "2023-10-19",
+                "image": "https://example.com/images/cloud49.jpg"
+            },
+            {
+                "title": "Cloud Networking Fundamentals",
+                "date": "2024-03-26",
+                "image": "https://example.com/images/cloud50.jpg"
+            },
+            {
+                "title": "Cloud-based Backup Solutions",
+                "date": "2024-02-01",
+                "image": "https://example.com/images/cloud51.jpg"
+            },
+            {
+                "title": "Building a Private Cloud",
+                "date": "2024-05-15",
+                "image": "https://example.com/images/cloud52.jpg"
+            },
+            {
+                "title": "Managing Multi-cloud Environments",
+                "date": "2023-07-13",
+                "image": "https://example.com/images/cloud53.jpg"
+            },
+            {
+                "title": "Introduction to Cloud Functions",
+                "date": "2024-01-08",
+                "image": "https://example.com/images/cloud54.jpg"
+            },
+            {
+                "title": "Cloud Infrastructure as Code",
+                "date": "2023-12-25",
+                "image": "https://example.com/images/cloud55.jpg"
+            },
+            {
+                "title": "Introduction to VMware vSphere",
+                "date": "2023-08-27",
+                "image": "https://example.com/images/cloud56.jpg"
+            },
+            {
+                "title": "Cloud Computing for Enterprises",
+                "date": "2024-04-01",
+                "image": "https://example.com/images/cloud57.jpg"
+            },
+            {
+                "title": "Introduction to Elastic Beanstalk",
+                "date": "2024-02-14",
+                "image": "https://example.com/images/cloud58.jpg"
+            },
+            {
+                "title": "Cloud Analytics Services",
+                "date": "2024-05-26",
+                "image": "https://example.com/images/cloud59.jpg"
+            },
+            {
+                "title": "Introduction to Amazon S3",
+                "date": "2023-09-12",
+                "image": "https://example.com/images/cloud60.jpg"
+            },
+            {
+                "title": "Cloud Application Deployment",
+                "date": "2023-11-06",
+                "image": "https://example.com/images/cloud61.jpg"
+            },
+            {
+                "title": "Cloud Integration Strategies",
+                "date": "2024-01-23",
+                "image": "https://example.com/images/cloud62.jpg"
+            },
+            {
+                "title": "Understanding Cloud SLAs",
+                "date": "2024-03-17",
+                "image": "https://example.com/images/cloud63.jpg"
+            },
+            {
+                "title": "Introduction to IBM Cloud",
+                "date": "2023-10-01",
+                "image": "https://example.com/images/cloud64.jpg"
+            },
+            {
+                "title": "Cloud-native CI/CD Tools",
+                "date": "2024-04-24",
+                "image": "https://example.com/images/cloud65.jpg"
+            },
+            {
+                "title": "Understanding Cloud Load Balancing",
+                "date": "2023-09-07",
+                "image": "https://example.com/images/cloud66.jpg"
+            },
+            {
+                "title": "Cloud Computing Use Cases",
+                "date": "2024-01-16",
+                "image": "https://example.com/images/cloud67.jpg"
+            },
+            {
+                "title": "Cloud Data Lakes",
+                "date": "2024-02-21",
+                "image": "https://example.com/images/cloud68.jpg"
+            },
+            {
+                "title": "Introduction to CloudFront",
+                "date": "2023-12-01",
+                "image": "https://example.com/images/cloud69.jpg"
+            },
+            {
+                "title": "Cloud Storage Solutions",
+                "date": "2024-03-02",
+                "image": "https://example.com/images/cloud70.jpg"
+            },
+            {
+                "title": "Cloud Logging and Monitoring",
+                "date": "2023-11-28",
+                "image": "https://example.com/images/cloud71.jpg"
+            },
+            {
+                "title": "Understanding Cloud DRaaS",
+                "date": "2024-01-02",
+                "image": "https://example.com/images/cloud72.jpg"
+            },
+            {
+                "title": "Introduction to Cloud Pub/Sub",
+                "date": "2023-08-25",
+                "image": "https://example.com/images/cloud73.jpg"
+            },
+            {
+                "title": "Cloud Orchestration with Kubernetes",
+                "date": "2023-07-31",
+                "image": "https://example.com/images/cloud74.jpg"
+            },
+            {
+                "title": "Cloud-based Email Services",
+                "date": "2024-04-09",
+                "image": "https://example.com/images/cloud75.jpg"
+            },
+            {
+                "title": "Introduction to Azure DevOps",
+                "date": "2024-05-27",
+                "image": "https://example.com/images/cloud76.jpg"
+            },
+            {
+                "title": "Cloud Backup and Restore",
+                "date": "2024-02-09",
+                "image": "https://example.com/images/cloud77.jpg"
+            },
+            {
+                "title": "Understanding Cloud Firewall",
+                "date": "2023-11-22",
+                "image": "https://example.com/images/cloud78.jpg"
+            },
+            {
+                "title": "Introduction to Cloud Dataproc",
+                "date": "2024-01-10",
+                "image": "https://example.com/images/cloud79.jpg"
+            },
+            {
+                "title": "Cloud CDN Services",
+                "date": "2023-09-15",
+                "image": "https://example.com/images/cloud80.jpg"
+            },
+            {
+                "title": "Cloud-based Application Development",
+                "date": "2024-04-29",
+                "image": "https://example.com/images/cloud81.jpg"
+            },
+            {
+                "title": "Cloud Network Architecture",
+                "date": "2023-10-24",
+                "image": "https://example.com/images/cloud82.jpg"
+            },
+            {
+                "title": "Introduction to AWS Lambda",
+                "date": "2023-08-20",
+                "image": "https://example.com/images/cloud83.jpg"
+            },
+            {
+                "title": "Understanding Cloud Native Patterns",
+                "date": "2023-12-13",
+                "image": "https://example.com/images/cloud84.jpg"
+            },
+            {
+                "title": "Cloud-based Disaster Recovery",
+                "date": "2024-05-06",
+                "image": "https://example.com/images/cloud85.jpg"
+            },
+            {
+                "title": "Introduction to Cloud Composer",
+                "date": "2023-10-10",
+                "image": "https://example.com/images/cloud86.jpg"
+            },
+            {
+                "title": "Cloud-based Application Security",
+                "date": "2024-03-20",
+                "image": "https://example.com/images/cloud87.jpg"
+            },
+            {
+                "title": "Understanding Cloud IAM",
+                "date": "2023-11-09",
+                "image": "https://example.com/images/cloud88.jpg"
+            },
+            {
+                "title": "Cloud-based Database Management",
+                "date": "2024-02-26",
+                "image": "https://example.com/images/cloud89.jpg"
+            },
+            {
+                "title": "Cloud-based Microservices",
+                "date": "2023-08-08",
+                "image": "https://example.com/images/cloud90.jpg"
+            },
+            {
+                "title": "Introduction to Cloud Dataflow",
+                "date": "2024-01-28",
+                "image": "https://example.com/images/cloud91.jpg"
+            },
+            {
+                "title": "Cloud-native Infrastructure",
+                "date": "2024-03-04",
+                "image": "https://example.com/images/cloud92.jpg"
+            },
+            {
+                "title": "Cloud Cost Optimization",
+                "date": "2023-12-17",
+                "image": "https://example.com/images/cloud93.jpg"
+            },
+            {
+                "title": "Cloud-based Big Data Processing",
+                "date": "2024-05-25",
+                "image": "https://example.com/images/cloud94.jpg"
+            },
+            {
+                "title": "Introduction to Azure Functions",
+                "date": "2024-01-18",
+                "image": "https://example.com/images/cloud95.jpg"
+            },
+            {
+                "title": "Understanding Cloud Data Encryption",
+                "date": "2023-09-21",
+                "image": "https://example.com/images/cloud96.jpg"
+            },
+            {
+                "title": "Cloud Storage Performance Optimization",
+                "date": "2024-04-11",
+                "image": "https://example.com/images/cloud97.jpg"
+            },
+            {
+                "title": "Introduction to AWS Fargate",
+                "date": "2024-03-25",
+                "image": "https://example.com/images/cloud98.jpg"
+            },
+            {
+                "title": "Cloud Computing for Startups",
+                "date": "2023-11-15",
+                "image": "https://example.com/images/cloud99.jpg"
+            },
+            {
+                "title": "Understanding Cloud Network Security",
+                "date": "2024-01-13",
+                "image": "https://example.com/images/cloud100.jpg"
+            }
+        ]
+    }
 ]
