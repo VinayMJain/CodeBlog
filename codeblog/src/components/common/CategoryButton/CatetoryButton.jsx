@@ -4,7 +4,7 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import blogs from '../../../blogs.json';
 
 export const CatetoryButton = () => {
-  const [alignment, setAlignment] = React.useState('web');
+  const [alignment, setAlignment] = React.useState('all');
 
   const handleChange = (event, newAlignment) => {
     setAlignment(newAlignment);
@@ -18,8 +18,8 @@ export const CatetoryButton = () => {
     onChange={handleChange}
     aria-label="Platform"
     sx={{
-      marginLeft: '30px',
-      marginTop: '20px',
+      // marginLeft: '30px',
+      // marginTop: '20px',
       backgroundColor: 'white',
       color: "white",
       "button": {
@@ -27,7 +27,7 @@ export const CatetoryButton = () => {
       },
     }}
   >
-    <ToggleButton value="all">All</ToggleButton>
+    <ToggleButton value="all"  >All</ToggleButton>
     {blogs.map((blog, index) => (
       <ToggleButton key={index} value={blog.category}>{blog.category}</ToggleButton>
     ))}
