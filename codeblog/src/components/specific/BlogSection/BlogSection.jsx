@@ -6,7 +6,7 @@ import blogs from '../../../blogs.json';
 
 const UnsplashAccessKey = 'aVhwloBHIg3J6I1FchuFQt-rr1kwoHJR-lpfzPYBjnI'; // Replace with your Unsplash API access key
 
-function BlogSection({ selectedCategory }) {
+function BlogSection({ selectedCategory, selectedSortOption }) {
   const [photos, setPhotos] = useState([]);
   // const [query, setQuery] = useState('');
   const [error, setError] = useState(null);
@@ -50,8 +50,17 @@ function BlogSection({ selectedCategory }) {
     ? blogs.flatMap(category => category.blogs)
     : blogs.find(category => category.category === selectedCategory).blogs;
 
-  const allTitles = filteredBlogs.reduce((titles, blog) => {
-    const truncatedTitle = blog.title.length > 25 ? blog.title.substring(0, 20) + "..." : blog.title;
+  // Sort blogs based on the selected sort option
+  const sortedBlogs = [...filteredBlogs].sort((a, b) => {
+    if (selectedSortOption === 'date') {
+      return new Date(b.date) - new Date(a.date);
+    }
+    // Add more sorting options here (e.g., views, likes)
+    return 0;
+  });
+
+  const allTitles = sortedBlogs.reduce((titles, blog) => {
+    const truncatedTitle = blog.title.length > 25 ? blog.title.substring(0, 22) + "..." : blog.title;
     titles.push({ ...blog, title: truncatedTitle });
     return titles;
   }, []);

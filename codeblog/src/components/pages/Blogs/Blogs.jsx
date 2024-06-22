@@ -8,11 +8,12 @@ import {CatetoryButton} from '../../common/CategoryButton/CatetoryButton';
 import {SortButton} from '../../common/SortButton/SortButton';
 import Stack from '@mui/material/Stack';
 
-const UnsplashAccessKey = 'aVhwloBHIg3J6I1FchuFQt-rr1kwoHJR-lpfzPYBjnI'; // Replace with your Unsplash API access key
+
 
 function Blogs() {
   console.log("Blogs.jsx rendered")
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedSortOption, setSelectedSortOption] = useState('');
   return (
     <div 
       className={styles.blogContainer} 
@@ -40,11 +41,15 @@ function Blogs() {
               selectedCategory={selectedCategory} 
               setSelectedCategory={setSelectedCategory} 
             />
-            <SortButton />
+            <SortButton 
+              selectedSortOption={selectedSortOption}
+              setSelectedSortOption={setSelectedSortOption}
+            />
           </Stack>
         </div>
         <BlogSection
           selectedCategory={selectedCategory} 
+          selectedSortOption={selectedSortOption}
         />
       </main>
 

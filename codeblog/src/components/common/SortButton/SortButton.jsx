@@ -4,11 +4,10 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-export const SortButton = () => {
-    const [age, setAge] = React.useState('');
+export const SortButton = ({ selectedSortOption, setSelectedSortOption }) => {
 
     const handleChange = (event) => {
-        setAge(event.target.value);
+        setSelectedSortOption(event.target.value);
     };
 
     return (
@@ -29,7 +28,7 @@ export const SortButton = () => {
                 <Select
                     labelId="demo-simple-select-autowidth-label"
                     id="demo-simple-select-autowidth"
-                    value={age}
+                    value={selectedSortOption}
                     onChange={handleChange}
                     autoWidth
                     label="Age"
