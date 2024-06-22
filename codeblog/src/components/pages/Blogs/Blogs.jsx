@@ -4,6 +4,7 @@ import SearchBarMui from '../../common/SearchBar/SearchBarMui';
 import styles from './Blogs.module.css';
 import RankingSection from '../../specific/RankingSection/RankingSection';
 import BlogSection from '../../specific/BlogSection/BlogSection';
+import {CatetoryButton} from '../../common/CategoryButton/CatetoryButton';
 
 function Blogs() {
   console.log("Blogs.jsx rendered")
@@ -22,6 +23,7 @@ function Blogs() {
         >
           {/* <SearchBar /> */}
           <SearchBarMui />
+          <CatetoryButton />
         </div>
         <BlogSection />
       </main>
