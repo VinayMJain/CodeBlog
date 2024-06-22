@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from './BlogSection.module.css';
 import Card from '../../common/Card/Card';
+import blogs from '../../../blogs.json';
 
 const UnsplashAccessKey = 'aVhwloBHIg3J6I1FchuFQt-rr1kwoHJR-lpfzPYBjnI'; // Replace with your Unsplash API access key
 
@@ -44,15 +45,33 @@ function BlogSection() {
     return <div>Loading...</div>;
   }
 
+
+    // Extract and truncate titles
+    const allTitles = blogs.reduce((titles, category) => {
+      category.blogs.forEach(blog => {
+          const truncatedTitle = blog.title.length > 25 ? blog.title.substring(0, 17) + "..." : blog.title;
+          titles.push({ ...blog, title: truncatedTitle });
+      });
+      return titles;
+  }, []);
+
+
   return (
     <div className={styles.container}>
       
       <div className={styles.blogContainer} id='blogContainerId'>
-        {photos.map((photo) => (
+        {/* {photos.map((photo) => (
           <Card 
             image={photo.urls.small} 
             key={photo.id} 
             title={photo.alt_description || 'Untitled'} 
+          />
+        ))} */}
+        {allTitles.map((blog) => (
+          <Card 
+            image={photos[Math.floor(Math.random() * (19 - 1 + 1)) + 1].urls.small}
+            key={blog.id} 
+            title={blog.title} 
           />
         ))}
       </div>

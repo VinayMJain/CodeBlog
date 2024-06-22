@@ -9,6 +9,7 @@ import styles from './SearchBar.module.css'
 
 export default function SearchBarMui() {
     const [value, setValue] = React.useState(null);
+    // TODO: Dropdown list not showing up
 
     const allTitles = blogs.reduce((titles, category) => {
         category.blogs.forEach(blog => titles.push(blog.title));
