@@ -7,7 +7,7 @@ import styles from './SearchBar.module.css'
 
 // const filter = createFilterOptions();
 
-export default function FreeSoloCreateOption() {
+export default function SearchBarMui() {
     const [value, setValue] = React.useState(null);
 
     const allTitles = blogs.reduce((titles, category) => {
@@ -102,13 +102,13 @@ export default function FreeSoloCreateOption() {
         id="searchButtonId"
         type="submit" 
         >
-          <img 
+        <img 
             alt="searchButton" 
             id="searchImage"
             src="images/search.png" 
-          />
+        />
         </button>
-      </div>
+    </div>
 
 );
 }
