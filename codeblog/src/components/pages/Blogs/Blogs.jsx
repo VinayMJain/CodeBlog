@@ -1,5 +1,6 @@
 import React from 'react';
-import SearchBar from '../../common/SearchBar/SearchBar';
+// import SearchBar from '../../common/SearchBar/SearchBar';
+import SearchBarMui from '../../common/SearchBar/SearchBarMui';
 import styles from './Blogs.module.css';
 import RankingSection from '../../specific/RankingSection/RankingSection';
 import BlogSection from '../../specific/BlogSection/BlogSection';
@@ -19,7 +20,8 @@ function Blogs() {
           className={styles.searchBarContainer} 
           id='searchBarParentId'
         >
-          <SearchBar />
+          {/* <SearchBar /> */}
+          <SearchBarMui />
         </div>
         <BlogSection />
       </main>
