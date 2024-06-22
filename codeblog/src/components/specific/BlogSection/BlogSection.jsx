@@ -51,7 +51,7 @@ function BlogSection({ selectedCategory }) {
     : blogs.find(category => category.category === selectedCategory).blogs;
 
   const allTitles = filteredBlogs.reduce((titles, blog) => {
-    const truncatedTitle = blog.title.length > 25 ? blog.title.substring(0, 22) + "..." : blog.title;
+    const truncatedTitle = blog.title.length > 25 ? blog.title.substring(0, 20) + "..." : blog.title;
     titles.push({ ...blog, title: truncatedTitle });
     return titles;
   }, []);
