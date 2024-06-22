@@ -37,8 +37,10 @@ export const SortButton = ({ selectedSortOption, setSelectedSortOption }) => {
                     }}
                 >
                     <MenuItem value="">
-                    <em>None</em>
+                    <em>Clear</em>
                     </MenuItem>
+                    <MenuItem value="atoz">By A to Z</MenuItem>
+                    <MenuItem value="ztoa">By Z to A</MenuItem>
                     <MenuItem value="date">By Date Uploaded</MenuItem>
                     <MenuItem value="views">By Views</MenuItem>
                     <MenuItem value="likes">By likes</MenuItem>

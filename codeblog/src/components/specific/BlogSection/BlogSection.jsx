@@ -54,6 +54,10 @@ function BlogSection({ selectedCategory, selectedSortOption }) {
   const sortedBlogs = [...filteredBlogs].sort((a, b) => {
     if (selectedSortOption === 'date') {
       return new Date(b.date) - new Date(a.date);
+    } else if (selectedSortOption === 'atoz') {
+      return a.title.localeCompare(b.title);
+    } else if (selectedSortOption === 'ztoa') {
+      return b.title.localeCompare(a.title);
     }
     // Add more sorting options here (e.g., views, likes)
     return 0;
