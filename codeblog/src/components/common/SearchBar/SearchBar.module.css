@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     border: 1px solid black;
-    border-radius: 30px; 
+    border-radius: 40px; 
     background-color: #f2f2f2; 
     padding: 5px;
     width: 50%; /* Adjust width as needed */
@@ -23,6 +23,7 @@
 }
 
 .searchBarDiv button.searchButton {
+    margin-left: 10px;
     background-color: #345A69; /* The button's background color */
     border: none;
     padding: 10px 15px;
@@ -56,4 +57,5 @@
 /* Making the button's hover state a bit darker */
 .searchBarDiv button:hover {
     background-color: #2d4f5e;
+    color: white;
 }
