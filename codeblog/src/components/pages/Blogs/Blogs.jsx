@@ -15,6 +15,8 @@ function Blogs() {
   console.log("Blogs.jsx rendered")
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedSortOption, setSelectedSortOption] = useState('');
+  const [selectedBlog, setSelectedBlog] = useState(null); 
+
   return (
     <div 
       className={styles.blogContainer} 
@@ -29,7 +31,7 @@ function Blogs() {
           id='searchBarParentId'
         >
           {/* <SearchBar /> */}
-          <SearchBarMui />
+          <SearchBarMui onBlogSelect={setSelectedBlog} />
           <Stack 
             direction="row" 
             spacing={2}
@@ -51,6 +53,7 @@ function Blogs() {
         <BlogSection
           selectedCategory={selectedCategory} 
           selectedSortOption={selectedSortOption}
+          selectedBlog={selectedBlog}
         />
       </main>
 

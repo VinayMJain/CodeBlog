@@ -7,11 +7,13 @@ import styles from './SearchBar.module.css';
 
 // const filter = createFilterOptions();
 
-export default function SearchBarMui() {
+// BUG : empty search bar should reset the selected blog
+
+export default function SearchBarMui({ onBlogSelect }) {
     const [value, setValue] = React.useState(null);
 
     const allTitles = blogs.reduce((titles, category) => {
-        category.blogs.forEach(blog => titles.push(blog.title));
+        category.blogs.forEach(blog => titles.push(blog));
         return titles;
     }, []);
 
@@ -25,17 +27,10 @@ export default function SearchBarMui() {
         <Autocomplete
         value={value}
         onChange={(event, newValue) => {
-            if (typeof newValue === 'string') {
-            setValue({
-                title: newValue,
-            });
-            } else if (newValue && newValue.inputValue) {
-            // Create a new value from the user input
-            setValue({
-                title: newValue.inputValue,
-            });
+            if (newValue && newValue.title) {
+              onBlogSelect(newValue); // Update selected blog state
             } else {
-            setValue(newValue);
+                setValue(null);
             }
         }}
         //   filterOptions={(options, params) => {
@@ -58,19 +53,8 @@ export default function SearchBarMui() {
         handleHomeEndKeys
         id="free-solo-with-text-demo"
         options={allTitles}
-        getOptionLabel={(option) => {
-            // Value selected with enter, right from the input
-            if (typeof option === 'string') {
-            return option;
-            }
-            // Add "xxx" option created dynamically
-            if (option.inputValue) {
-            return option.inputValue;
-            }
-            // Regular option
-            return option.title;
-        }}
-        renderOption={(props, option) => <li {...props}>{option}</li>}
+        getOptionLabel={(option) => option.title}
+        renderOption={(props, option) => <li {...props}>{option.title}</li>}
         sx={{
             color: "black",
             fontFamily: "Poppins",
