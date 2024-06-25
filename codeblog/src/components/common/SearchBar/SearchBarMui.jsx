@@ -1,15 +1,14 @@
 import * as React from 'react';
 import TextField from '@mui/material/TextField';
-import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
-import blogs from "../../../blogs.json"
-import styles from './SearchBar.module.css'
+import Autocomplete from '@mui/material/Autocomplete';
+import blogs from "../../../blogs.json";
+import styles from './SearchBar.module.css';
 
 
 // const filter = createFilterOptions();
 
 export default function SearchBarMui() {
     const [value, setValue] = React.useState(null);
-    // TODO: Dropdown list not showing up
 
     const allTitles = blogs.reduce((titles, category) => {
         category.blogs.forEach(blog => titles.push(blog.title));
@@ -71,7 +70,7 @@ export default function SearchBarMui() {
             // Regular option
             return option.title;
         }}
-        renderOption={(props, option) => <li {...props}>{option.title}</li>}
+        renderOption={(props, option) => <li {...props}>{option}</li>}
         sx={{
             color: "black",
             fontFamily: "Poppins",
