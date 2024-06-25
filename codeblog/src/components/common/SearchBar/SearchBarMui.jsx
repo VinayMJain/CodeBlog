@@ -78,6 +78,14 @@ export default function SearchBarMui() {
             width: 500,
             '& input': {
             fontSize: 20,
+            height: "15px",
+            },
+            ".MuiAutocomplete-inputRoot": {
+                borderRadius: "50px"
+            },
+            "&.MuiAutocomplete-root": {
+                backgroundColor: "white",
+                borderRadius: "50px",
             },
             "#free-solo-with-text-demo": {
                 backgroundColor: "white",
@@ -85,8 +93,12 @@ export default function SearchBarMui() {
             },
             "#free-solo-with-text-demo-label": {
                 paddingLeft: "10px",
-                paddingTop: "3px",
-                color: "black",
+                lineHeight: "1rem",
+                fontSize: "15px",
+                "&.MuiInputLabel-outlined.MuiInputLabel-shrink": {
+                    transform: "translate(14px, -4px) scale(0.75)",
+                    border: "none",
+                },
             },
             ".css-md26zr-MuiInputBase-root-MuiOutlinedInput-root" :{
                 backgroundColor: "white",

@@ -7,6 +7,7 @@ import BlogSection from '../../specific/BlogSection/BlogSection';
 import {CatetoryButton} from '../../common/CategoryButton/CatetoryButton';
 import {SortButton} from '../../common/SortButton/SortButton';
 import Stack from '@mui/material/Stack';
+import SearchBar from '../../common/SearchBar/SearchBar';
 
 
 
