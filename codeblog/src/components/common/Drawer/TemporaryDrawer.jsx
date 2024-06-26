@@ -24,6 +24,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import QuizIcon from '@mui/icons-material/Quiz';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import { Link } from 'react-router-dom'; 
+import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
 const drawerWidth = 240;
 
@@ -165,7 +166,7 @@ const openedMixin = (theme) => ({
                         if (index === 0) {
                             return <AutoStoriesIcon />;
                         } else {
-                            return <CloudQueueIcon />;
+                            return <CloudUploadIcon />;
                         }
                     })(index)}
                     </ListItemIcon>
