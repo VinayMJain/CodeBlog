@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import Home from './components/pages/Home/Home';
 import MainHeader from './components/common/Header/MainHeader';
 import About from './components/pages/About/About';
 import Uploads from './components/pages/Uploads/Uploads';
@@ -10,43 +9,53 @@ import Navbar from './components/common/Navbar/Navbar';
 import Blogs from './components/pages/Blogs/Blogs';
 import LoginForm from './components/specific/LoginForm/LoginForm';
 import SignUp from './components/specific/SignUp/SignUp';
-import blogs from './uploadBlogs.json';
+import blogsData from './uploadBlogs.json';
 import TemporaryDrawer from './components/common/Drawer/TemporaryDrawer';
 
 function App() {
-  const [notificationCount, setNotificationCount] = useState(0);
+    const [blogs, setBlogs] = useState(blogsData);
+    const [notificationCount, setNotificationCount] = useState(0);
 
-  useEffect(() => {
-    let totalItems = 0;
-    blogs.forEach(blog => {
-      totalItems += blog.blogsList.length;
-    });
-    setNotificationCount(totalItems);
-  }, []); 
-  const updateNotification = () => {
-    setNotificationCount(notificationCount - 1);
-  };
+    useEffect(() => {
+        let totalItems = 0;
+        blogs.forEach(blog => {
+            totalItems += blog.blogsList.length;
+        });
+        setNotificationCount(totalItems);
+    }, [blogs]);
 
-  return (
-    <>
-      <MainHeader notificationCounter={notificationCount} />
-      <BrowserRouter>
-        {/* <Navbar /> */}
-        <TemporaryDrawer />
-        <Routes>
-          <Route path="/" element={<Blogs />} />
-          <Route path="*" element={<Blogs />} />
-          <Route path="/Blogs" element={<Blogs />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/Uploads" element={<Uploads updateNotification={updateNotification}/>} />
-          <Route path="/faqs" element={<Faqs />} />
-          <Route path="/Contact" element={<ContactUs />} />
-          <Route path="/signin" element={<LoginForm />} />
-          <Route path="/signup" element={<SignUp />} />
-        </Routes>
-      </BrowserRouter>
-    </>
-  );
+    const handleDelete = (monthIndex, blogId) => {
+        const newBlogs = blogs.map((month, index) => {
+            if (index === monthIndex) {
+                return {
+                    ...month,
+                    blogsList: month.blogsList.filter(blog => blog.id !== blogId)
+                };
+            }
+            return month;
+        });
+        setBlogs(newBlogs);
+    };
+
+    return (
+        <>
+            <MainHeader notificationCounter={notificationCount} />
+            <BrowserRouter>
+                <TemporaryDrawer />
+                <Routes>
+                    <Route path="/" element={<Blogs />} />
+                    <Route path="*" element={<Blogs />} />
+                    <Route path="/Blogs" element={<Blogs />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/Uploads" element={<Uploads blogs={blogs} handleDelete={handleDelete} />} />
+                    <Route path="/faqs" element={<Faqs />} />
+                    <Route path="/Contact" element={<ContactUs />} />
+                    <Route path="/signin" element={<LoginForm />} />
+                    <Route path="/signup" element={<SignUp />} />
+                </Routes>
+            </BrowserRouter>
+        </>
+    );
 }
 
 export default App;
