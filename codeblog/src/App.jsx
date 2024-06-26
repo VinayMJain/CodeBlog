@@ -11,6 +11,7 @@ import Blogs from './components/pages/Blogs/Blogs';
 import LoginForm from './components/specific/LoginForm/LoginForm';
 import SignUp from './components/specific/SignUp/SignUp';
 import blogs from './uploadBlogs.json';
+import TemporaryDrawer from './components/common/Drawer/TemporaryDrawer';
 
 function App() {
   const [notificationCount, setNotificationCount] = useState(0);
@@ -30,7 +31,8 @@ function App() {
     <>
       <MainHeader notificationCounter={notificationCount} />
       <BrowserRouter>
-        <Navbar />
+        {/* <Navbar /> */}
+        <TemporaryDrawer />
         <Routes>
           <Route path="/" element={<Blogs />} />
           <Route path="*" element={<Blogs />} />

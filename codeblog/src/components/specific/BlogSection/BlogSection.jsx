@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from './BlogSection.module.css';
 import Card from '../../common/Card/Card';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import blogs from '../../../blogs.json';
 
 const UnsplashAccessKey = 'aVhwloBHIg3J6I1FchuFQt-rr1kwoHJR-lpfzPYBjnI'; // Replace with your Unsplash API access key
@@ -89,6 +91,23 @@ function BlogSection({ selectedCategory, selectedSortOption }) {
           />
         ))}
       </div>
+
+{/* <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+        {Array.from(Array(6)).map((_, index) => (
+          <Grid item xs={2} sm={4} md={4} key={index}>
+            {allTitles.map((blog,index) => (
+              <Card 
+                image={photos[Math.floor(Math.random() * (19 - 1 + 1)) + 1].urls.small}
+                key={index} 
+                title={blog.title} 
+              />
+        ))}
+          </Grid>
+        ))}
+      </Grid>
+    </Box> */}
+
     </div>
   );
 }
