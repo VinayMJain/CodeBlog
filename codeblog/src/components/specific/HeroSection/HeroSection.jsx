@@ -40,7 +40,10 @@ function HeroSection(){
                             className={styles.exploreButton}
                             href="Login.html"
                         ></a> */}
-                        <Button id="exploreButtonId" buttonText="Explore →"/>
+                        <Button 
+                            buttonText="Explore →"
+                            id="exploreButtonId" 
+                        />
                         {/* <button className="subscribe-button"><a href="Login.html">→</a></button> */}
                     </div>
                 </div>
