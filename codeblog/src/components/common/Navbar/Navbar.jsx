@@ -36,13 +36,29 @@ function Navbar({ onPageChange }) {
     }, [currentPage, navbarObjectArray]);
 
     return (
-        <header className={style.navHeader} id='navHeaderId'>
-            <nav className={style.navbar} id='navbarId'>
-                <div className={style.navbarOption} id='navbarOptionId'>
-                    <ul className={style.navbarList} id='navbarListId'>
+        <header 
+         className={style.navHeader} 
+         id='navHeaderId'
+        >
+            <nav 
+             className={style.navbar} 
+             id='navbarId'
+            >
+                <div 
+                 className={style.navbarOption} 
+                 id='navbarOptionId'
+                >
+                    <ul 
+                     className={style.navbarList} 
+                     id='navbarListId'
+                    >
                         {navbarObjectArray.map((item) => {
                             return (
-                                <li className={style.navbarItem} id={`navbarItem${item.id}`} key={item.id}>
+                                <li 
+                                 className={style.navbarItem} 
+                                 id={`navbarItem${item.id}`} 
+                                 key={item.id}
+                                >
                                     <Link
                                         className={style.navbarLinkButton}
                                         id={`navbarLinkButton${item.id}`}
