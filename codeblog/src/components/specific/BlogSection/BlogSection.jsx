@@ -73,8 +73,14 @@ function BlogSection({ selectedCategory, selectedSortOption, selectedBlog }) {
 
 
   return (
-    <div className={styles.container}>
-    <div className={styles.blogContainer} id='blogContainerId'>
+  <div 
+   className={styles.container}
+   id='containerId'
+  >
+    <div 
+     className={styles.blogContainer} 
+     id='blogContainerId'
+    >
       {selectedBlog && (
         <Card
           image={photos[Math.floor(Math.random() * photos.length)].urls.small}
