@@ -1,20 +1,21 @@
 import React from 'react'
 import Upload from '../../specific/Upload/Upload'
-import blogs from '../../../uploadBlogs.json'
 
-
-function Uploads({updateNotification}) {
-  console.log("Uploads.jsx rendered");
-  return (
-    <>
-    {blogs.map((blog) => (
-      <Upload updateNotification={updateNotification}
-        blogs={blog.blogsList} 
-        month={blog.month} 
-      />
-    ))}
-    </>
-  )
+function Uploads({ blogs, handleDelete }) {
+    console.log("Uploads.jsx rendered");
+    return (
+        <>
+            {blogs.map((blog, index) => (
+                <Upload
+                    blogs={blog.blogsList}
+                    handleDelete={handleDelete}
+                    key={blog.month}
+                    month={blog.month}
+                    monthIndex={index}
+                />
+            ))}
+        </>
+    )
 }
 
-export default Uploads
+export default Uploads;

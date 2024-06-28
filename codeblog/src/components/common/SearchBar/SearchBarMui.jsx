@@ -1,18 +1,19 @@
 import * as React from 'react';
 import TextField from '@mui/material/TextField';
-import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
-import blogs from "../../../blogs.json"
-import styles from './SearchBar.module.css'
+import Autocomplete from '@mui/material/Autocomplete';
+import blogs from "../../../blogs.json";
+import styles from './SearchBar.module.css';
 
 
 // const filter = createFilterOptions();
 
-export default function SearchBarMui() {
+// BUG : empty search bar should reset the selected blog
+
+export default function SearchBarMui({ onBlogSelect }) {
     const [value, setValue] = React.useState(null);
-    // TODO: Dropdown list not showing up
 
     const allTitles = blogs.reduce((titles, category) => {
-        category.blogs.forEach(blog => titles.push(blog.title));
+        category.blogs.forEach(blog => titles.push(blog));
         return titles;
     }, []);
 
@@ -26,17 +27,10 @@ export default function SearchBarMui() {
         <Autocomplete
         value={value}
         onChange={(event, newValue) => {
-            if (typeof newValue === 'string') {
-            setValue({
-                title: newValue,
-            });
-            } else if (newValue && newValue.inputValue) {
-            // Create a new value from the user input
-            setValue({
-                title: newValue.inputValue,
-            });
+            if (newValue && newValue.title) {
+              onBlogSelect(newValue); // Update selected blog state
             } else {
-            setValue(newValue);
+                setValue(null);
             }
         }}
         //   filterOptions={(options, params) => {
@@ -59,18 +53,7 @@ export default function SearchBarMui() {
         handleHomeEndKeys
         id="free-solo-with-text-demo"
         options={allTitles}
-        getOptionLabel={(option) => {
-            // Value selected with enter, right from the input
-            if (typeof option === 'string') {
-            return option;
-            }
-            // Add "xxx" option created dynamically
-            if (option.inputValue) {
-            return option.inputValue;
-            }
-            // Regular option
-            return option.title;
-        }}
+        getOptionLabel={(option) => option.title}
         renderOption={(props, option) => <li {...props}>{option.title}</li>}
         sx={{
             color: "black",
@@ -78,6 +61,14 @@ export default function SearchBarMui() {
             width: 500,
             '& input': {
             fontSize: 20,
+            height: "15px",
+            },
+            ".MuiAutocomplete-inputRoot": {
+                borderRadius: "50px"
+            },
+            "&.MuiAutocomplete-root": {
+                backgroundColor: "white",
+                borderRadius: "50px",
             },
             "#free-solo-with-text-demo": {
                 backgroundColor: "white",
@@ -85,8 +76,12 @@ export default function SearchBarMui() {
             },
             "#free-solo-with-text-demo-label": {
                 paddingLeft: "10px",
-                paddingTop: "3px",
-                color: "black",
+                lineHeight: "1rem",
+                fontSize: "15px",
+                "&.MuiInputLabel-outlined.MuiInputLabel-shrink": {
+                    transform: "translate(14px, -4px) scale(0.75)",
+                    border: "none",
+                },
             },
             ".css-md26zr-MuiInputBase-root-MuiOutlinedInput-root" :{
                 backgroundColor: "white",

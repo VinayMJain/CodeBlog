@@ -1,12 +1,14 @@
 .mainHeader{
-    /* width: 80%; */
-    width: 100%;
+    width: 96%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     position: fixed;
     top:0;
     background-color: #121f26;
     z-index: 100;
+    padding-top: 10px;
+    margin-left: 60px;
 }
 
 .logoButton{

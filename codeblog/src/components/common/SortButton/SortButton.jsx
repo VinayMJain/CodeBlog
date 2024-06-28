@@ -31,7 +31,7 @@ export const SortButton = ({ selectedSortOption, setSelectedSortOption }) => {
                     value={selectedSortOption}
                     onChange={handleChange}
                     autoWidth
-                    label="Age"
+                    label="Sort"
                     sx={{
                         color: "white",
                     }}

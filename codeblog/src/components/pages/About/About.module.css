@@ -1,6 +1,8 @@
 section {
     margin-top: 25vh;
     color: white;
+    margin-left: 80px;
+
 }
 
 .headingAboutus {
@@ -28,6 +30,7 @@ section {
     width: 90%;
     height: 50px;
     margin-top: 60px;
+    margin-left: 80px;
 }
 
 .socialmediaLinks .linkedin,
