@@ -16,18 +16,27 @@ const Upload = ({ month, blogs, monthIndex, handleDelete }) => {
     };
 
     return (
-        <div className={style.mainContainer} id="mainContainerId">
-            <div className={style.pBlog} id="pBlogId">
+        <div 
+         className={style.mainContainer} 
+         id="mainContainerId"
+        >
+            <div 
+             className={style.pBlog} 
+             id="pBlogId"
+            >
                 <h2 id="monthP">{month}</h2>
             </div>
-            <div className={style.uploadBlog} id="uploadBlogId">
+            <div 
+             className={style.uploadBlog} 
+             id="uploadBlogId"
+            >
                 {myBlog.map((blog) => (
                     <Card
                         image={blog.path}
-                        title={blog.title}
                         key={blog.id}
                         onDelete={() => localHandleDelete(blog.id)}
                         showDeleteButton={true}
+                        title={blog.title}
                     />
                 ))}
             </div>
