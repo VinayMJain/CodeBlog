@@ -13,6 +13,7 @@ import blogsData from './uploadBlogs.json';
 import TemporaryDrawer from './components/common/Drawer/TemporaryDrawer';
 
 function App() {
+    console.log("App rendered");
     const [blogs, setBlogs] = useState(blogsData);
     const [notificationCount, setNotificationCount] = useState(0);
 
