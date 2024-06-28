@@ -7,11 +7,11 @@ function Uploads({ blogs, handleDelete }) {
         <>
             {blogs.map((blog, index) => (
                 <Upload
-                    key={blog.month}
                     blogs={blog.blogsList}
+                    handleDelete={handleDelete}
+                    key={blog.month}
                     month={blog.month}
                     monthIndex={index}
-                    handleDelete={handleDelete}
                 />
             ))}
         </>

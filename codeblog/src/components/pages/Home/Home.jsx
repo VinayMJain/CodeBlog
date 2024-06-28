@@ -33,12 +33,9 @@ function Home() {
     // };
 
     return (
-        <>
-            <Navbar 
-                onPageChange={handlePageChange} 
-            />
-            {/* {renderPage()} */}
-        </>
+        <Navbar 
+            onPageChange={handlePageChange} 
+        />
     );
 }
 

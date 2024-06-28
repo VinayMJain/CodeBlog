@@ -51,9 +51,9 @@ function Blogs() {
           </Stack>
         </div>
         <BlogSection
+          selectedBlog={selectedBlog}
           selectedCategory={selectedCategory} 
           selectedSortOption={selectedSortOption}
-          selectedBlog={selectedBlog}
         />
       </main>
 
