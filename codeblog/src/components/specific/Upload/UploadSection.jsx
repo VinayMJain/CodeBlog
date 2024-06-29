@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import style from "./upload.module.css";
 import Card from "../../common/Card/Card";
 
-const Upload = ({ month, blogs, monthIndex, handleDelete }) => {
+const UploadSection = ({ month, blogs, monthIndex, handleDelete }) => {
     const [myBlog, setMyBlog] = useState(blogs);
 
     useEffect(() => {
@@ -44,4 +44,4 @@ const Upload = ({ month, blogs, monthIndex, handleDelete }) => {
     );
 };
 
-export default Upload;
+export default UploadSection;
