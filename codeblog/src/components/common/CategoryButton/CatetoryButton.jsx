@@ -19,8 +19,6 @@ export const CatetoryButton = ({ selectedCategory, setSelectedCategory }) => {
       onChange={handleChange}
       value={selectedCategory}
       sx={{
-        // marginLeft: '30px',
-        // marginTop: '20px',
         backgroundColor: 'white',
         color: "white",
         "button": {
