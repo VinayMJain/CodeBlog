@@ -1,12 +1,12 @@
 import React from 'react'
-import Upload from '../../specific/Upload/Upload'
+import UploadSection from '../../specific/Upload/UploadSection'
 
 function Uploads({ blogs, handleDelete }) {
     console.log("Uploads.jsx rendered");
     return (
         <>
             {blogs.map((blog, index) => (
-                <Upload
+                <UploadSection
                     blogs={blog.blogsList}
                     handleDelete={handleDelete}
                     key={blog.month}

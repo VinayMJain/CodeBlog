@@ -64,6 +64,7 @@ function SignUp() {
                     >
                         <label 
                             htmlFor="firstName"
+                            id="firstNameLabelId"
                         >
                             First Name
                         </label>
@@ -82,6 +83,7 @@ function SignUp() {
                     > 
                         <label 
                             htmlFor="lastName"
+                            id="lastNameLabelId"
                         >
                             Last Name
                         </label>
@@ -104,6 +106,7 @@ function SignUp() {
                     >
                         <label 
                             htmlFor="email"
+                            id="emailLabelId"
                         >
                             Email
                         </label>
@@ -121,6 +124,7 @@ function SignUp() {
                     >
                         <label 
                             htmlFor="dob"
+                            id="dobLabelId"
                         >
                             Date of Birth
                         </label>
@@ -142,6 +146,7 @@ function SignUp() {
                     >
                         <label 
                             htmlFor="phone"
+                            id="phoneLabelId"
                         >
                             Phone
                         </label>
@@ -164,6 +169,7 @@ function SignUp() {
                     >
                         <label 
                             htmlFor="password"
+                            id="passwordLabelId"
                         >
                             Password
                         </label>
@@ -175,11 +181,11 @@ function SignUp() {
                             type={passwordVisible ? "text" : "password"} 
                         />
                         <img 
-                            id="togglePasswordVisibilityImageId" 
-                            src={passwordVisible ? "/images/Openeye.png" : "/images/Closeeye.png"} 
                             alt={passwordVisible ? "Hide Password" : "Show Password"} 
-                            onClick={togglePasswordVisibility} 
                             className={styles.eyeIcon} 
+                            id="togglePasswordVisibilityImageId" 
+                            onClick={togglePasswordVisibility} 
+                            src={passwordVisible ? "/images/Openeye.png" : "/images/Closeeye.png"} 
                         />
                     </div>
                     <div 
@@ -188,6 +194,7 @@ function SignUp() {
                     >
                         <label 
                             htmlFor="confirmPassword"
+                            id="confirmPasswordLabelId"
                         >
                             Confirm Password
                         </label>
@@ -199,11 +206,11 @@ function SignUp() {
                             type={confirmPasswordVisible ? "text" : "password"} 
                         />
                         <img 
-                            id="toggleConfirmPasswordVisibilityImageId" 
-                            src={confirmPasswordVisible ? "/images/Openeye.png" : "/images/Closeeye.png"} 
                             alt={confirmPasswordVisible ? "Hide Password" : "Show Password"} 
-                            onClick={toggleConfirmPasswordVisibility} 
                             className={styles.eyeIcon} 
+                            id="toggleConfirmPasswordVisibilityImageId" 
+                            onClick={toggleConfirmPasswordVisibility} 
+                            src={confirmPasswordVisible ? "/images/Openeye.png" : "/images/Closeeye.png"} 
                         />
                     </div>
                 </div>
@@ -211,8 +218,14 @@ function SignUp() {
                     className={styles.formActions}
                     id="formActionsId"
                 >
-                    <Button id="submitButtonId" buttonText="Sign Up"/>
-                    <Button id="continueWithEmailButtonId" buttonText="Continue with email" />
+                    <Button 
+                     buttonText="Sign Up"
+                     id="submitButtonId" 
+                    />
+                    <Button 
+                     buttonText="Continue with email" 
+                     id="continueWithEmailButtonId" 
+                    />
                 </div>
             </form>
         </section>
