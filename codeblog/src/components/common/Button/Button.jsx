@@ -4,8 +4,8 @@ import styles from './Button.module.css';
 const Button = ({ buttonText }) => {
     return (
             <button 
-                id={`autoResizeButtonId-${buttonText}`} 
                 className={styles.autoResizeButton}
+                id={`autoResizeButtonId-${buttonText}`} 
             >
                 {buttonText}
             </button>

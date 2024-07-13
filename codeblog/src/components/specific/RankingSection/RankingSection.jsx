@@ -14,7 +14,10 @@ const accountHolderRank = { imageUrl: 'images/userData/user6.jpeg', name: 'Reed 
 
 function RankingSection() {
     return (
-        <div className={styles.rankingsSection} id="rankingsSectionId">
+        <div 
+         className={styles.rankingsSection} 
+         id="rankingsSectionId"
+        >
             <h1 
                 className={styles.globalRankingsHeading}
                 id="globalRankingsHeadingId" 
@@ -28,8 +31,8 @@ function RankingSection() {
                 {rankings.map(({ rank, imageUrl, name }) => (
                     <div 
                         className={styles.rankingItem} 
-                        key={rank}
                         id={`rankingItem${rank}Id`}
+                        key={rank}
                     >
                         <span 
                             className={styles.rank}
@@ -64,8 +67,8 @@ function RankingSection() {
                 </div>
                 <div 
                     className={styles.rankingItem}
-                    key={additionalRank1.rank}
                     id={`rankingItem${additionalRank1.rank}Id`}
+                    key={additionalRank1.rank}
                 >
                     <span 
                         className={styles.rank}
@@ -93,8 +96,8 @@ function RankingSection() {
                 </div>
                 <div 
                     className={styles.rankingItem} 
-                    key={accountHolderRank.rank}
                     id={`rankingItem${accountHolderRank.rank}Id`}
+                    key={accountHolderRank.rank}
                 >
                     <span 
                         className={styles.rank}
@@ -109,8 +112,8 @@ function RankingSection() {
                         <img 
                             alt={accountHolderRank.name} 
                             className={styles.rankHolderImage} 
-                            src={accountHolderRank.imageUrl} 
                             id={`rankHolderImage${accountHolderRank.rank}Id`}
+                            src={accountHolderRank.imageUrl} 
                         />
                         <span 
                             className={styles.rankHolderName}

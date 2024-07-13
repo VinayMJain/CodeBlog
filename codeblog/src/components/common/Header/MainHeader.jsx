@@ -5,7 +5,10 @@ import NotificationButton from '../NotificationButton/NotificationButton'
 function MainHeader({notificationCounter}) {
     console.log('MainHeader rendered')
   return (
-    <div className={styles.mainHeader} id="mainHeader">
+    <div 
+     className={styles.mainHeader} 
+     id="mainHeader"
+    >
         <button 
             className={styles.logoButton} 
             id='logoButtonId'
@@ -24,7 +27,10 @@ function MainHeader({notificationCounter}) {
                 </span>
         </button>
 
-        <div className={styles.profileSection} id="profileSectionId">
+        <div 
+         className={styles.profileSection} 
+         id="profileSectionId"
+        >
         {/* <button 
                     className={styles.notificationButton}
                     id='notificationButtonId'
