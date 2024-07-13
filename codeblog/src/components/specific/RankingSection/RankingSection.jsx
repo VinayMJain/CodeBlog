@@ -14,10 +14,7 @@ const accountHolderRank = { imageUrl: 'images/userData/user6.jpeg', name: 'Reed 
 
 function RankingSection() {
     return (
-        <div 
-         className={styles.rankingsSection} 
-         id="rankingsSectionId"
-        >
+        <div className={styles.rankingsSection} id="rankingsSectionId">
             <h1 
                 className={styles.globalRankingsHeading}
                 id="globalRankingsHeadingId" 
@@ -31,8 +28,8 @@ function RankingSection() {
                 {rankings.map(({ rank, imageUrl, name }) => (
                     <div 
                         className={styles.rankingItem} 
-                        id={`rankingItem${rank}Id`}
                         key={rank}
+                        id={`rankingItem${rank}Id`}
                     >
                         <span 
                             className={styles.rank}
@@ -67,8 +64,8 @@ function RankingSection() {
                 </div>
                 <div 
                     className={styles.rankingItem}
-                    id={`rankingItem${additionalRank1.rank}Id`}
                     key={additionalRank1.rank}
+                    id={`rankingItem${additionalRank1.rank}Id`}
                 >
                     <span 
                         className={styles.rank}
@@ -96,8 +93,8 @@ function RankingSection() {
                 </div>
                 <div 
                     className={styles.rankingItem} 
-                    id={`rankingItem${accountHolderRank.rank}Id`}
                     key={accountHolderRank.rank}
+                    id={`rankingItem${accountHolderRank.rank}Id`}
                 >
                     <span 
                         className={styles.rank}
@@ -112,8 +109,8 @@ function RankingSection() {
                         <img 
                             alt={accountHolderRank.name} 
                             className={styles.rankHolderImage} 
-                            id={`rankHolderImage${accountHolderRank.rank}Id`}
                             src={accountHolderRank.imageUrl} 
+                            id={`rankHolderImage${accountHolderRank.rank}Id`}
                         />
                         <span 
                             className={styles.rankHolderName}

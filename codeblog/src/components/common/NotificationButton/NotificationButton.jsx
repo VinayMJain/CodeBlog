@@ -21,29 +21,23 @@ const NotificationButton = ({notificationCount}) => {
     // console.log(blogs.length)
 
 return (
-    <div 
-     className={styles.notificationContainer}
-     id='notificationContainerId' 
+    <div className={styles.notificationContainer}>
+    <button 
+        className={styles.notificationButton}
+        id='notificationButtonId'
     >
-        <button 
-            className={styles.notificationButton}
-            id='notificationButtonId'
-        >
-            <img 
-                alt="Notification" 
-                id='notificationLogoId'
-                src="images/notification.png" 
-            />
-            {/* Step 4: Display Notification Count */}
-            {notificationCount > 0 && (
-            <span 
-            className={styles.notificationBadge}
-            id='notificationBadgeId'
-            >
-                {notificationCount}
-            </span>
-            )}
-        </button>
+        <img 
+        alt="Notification" 
+        id='notificationLogoId'
+        src="images/notification.png" 
+        />
+        {/* Step 4: Display Notification Count */}
+        {notificationCount > 0 && (
+        <span className={styles.notificationBadge}>
+            {notificationCount}
+        </span>
+        )}
+    </button>
     </div>
 );
 };

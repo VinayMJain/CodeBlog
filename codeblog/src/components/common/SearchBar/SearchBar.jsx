@@ -14,9 +14,9 @@ function SearchBar() {
         type="search" 
       />
       <button 
-        className={styles.searchButton}
-        id="searchButtonId"
-        type="submit" 
+      className={styles.searchButton}
+      id="searchButtonId"
+      type="submit" 
       >
         <img 
           alt="searchButton" 

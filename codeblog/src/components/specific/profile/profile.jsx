@@ -20,9 +20,9 @@ function Profile() {
           id='nameEditButtonId'
         >
           <img 
-            alt='Edit Profile' 
-            id='nameEditImgId' 
             src="images/pencil.png" 
+            id='nameEditImgId' 
+            alt='Edit Profile' 
           />
         </button>
       </div>
@@ -35,9 +35,9 @@ function Profile() {
           id='profileImageId'
         >
           <img 
-            alt="Profile Here" 
-            id='profileImageImgId' 
             src="images/profile-photo.png" 
+            id='profileImageImgId' 
+            alt="Profile Here" 
           />
         </div>
         <div 
@@ -74,9 +74,9 @@ function Profile() {
             id='linkedinId'
           >
             <img 
-              alt='LinkedIn' 
-              id='linkedinImgId' 
               src="images/linkedin.png" 
+              id='linkedinImgId' 
+              alt='LinkedIn' 
             />
           </div>
           <div 
@@ -84,9 +84,9 @@ function Profile() {
             id='githubId'
           >
             <img 
-              alt='GitHub' 
-              id='githubImgId' 
               src="images/github.png"  
+              id='githubImgId' 
+              alt='GitHub' 
             />
           </div>
           <div 
@@ -94,9 +94,9 @@ function Profile() {
             id='twitterId'
           >
             <img 
-              alt='Twitter' 
-              id='twitterImgId' 
               src="images/logos.png" 
+              id='twitterImgId' 
+              alt='Twitter' 
             />
           </div>
           <div 
@@ -104,9 +104,9 @@ function Profile() {
             id='instaId'
           >
             <img 
-              alt='Instagram' 
-              id='instaImgId' 
               src="images/instagram.png" 
+              id='instaImgId' 
+              alt='Instagram' 
             />
           </div>
         </div>

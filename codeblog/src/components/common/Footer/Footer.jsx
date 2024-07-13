@@ -4,10 +4,8 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer 
-      className={styles.footer}
-      id='footerMain'
-    >
+    <footer className={styles.footer}
+      id='footerMain'>
       <div 
         className={styles.footerMain} 
         id='footerMainDiv'
@@ -27,10 +25,7 @@ const Footer = () => {
             <br />
             Subscribe to CodeBlog's newsletter.
           </p>
-          <div 
-           className={styles.subscribeForm} 
-           id='subscribeForm'
-          >
+          <div className={styles.subscribeForm} id='subscribeForm'>
             <input
               className={styles.email}
               id='emailInput'

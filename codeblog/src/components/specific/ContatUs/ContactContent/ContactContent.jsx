@@ -24,10 +24,10 @@ function ContactContent() {
         id='iconsDiv1'
       >
         <img 
-          alt="Cellphone Icon" 
           className={styles.iconsImg} 
           id='iconsImg1' 
           src="images/cell.png" 
+          alt="Cellphone Icon" 
         />
         <p 
           className={styles.contentDivPara} 
@@ -41,10 +41,10 @@ function ContactContent() {
         id='iconsDiv2'
       >
         <img 
-          alt="Mail Icon" 
           className={styles.iconsImg} 
           id='iconsImg2' 
           src="images/mail.png" 
+          alt="Mail Icon" 
         />
         <p 
           className={styles.contentDivPara} 
@@ -58,10 +58,10 @@ function ContactContent() {
         id='iconsDiv3'
       >
         <img 
-          alt="Location Icon" 
           className={styles.iconsImg} 
           id='iconsImg3' 
           src="images/location.svg" 
+          alt="Location Icon" 
         />
         <p 
           className={styles.contentDivPara} 

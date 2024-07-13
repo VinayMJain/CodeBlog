@@ -13,25 +13,24 @@ export const CatetoryButton = ({ selectedCategory, setSelectedCategory }) => {
 
   return (
     <ToggleButtonGroup
-      aria-label="Platform"
-      color="primary"
-      exclusive
-      onChange={handleChange}
-      value={selectedCategory}
-      sx={{
-        backgroundColor: 'white',
-        color: "white",
-        "button": {
-          backgroundColor: "#508ba3"
-        },
-      }}
-    >
+    color="primary"
+    value={selectedCategory}
+    exclusive
+    onChange={handleChange}
+    aria-label="Platform"
+    sx={{
+      // marginLeft: '30px',
+      // marginTop: '20px',
+      backgroundColor: 'white',
+      color: "white",
+      "button": {
+        backgroundColor: "#508ba3"
+      },
+    }}
+  >
     <ToggleButton value="all"  >All</ToggleButton>
     {blogs.map((blog, index) => (
-      <ToggleButton 
-        key={index} 
-        value={blog.category}
-      >{blog.category}</ToggleButton>
+      <ToggleButton key={index} value={blog.category}>{blog.category}</ToggleButton>
     ))}
   </ToggleButtonGroup>
   )

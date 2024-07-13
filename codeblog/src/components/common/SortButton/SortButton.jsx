@@ -20,18 +20,18 @@ export const SortButton = ({ selectedSortOption, setSelectedSortOption }) => {
             size="small"
             >
             <InputLabel 
-                id="demo-simple-select-autowidth-label"
-                sx={{
-                    color: "white",
-                }}
+            id="demo-simple-select-autowidth-label"
+            sx={{
+                color: "white",
+            }}
             >Sort</InputLabel>
                 <Select
-                    autoWidth
-                    id="demo-simple-select-autowidth"
-                    label="Sort"
                     labelId="demo-simple-select-autowidth-label"
-                    onChange={handleChange}
+                    id="demo-simple-select-autowidth"
                     value={selectedSortOption}
+                    onChange={handleChange}
+                    autoWidth
+                    label="Sort"
                     sx={{
                         color: "white",
                     }}

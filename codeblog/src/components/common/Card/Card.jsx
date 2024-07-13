@@ -14,7 +14,7 @@ const Card = ({title,image, onDelete, showDeleteButton }) => {
             className={style.image} 
             id="cardImageId">
             <img 
-              alt="blogImage" 
+              alt="" 
               id="blogImageId" 
               src={image} 
             />

@@ -102,11 +102,7 @@ function TemporaryDrawer() {
 
     return (
         <Box sx={{ display: 'flex' }}>
-            <Drawer 
-             open={open} 
-             sx={{ '.MuiDrawer-paper': { backgroundColor: '#224452' } }}
-             variant="permanent" 
-            >
+            <Drawer variant="permanent" open={open} sx={{ '.MuiDrawer-paper': { backgroundColor: '#224452' } }} >
                 <DrawerHeader>
                     <Typography heading sx={{ color: "white", marginRight: "50px" }}>
                         CodeBlog
@@ -118,11 +114,7 @@ function TemporaryDrawer() {
                 <Divider />
                 <List>
                     {['Blogs', 'Uploads'].map((text, index) => (
-                        <ListItem 
-                         disablePadding 
-                         key={text} 
-                         sx={{ display: 'block', color: "white" }}
-                        >
+                        <ListItem key={text} disablePadding sx={{ display: 'block', color: "white" }}>
                             <ListItemButton
                                 component={Link}
                                 to={index === 0 ? "/Blogs" : "/Uploads"}
@@ -142,10 +134,7 @@ function TemporaryDrawer() {
                                 >
                                     {index === 0 ? <AutoStoriesIcon /> : <CloudUploadIcon />}
                                 </ListItemIcon>
-                                <ListItemText 
-                                 primary={text} 
-                                 sx={{ opacity: open ? 1 : 0 }} 
-                                />
+                                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
                             </ListItemButton>
                         </ListItem>
                     ))}
@@ -153,11 +142,7 @@ function TemporaryDrawer() {
                 <Divider />
                 <List>
                     {['FAQs', "Contact", 'About'].map((text, index) => (
-                        <ListItem 
-                         disablePadding 
-                         key={text} 
-                         sx={{ display: 'block', color: "white" }}
-                        >
+                        <ListItem key={text} disablePadding sx={{ display: 'block', color: "white" }}>
                             <ListItemButton
                                 component={Link}
                                 to={index === 0 ? "/faqs" : index === 1 ? "/Contact" : "/about"}
